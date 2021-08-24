@@ -1,0 +1,12 @@
+name: TM_HF2
+title: TM_HF2
+username:
+account: vivianesch
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2164346
+bundleId: 3060800
+url: https://vivianesch.shinyapps.io/TM_HF2/
+when: 1587750131.39198
+asMultiple: FALSE
+asStatic: FALSE

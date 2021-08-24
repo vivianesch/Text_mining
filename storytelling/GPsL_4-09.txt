@@ -1,0 +1,526 @@
+Fogaça: então tá, tá gravando a partir de agora. podemos fazer uma rodada de apresentação,
+não sei quem quer começar. apesentação com a função e o tempo de experiência na parte de
+perfuração.
+Entrevistado 1: sou um fiscal, que é tipo um líder operacional, tenho sete anos de embarque e
+é isso, quer mais algum detalhe do dia a dia?
+Fogaça: não só experiência de embarque mesmo. trabalha só com perfuração ou produção
+também?
+Entrevistado 1: perfuração e completação, produção é outro setor.
+Entrevistado 2: sou fiscal também, tenho 14 anos de experiência na função, sendo que uma
+parte foi sob "solo terrestres" (não entendi se é isso mesmo), maior parte né, e já estou cinco
+anos na perfuração marítma, na perfuração e na completação.
+Entrevistado 3: sou engenheiro de instruções de poços, tenho 19 anos de experiência em óleo
+e gás, já fui fiscal por quatro anos, já fui engenheiro de projetos por oito anos e já fui gerente
+da operação por mais de oito anos também. portanto tenho essa experiência toda.
+Entrevistada 4: sou projetista de perfuração, fui fiscal durante quatro anos e meio, e to como
+projetista há seis anos.
+Fogaça: o fiscal fica sempre embarcado?
+Entrevistada 4: sempre embarcado. é ele fica só um período de seis meses embarcado. a cada
+dois anos ele fica seis meses embarcado.
+Entrevistado 1: a cada dois a três anos, a gente passa seis meses embarcado.
+Entrevistado 3: a particularidade do fiscal da total é que passa quatro semanas embarcado e
+quatro semanas desembarcado.
+Fogaça: tá legal. então, validando o caso para ter certeza que a gente entendeu o que vocês
+nos contaram. a gente teve um caso de blackout parcial, que evoluiu para um caso de blackout
+total, houve uma disconexão da sonda e abalroamento com o barco que estava fazendo o
+suprimento desta sonda. Pergunta para vocês. de todos os casos que vocês poderiam ter
+escolhido, a gente teve até uma troca de caso, um ajuste grande no começo, mas por que esse
+caso?
+Entrevistado 2: são falhas que já aconteceram né. relacionadas a isso aí, que podem gerar isso
+aí. e consequências mais gravres. um problema com consequências mais graves.
+Fogaça: considerando esse acidente como um todo. em grau de severidade, consideraria ele
+grave?
+Entrevistado 3: muito
+Fogaça: e em termos de probabilidade?
+Entrevistado 1: bem baixa
+Entrevistado 2: a probabilidade é sempre baixa, não é? senão você não faz a operação.
+Fogaça: Tá, não mas seria um acidente possível de acontecer, não é? mas essa possíbilidade é
+remota?
+Entrevistado 3: remota não, baixa.
+Fogaça: baixa, entendi. Ok.
+Entrevistado 1: acho que é remota, pois você quase não tem notícia (alguma coisa que não
+entendi) batendo em barco.
+Entrevistada 4: eu vi uma vez e, nossa foi a 10 anos atrás.
+Entrevistado 3: baixa
+Fogaça: não não o abalroamento, eu digo o caso como um todo, considerem blackout...
+Entrevistado 1: tudo, tudo acontecendo ao mesmo tempo é mutio baixa
+Entrevistado 2: tipo, faz 14 anos que eu embarco e eu nunca vi um blackout, nunca vi uma
+desconexão, nunca vi um abalroamento
+Entrevistada 4: quanto mais tudo junto né.
+Entrevistado 2: nunca vi um homem cair no mar.
+Entrevistado 3: é nesse caso é remoto.
+Fogaça: não tudo bem, mas ainda assim por que esse caso é interessante para vocês, por que
+vocês escolheram falar disso?
+Entrevistado 1: por que o ESD é o fator gerador aí das maiores coisas que podem acontecer aí.
+Fogaça: tá a desconexão, o ESD é o ponto chave aí.
+Entrevistado 1: é um risco ai por vários momentos
+Entrevistado 2: é um risco até para empresa.
+Entrevistado 3: e o histórico que nós temos de blackout parciais nas duas sondas, não é
+negligenciável. temos um histórico que nos faz preocupar e obviamente ações estão em curso
+para que, digamos que, se diminua ou mitigue eventos.
+Entrevistado 1: a petrobras mais ou menos nos deu a ideia de facilitar o acontecimento do
+blackout parcial né, e dificultar ele virar um total. Tem lugar que tem politicas ao contrário.
+diminui muito o risco de qualquer blackout, e aumenta a chance de acontecer blackout total.
+Fogaça: legal, é uma escolha de gestão de risco. em termos de desconexão, tem acontecido
+nas sondas de libra.
+Entrevistado 1: então libra teve uma vez. eu tive uma vez só também.
+Fogaça: não seria comum, é raro isso acontecer?
+Entrevistada 4: sim é raro.
+Entrevistado 3: eu já tive n desconexões. n eu não digo, mas já tive muitas disconexões. cinco
+desconexões é muitas desconexões para quem tem 19 anos. e já tive uma desconexão porque
+o driller, que é o cara responsável pelo frontline da operação, o cara estava mindset e o cara
+carregou no botão que não deveria carregar. porque antes de você fazer a disconexão ele
+pergunta, você tem que dar confirmação, você quer fazer a disconexão, e o cara estava
+completamente naquele efeito túnel, o cara carregou duas vezes no botão para desconectar.
+Fogaça: quase um susto assim.
+Entrevistado 3: o cara fez, quando o cara veio, pois nós temos a câmera ali para ver a
+operação, o cara tem a câmera que ele consegue ver, o cara quando vê a lama caindo o cara se
+deu conta que ele tinha desconectado. foi a hora que ele se deu conta que tinha feito uma
+burragem
+Fogaça: interessante.
+Entrevistado 3: o fator humano e normalmente isso nas companhias, ou seja, as donas das
+sondas num caso desses o que elas fazem? uma carta sr. você está despedido. e nós total
+dissemos: esse cara nós não vamos despedir. O cara era extremamente competente, mas
+aconteceu com um cara extremamente competente. humano estranho não é
+Fogaça: e chegaram alguma conclusão do caso?
+Entrevistado 3: isso foi a três anos atrás né. hoje os exercícios e, lógico a petrobrás vai buscar
+vocês para de fato ajudar a nós, já é uma atitude de fato que é de bater palmas não é. por que
+nós dessa operadora somos muito conservadores. mas somos nós dois que identificamos que
+o fator humano é um problema sério e que nós já nos demos conta que só por nós mesmo não
+vamos conseguir resolver e temos que buscar como funciona na aviação e outras indústrias,
+não é, naquela época isso ainda não se fazia. mas hoje o caminho é esse não é, esse é um
+depoimento que eu...
+Fogaça: ótimo, tá bom. a gente escolheu então. conduziu né, para envolver geradores e toda
+essa parte de abalroamento, deck de carga e tudo mais, acho que ficou claro a respeito dos
+porquês ai pra mim, pelo menos. se quiserem completar alguma coisa, me enterropam a
+qualquer momento. O dia da semana não foi o caso, mas a hora envolvia aquela parte de
+fadiga e troca de turno e tudo mais, porque é mais estafante, é mais cansativo. todo mundo
+trabalha assim, internacionalmente é esse mesmo sistema de 12/12 horas, ai tem o 12+6 e
+tudo mais... tem outros sistemas?
+Entrevistado 3: assim não, normalmente assim para um subcarga. no dia do revesamento das
+equipes há sempre uma subcarga.
+Entrevistado 2: ai tem também que, a gente tá batendo muito nisso né, que eu vivo com um
+problema sério, que eles tavam trabalhando... a petrobrás trabalha 14 folga 21, e atualmente a
+gente trabalha 14 e folga 14, mas também muitas vezes a gente é compensado por 28 dias de
+folga. e os caras, quem não é petrobras é os que tiram 14 por 14. e devido assim, pelo menos
+há mais de anos que eu to notando nas sondas agora que ta dando uma diminuida, os cara
+tavam fazendo 14 folga 7 e entra mais 14, que eles chamam a dobradinha. ou então ficam 21
+folgam 7 e voltam pra mais 14.
+Fogaça: isso são normas da empresa ou isso é lei trabalhista para função?
+Entrevistado 2: não, tá dentro da lei trabalhista, né de você poder ficar uma semana a mais
+ainda lá, mas lei fala que é esporádicos, do tipo as vezes o cara liga: oh teve um acidente aqui
+não vou poder embarcar amanhã, você vai ter que ficar mais uma semana, esporádico, e lá
+tava virando rotina. Então a gente começou a bater.
+Fogaça: isso na petrobrás como um todo ou só libra?
+Entrevistado 3: libra
+Entrevistado 2: não
+Entrevistada 4: acho que petrobrás como um todo.
+Fogaça: libra também?
+Entrevistada 4: libra também, e petrobrás como um todo.
+Entrevistado 2: ai a gente bateu em cima, e nada de conseguir resolver. ai a gente ta
+tentando... punindo os caras na nota que a gente dá, baixa os indíces deles. e parece que agora
+eles tão mais... contratando mais gente e formando um pool de reserva.
+Fogaça: eessa decisão de escala é que tem um departamento de escala que escala isso? como
+é?
+Entrevistado 2: é que pra ele é mais fácil pagar hora extra do que contratar uma pessoa a mais.
+Fogaça: mas tem um setor de escala na empresa que determina isso, quem decide se vai ficar
+uma semana a mais ou não?
+Entrevistada 4: a sonda
+Entrevistado 1: a contratada
+Entrevistado 3: isso tem resposta, não é, hoje temos penalizados dessa forma. o mercado do
+óleo e gás deu uma caida, os preços todo mundo conhece, as organizações foram pedidas para
+que elas fizessem otimização dos custos, não é, e cada companhia, adotou a otimização que
+lhe fosse conveniente. e o que é mais factível nessa otimização é recursos humanos.
+Fogaça: certo.
+Entrevistado 3: então essas companhias que adotam em não dar o período, digamos que o
+mais razoável aos colaboradores, no caso desse problema da contribuição, então fazem essa
+tal dobradinha.
+Fogaça: tá ótimo.
+Entrevistado 3: mas aí nós como (alguma coisa que não entendi), que é nosso caso operadores,
+temos diferença.
+Entrevistado 2: isso aí é outra coisa também, ele falou certo aí, o mais fácil é mexer com fator
+humano. que é o nosso gargalo. Porque por exemplo, eu notei agora que a gente teve um
+problema de contrato de material. provavelmente eles pegaram um material mais barato e
+mais em conta, nessa história de corte de custos né. só que para ele não é... não tem sentido
+pegar alguma coisa mais barata. por exemplo, teve lá problema com camisa de bomba. aí
+pegram uma camisa de bomba lá de uma marca genérica, eles tiveram que trocar 70 vezes. as
+duas horas que ele parou ali para trocar isso, pra dar o timing, daria para comparar 10 vezes a
+melhor marca e ia sobrar dinheiro. então nesse ponto... agora eles tem que ver também que a
+parte do fator humano o barato também pode sair caro.
+Entrevistado 1: mas tem também o outro lado, você tem o pool não é 100% bom né, tem
+gente que nem sempre é da sonda.
+Entrevistada 4: é que não tem experiência.
+Entrevistado 1: para substituir ferias e sei lá o que. ta cheio dessas pessoas, que todo mundo
+tira férias uma vez por ano.
+Fogaça: e o pessoal que não é da sonda, tu fala, que não conhece aquela sonda em especial
+Entrevistado 3: sim
+Entrevistado 1: é, porque você vai ter um chefe de máquina da vida que vai ter que tirar férias,
+não tem jeito, é um cara que faz tudo. e aí você vai trazer quem, um outro chefe que trabalha
+no pool, que cada hora embarca numa sonda cobrindo férias.
+Fogaça: não tem mesma especialização. entendi.
+Entrevistado 1: é complicado a situação. e ajeitar isso tudo.
+Fogaça: e uma pergunta rápida a respeito dessa parte de compras de materiais. na aviação,
+por exemplo, eu tenho o avião da boeing, e ela especifica quais peças eu posso usar, eu tenho
+um partnumber um negócio lá que diz é só aquilo ali. se tu não comprar aquela peça tu ta
+infringindo a lei. como funciona, tu comentaste da camisa de bomba, qual é o grau de
+liberdade que vocês tem de correr atrás de uma peça...
+Entrevistado 2: a gente especifica mas não tem especifica marca não.
+Entrevistado 1: mas os críticos são todos homologados né, BOP, (algum outro equipamento
+que não entendi a sigla) e essa coisas...
+Fogaça: tá ok, então ela era mais simples, mas estava dentro da especificação.
+Entrevistado 1: tem classificadora...
+Entrevistado 3: vamos mencionar um exemplo que resultou num LTI (Lost Time Injury), nas
+nossas (alguma coisa que não entendi), as botas. nós temos uma bota, ou seja, a sonda, a
+proprietária da sonda tem uma bota com uma certa especificação, com certo serial number,
+não sei qual foi o motivo, que elas não foram procurar ou não tiveram a bota
+Fogaça: bota bota, bota de calçado?
+Entrevistada 4: isso
+Entrevistado 3: bota calçado. né com essa especificação. e o cara viu uma bota que na visão,
+que na posição dele, não é, e no estudo que ele fez no datasheet, era uma bota que tinha
+especificação para ser usada offshore, só que ninguem avaliou que aquilo, com óleo,
+escorregava. então um cara escorregou e torceu o pé e tivemos um acidente com
+afastamento.
+Fogaça: pequenos detalhes...
+Entrevistado 2: e para isso ai, essas botas foram proíbidas e tiveram que comprar botas novas
+Entrevistado 3: se gastou duas vezes.
+Fogaça: o barato sai caro
+Entrevistado 2: esse material para eles nao é... eles já estão cientes do material...
+Fogaça: seguindo. a parte de condições meteorológicas, comentou que as condições
+meteorológicas... era noite e as condições eram marginais. em linhas gerais, teria como
+explicar o que é uma condição marginal. vocês comentaram que vento é um fator muito
+importante, o que mais que influenciaria bastante aqui.
+Entrevistado 3: onda
+Entrevistado 1: comprimento das ondas é horrível de falar... enquanto ela tá subindo e
+descendo.
+Entrevistada 4: correntes
+Entrevistado 2: e a onda né
+Entrevistada 4: a altura né.
+Fogaça: então ondas perto do limite, vento...
+Entrevistado 2: onda e vento é mais uma questão de movimentação
+Entrevistado 1: é uma média assim. não pá mediu, está acima do limite. você mede, tem
+rajada, aí faz 15 minutos que não tem rajada
+Fogaça: mas vocês tem anemometro pra medir vento?
+Entrevistado 1: tudo tudo
+Fogaça: essa medidade de
+Entrevistado 2: mede até na hora.
+Fogaça: também tem um valor númerico que aparece em algum lugar. isso é medido né, não é
+no olho?
+Entrevistado 1: tem gráfico
+Fogaça: ok, então não é medido "assim"... ok. a gente já falou bastante, mas é só para validar
+mesmo, a parte de pessoas envolvidas então, a gente mencionou DPO, então novo e recem
+promovido. pouca experiência, ansiedade e essas coisas. a parte do eletrecista ocorre o
+contrário. é extremamente experiente, aí é um pouco de complacencia, um pouco de excesso
+de confiança. algum tipo de ruído na comunicação entre o pessoal da plataforma e da sonda
+na parte de atracamento ali do barco, não sei se atracamento é o correto, mas a aproximação
+para descarga né. e algo mais? esqueci alguma coisa?
+Entrevistada 4: não, acho que é isso
+Fogaça: tá, em relação a treina...
+Entrevistado 2: sempre assim falando tem a probabilidade toda né. todos foram proativos aí.
+mas pecaram na proatividade.
+Fogaça: o pessoal, em especial o DPO, treinamentos específicos para isso, tem algum
+treinamento, dá pra fazer algum simulado? assim oh, tu ta com um pane agora de blackout, vai
+fazer essa comunicação e tudo mais, existe... e tem tipo um simulador pra isso? como que é?
+Entrevistado 2: a gente faz um drill, toda semana tem um drill
+Entrevistado 1: mas como eu falei, não é a mesma coisa.
+Fogaça: não nunca é
+Entrevistado 1: é que nem aquele curso avançado de (alguma coisa de poço), não tem o
+cenário, não tem o stress.
+Fogaça: isso é feito na plataforma?
+Entrevistado 1: sim
+Fogaça: tá, aqueles simuladores que a gente viu no SENAI, tem alguma coisa pra esse tipo de
+coisa ou não?
+Entrevistado 3: não, lá na sonda não.
+Entrevistada 4: na sonda não...
+Fogaça: tipo uma sala de controle ou coisa assim
+Entrevistada 4: o soldador sim, mas o DPO não, que eu saiba não né.
+Entrevistado 3: o DPO tem, faz faz faz...
+Entrevistada 4: treinamento de stress eu não sei...
+Entrevistado 3: ele faz, um DPO tem que ter três níveis de certificação. se o cara não tiver
+nesses três níveis de certificação, o cara não é DPO. uma das coisas tem que se controlar,
+muitas das vezes, se o cara atende as certificações exigidas para ser um DPO.
+Fogaça: além de ter curso teórico tem simulador, tem treinamento simulado regulares?
+Entrevistado 3: o cara pode ser um cara brilhante ter as classificações e um cara que nunca viu
+poços, não é, que não tem dois anos de poços e vai fazer um controle de rupções, IWCF, e pelo
+fato do cara ser muito bom, ele consegue a certificação, mas o cara nunca viu um
+equipamento.
+Fogaça: então ele não pode ser DPO?
+Entrevistado 3: não não, to dando um exemplo. o cara na realidade quando tiver um kick,
+quando tiver um problema sério...
+Fogaça: vai ser a primeira vez, first time.
+Entrevistado 3: vai ser a primeira vez, mas tem outros fatores que vão influenciar que ele não
+faça mais o seu trabalho.
+Fogaça: entendi, então ele pode chegar lá, mesmo que esteja completamente certificado, está
+bem verdinho ainda, bem cru.
+Entrevistado 3: exatamente.
+Fogaça: ok. a parte do eletrecista como é os periódicos desse pessoal? tem simulador também
+ou é só o inicial?
+Entrevistada 4: não sempre.
+Fogaça: não
+Entrevistado 1: esse simulado de blackout é no mínimo uma vez por ano que se faz. faz um
+simulado real mesmo, bota a sonda para derivar e ele faz tudo.
+Entrevistado 3: não isso são aqueles testes do...
+Fogaça: o DPO isso? ou eletrecista?
+Entrevistado 1: ele pediu máquinas, o DPO também vai participar né.
+Entrevistado 3: participa todos
+Fogaça: é anual então?
+Entrevistado 1: é anual
+Fogaça: tá bom.
+Entrevistado 2: outra coisa quando vai um cabra novo pra la, tem um sistema de
+acompanhamento.
+Fogaça: ele não vai estar sozinho?
+Entrevistado 2: não, tem o mentor tem uma (alguma coisa) inicial.
+Fogaça: e nesse caso como fica o noturno?
+Entrevistado 3: o cara não tem mentor ali.
+Fogaça: ele vai tá sozinho
+Entevistado 2: não, ele tem um mentor só que o mentor não vai ta na hora. é um cara que ele
+tem pra tirar dúvida, não é um cara que vai ficar colado com ele o tempo todo.
+Fogaça: entendi. comentavam a respeito de experiência. quem seria um DPO bom que tipo de
+experiência esse cara já tem para ser um cara safo na operaçã, que ta com ele tá tranquilo não
+sei se é um tempo, tipo: ah o cara com quatro anos embarcado, ou que já passou por tal e tal
+situação. não sei se vocês têm essa noção.
+Entrevistada 4: não também acho que...
+Entrevistado 1: porque você pode passar 20 anos e não rolou nada.
+Fogaça: ba mas ai o cara é muito pé quente né.
+Entrevistado 3: só partilhando o que a total faz. nós no contrato identificamos as posições
+chaves da sonda, do cara que vai trabalhar na sonda. e para cada uma dessas posições chaves
+nós consideramos que o cara é aceito nessa posição e haverão x numeros nessa posição num
+outro navio qualquer.
+Fogaça: trabalhando como DPO, por exemplo.
+Entrevistado 3: trabalhando como DPO por cinco anos.
+Fogaça: então esse cara é considerado proficiente.
+Entrevistado 3: esse cara é proficiente. o cara, driller, que tenha cinco anos, vai trabalhar como
+driller.
+Fogaça: e cinco anos é mais ou menos parelho para qualquer função?
+Entrevistado 3: digamos que nas funções chaves.
+Fogaça: e chega na total hoje um cara que não tem cinco, mas tem quatro anos. ele não vai
+assumir?
+Entrevistado 3: o cara não vai assumir.
+Fogaça: a petrobrás faz alguma coisa nesse sentido?
+Entrevistado 2: não porque a petrobrás é... no caso da gente, a gente é fiscalização né.
+Fogaça: então vocês subcontratam, isso?
+Entrevistado 2: não, a seadrill... aí é gestão da seadrill.
+Entrevistado 3: a diferença é que nós é na total temos chamado bridging de documentos. que
+nós fazemos bridge do management do sistema de segurança, do gerenciamento da
+companhia que nós estamos a contratar. fazemos o match e vemos qual é o gap de um e do
+outro. quer dizer, nós co-assinamos...
+Fogaça: um aceite como se fosse.
+Entrevistado 3: exato.
+Fogaça: e para o fiscal, não se é o caso, se isso aparece no radar de vocês, se vocês chamam
+atenção, vocês tão embarcando em uma plataforma onde tem, por exemplo: chove em cima
+do pobre do DPO, ali e tal, o cara é primeiro ano dele, é novinho, isso chama atenção? ba to
+numa plataforma que tem um cara novinho aqui e tal, vamo ficar de olho nele ou alguma coisa
+assim.
+Entrevistada 4: ele nunca vai tá sozinho.
+Entrevistado 1: é que o cara nunca tá solo.
+Entrevistado 2: e é assim, nunca tem dois fresquinhos juntos.
+Fogaça: sempre tem um veterano junto?
+Entrevistado 2: tem tem
+Fogaça: mas isso chega a chamar atenção, quem são os novatos da plataforma ou não?
+Entrevistado 2: não, se ele pegar um soldador novo...
+Entrevistado 3: não, mas aí ele vai ver mais soldadores, por que o DPO é mais (alguma coisa
+que não entendi)
+Fogaça: sim sim, eu usei de exemplo porque foi o nome que apareceu né. mas se tu tem um
+soldador que é novo, tipo é o primeiro embarque do cara, isso chama atenção?
+Entrevistado 1: não aí a gente fica mais... dá pra saber
+Fogaça: no briefing isso aparece para vocês? ou algo assim, num briefing de entrada em
+plataforma, vocês sabe que eles são os novatos ou alguma coisa? ou tem que pescar?
+Entrevistado 1: a gente pergunta
+Fogaça: não não, só curioso para saber como é o processo mesmo. Seguimos?
+Entrevistados: (conversa cruzada)
+Entrevistado 2: se é soldador novo também tem auto-pusher do lado
+Entrevistada 4: é por causa da performance né, ele geralmente dá o suporte
+Entrevistdo 2: para ser auto-pusher tem que ter sido soldador por muito tempo.
+Fogaça: não, ótimo, acho que estou entendendo. do ponto de vista fisiológico, acho que o
+ponto maior aqui do eletrecista que tava com problema em casa e, enfim problema
+psicológico, canseira e tudo mais, a parte de cansaço acho que influencia mais ele né. acho que
+a parte do resto do controle da plataforma não é mais tanto, não é, essa parte fisiológica e
+psicológica. teve ansiedade do outro rapaz ali do barco e tudo mais. mas acho que é por aí né.
+não tem mais muito o que explorar.
+Entrevistado 2: é um cansaço normal né. todo mundo tem isso
+Fogaça: tem
+Entrevistado 3: mas o cara do barco, ou seja, o DPO, ele fez o trabalho dele.
+Fogaça: fez fez, acho que o ponto
+Entrevistado 3: a única coisa é que a comunicação entre ele e o cara do barco
+Fogaça: mas acho que em termos de estado físico, eu acho que o do eletrecista pesou, foi o
+que mais pesou aqui na parte de repente estar cançado de ta...
+Entrevistado 3: sim sim
+Fogaça: ta ta então ta beleza. entedemos certo. em relação a procedimentos que deveriam
+existir ou que falharam, alguma coisa assim, algum checklist, eu imagino que tudo seja
+procedimentalizado, pelo que vocês me comentaram. tem um procedimento para partida do
+gerador, entendi que tem um procedimento para comunicação com o barco, mesmo que não
+seja um checklist, é treinado tudo isso. então. algum desses vocês entendem que sejam
+particularmente dificil ou que deveria existir e não existe, que tem que ser reformado, sem
+falar em profundidade, mas em geral tal procedimento é charope ou é dificil ou alguma coisa
+assim.
+Entrevistado 2: não, os procedimentos são revisados frequentemente.
+Fogaça: aham. e apos a revisão como o pessoal recebe esses procedimentos novos?
+Entrevistado 3: não é com a ajuda do pessoal que faz as operações que as revisões são feitas.
+Fogaça: ok, mas não é necessáriamente todo mundo, sai uma revisão e como todo mundo fica
+sabendo dela?
+Entrevistado 3: uma determinada área que vai fazer um determinado trabalho, o cara vai
+receber uma ordem de trabalho, né. depois o trabalho vai ser concluido, não é, que você tem
+tudo que você tem que fazer, você vê situações adversas ou situações de melhorias e você
+reporta elas, depois, o cara, o (performant) da sonda e a equipe senior da sonda avaliam e
+integram esses comentários ou não.
+Fogaça: o procedimento é para sonda, não é para eletrecistas por exemplo.
+Entrevistado 3: não, para cada área da sonda.
+Entrevistado 2: para as operações
+Entrevistado 3: para cada operações da sonda.
+Entrevistado 1: cada sonda tem um procedimento.
+Fogaça: tá supõe que nessa sonda que a gente falou hoje, o eletrecista chega lá e diz: ba esse
+procedimento poderia ser melhorado. ele reporta e vem um procedimento. é só para aquela
+sonda é reportado.
+Entrevistado 1: só para aquela sonda. mas ai isso é diivulgado...
+Entrevistado 2: aí tem a abrangência, se a outra sonda tem esse mesmo procedimento, aí essa
+melhoria vai ser para outras sondas também.
+Entrevistado 3: se a sonda for da mesma família.
+Fogaça: isso vem num boletim de treinamento? como é feita essa adaptação?
+Entrevistada 4: aí eu não sei se eles fazem um treinamento para cada vez que muda o
+procedimento. eu acho que quando vai fazer um trabalho, ele tem que fazer a permissão de
+trabalho, aí ele tem que botar lá que leu o procedimento nananana. ele assina que ele leu.
+Fogaça: então, suponha que tenha mudado um procedimento há um mês atrás e eu sou o
+eletrecista, aí chego lá e vou receber "oh tem um procedimento novo" eu tenho que dar
+ciência que eu li ele.
+Entrevistado 2: é exato. se você for fazer esse trabalho você vai ter que ler.
+Entrevistado 1: o novo agora é step-by-step, que já vem a sequência operacional no meio do
+procedimento, misturado assim... o que você tá fazendo e a recomendação de porque você tá
+fazendo meio que junto assim, pra se você precisar ler meio separado.
+Fogaça: que é mais ou menos que a aviação está usando.
+Entrevistado 1: só que antes você lia toda as de risco e ia fazer. ai sempre ficava ocupando a
+cabeça, agora tá certinho os momentos.
+Entrevistado 3: isso se chama evolução que foi feita né.
+Entrevistado 1: é uma evolução.
+Fogaça: ta bom. algo que vocês visualizem ou imaginem que poderia ter deixado essa
+operação toda, vamos considerar tanto a comunicação com o barco ou a parte do gerador ali
+em baixo, mais fácil. alguma condição que poderia ter faciltado a vida do pessoal ali?
+Entrevistado 3: eu acho que na questão do barco, não é.
+Fogaça: tentanto manter o mesmo cenário...
+Entrevistado 3: mantendo o mesmo cenário... a comunicação falhou, tem que ter algo vizual,
+não é, o capitão do barco consiga ver que aquele vizual tá indicar pro cara afastar.
+Fogaça: o que seria esse visual por exemplo?
+Entrevistado 3: cara um flash de...
+Fogaça: uma luz estroboscópica, uma coisa assim, ou uma rotating beacon.
+Entrevistado 3: (alguma coisa que não entendi) quando o cara atraca né, ele tenha visão com o
+deck. o cara nunca fica sem visão com o deck da sonda, não é. a comunicação foi feita, e
+vamos supor que a comunicação falhou por algum motivo qualquer. se o cara tiver lá e quando
+vou acionar... vou dizer blackout, ok, para minha sonda. primeiro tem duas coisas quando dá
+blackout total a sonda normalmente apaga um... muitas luzes vão ser apagadas, não é. isto é
+um sinal que o capitão do outro barco tem que ver. mas se o cara de repente vê lá um flash,
+um código, uma lâmpada de cor...
+Entrevistado 2: um SOS né.
+Entrevistado 3: tipo um SOS, dizendo... uma lâmpada piscando.
+Fogaça: isso não existe? seria uma sugestão?
+Entrevistado 1: na realidade se for total, ele acabaria ouvindo o alarme né.
+Entrevistado 2: é mas se o cara tá desligado, é...
+Entrevistado 1: no parcial que não né
+Entrevistado 3: não, o cara, por exemplo, já no parcial
+Fogaça: se eu apagasse algumas luzes já...
+Entrevistado 3: já no parcial que é no momento que comunicaram, o que ia ser feito...
+Entrevistado 1: esse é o problema
+Entrevistado 3: o cara ia dar logo a partida de instrumento...
+Fogaça: esse sinal vizual, ele já existe ou seria uma sugestão?
+Entrevistado 3: isso não sei, mas para mim seria uma sugestão.
+Fogaça: uma recomendação. tá vou colocar como um recomendação adicional. legal. colocar
+um sinal visual.
+Entrevistado 3: só pra comentar, no tempo antigo era uma fumaça né.
+Fogaça: uma fumaça, um sinalizador tipo aqueles...
+Entrevistado 3: não não não, não se lembra daqueles tipo dos filmes dos índios.
+Entrevistado 2: sinal de fumaça...
+Fogaça: ah... certo, acho que a gente já falou dos erros humanos e falhas ativas aqui, ta bem
+explorado também. a gente poderia falar da supervisão da atividade. vocês comentaram que o
+eletrecista, entendi que ele é meio que um chefe, não ele não é o chefe, chefe de máquinas é
+o que tá dormindo lá, tá descansando. esse cara seria o próximo na cadeia de comando, seria o
+segundo ou não? tem algum supervisor entre eles ainda?
+Entrevistado 1: tem o assistente de chefe de máquina que é o ATSL. como é o nome em
+portugues?
+Fogaça: ele taria supervisionando esse cara?
+Entrevistado 1: sim ele taria supervisionando esse cara né.
+Fogaça: mesmo a noite, naquele horário ele estaria lá.
+Entrevistado 1: mesmo a noite. tem o chefe de máquinas e esse chefe de máquinas assistente
+aí que é o que fica à noite.
+Fogaça: então o eletrecista não estaria sozinho, teria mais alguem com ele.
+Entrevistado 1: é taria. a gente não descreveu muito sobre isso
+Entrevistado 3: supostamente sim
+Fogaça: tá então seria duas pessoas para não deixar acontencer o erro. teria uma supervisão
+ali. ele teria conhecimento técnico sufiente para servir como barreira?
+Entrevistado 3: mas não sei se durante uma operação dessa... não, normalmente o cara tem
+que acompanha-lo né.
+Entrevistado 1: é me deu um branco agora. a gente ta assumindo que o cara nem avisou ele.
+Entrevistado 3: sim o cara tá perto e...
+Fogaça: sim ele foi lá e tipo: deixa pra mim que eu resolvo, tá, entendi.
+Entrevistado 3: eu chamo isso de run (alguma coisa que não entendi)
+Fogaça: boa nomenclatura. ta e, a parte do rapaz DPO, o supervisor dele não estaria lá, taria
+remoto e taria sozinho, entao. taria sozinho na sua área.
+Entrevistado 1: é o DPO não (alguma coisa que não entendi) nem pra capitão. né, não tem
+supervisores.
+Fogaça: como ele parecia novato, teria um supervisor.
+Entrevistado 2: não, ele ta com o TTO, na mesma patente, só que com mais experiência.
+Fogaça: ta e esse cara taria dormindo nesse horário?
+Entrevistado 2: não
+Entrevistado 1: tem sempre dois
+Fogaça: tá então vai ter sempre dois embarcados?
+Entrevistado 1: isso
+Fogaça: ok, e esse cara ele poderia ter ajudado na situação? ter feito a comunicação para esse
+caso?
+Entrevistado 1: poderia. mas ele poderia não estar lá
+Fogaça: foi no banheiro...
+Entrevistado 3: ele até poderia tá lá. o cara quando, aquilo é (alguma coisa que não entendi)...
+eu fiz a comunicação, blackout... você tem todas as linhas de rádio que estão abertas, não é,
+porque você tem lá um barco atracado, você subentende que todo mundo ouviu, porque você
+tá vendo uma ação por parte da sonda.
+Fogaça: o capitão teria ação nesse acidente que a gente comentou aqui?
+Entrevistado 3: o capitão que tava dormindo...
+Fogaça: ele tava dormindo
+Entrevistado 3: não, o capitão que talvez podia ter uma helicopter view, não é, e indentificar
+coisas que os outros caras não identificaram.
+Fogaça: mas nesse caso ele ta dormindo?
+Entrevistado 3: o cara ta dormindo. o barco ta ali cara e esse barco tem que sair daqui. por
+exemplo, o cara do guindaste, quando o cara decreta blackout, o cara tem radio para
+comunicar o cara que tá la em baixo. ele não vai dizer: blackout, vamos suspender a operação.
+quer dizer, há outras fontes de... adicional de comunicação que podiam ter chamado a atenção
+ao capitão do barco né, mas nosso exemplo não chegamos até aí. daí a sugestão, porque a
+comunicação é um dos grandes males da indústria, não é, cara se o rádio não funcionou, por
+que não um flashezinho?
+Fogaça: sim sim ter um canal alternativo
+Entrevistado 3: na sonda quando eu faço um paging de abandono, eu faço com voz e luz...
+Fogaça: tá, em relação, ainda falando nesse ambito de comunicação.
+Entrevistado 3: voz, luz e som não é.
+Entrevistado 1: tem os beeps também.
+Fogaça: falando na falha do primeiro gerador ali do... pra eletrecistar ir ligar o segundo porque
+não foi manual. quem avisa ele? como é que ele fica sabendo que houve uma falha de
+gerador... blackout parcial ele vai ver.
+Entrevistado 2: tem uns paineis
+Fogaça: tipo um anunciador assim. para eu saber "oh não tive um acionamento automatico,
+alguem precisa ir lá resolver".
+Entrevistado 1: é o operador de máquina que taria lá.
+Fogaça: tá e ele avisa por rádio "oh fulano de tal to indo lá ver"
+Entrevistado 1: isso
+Fogaça: isso, tá.
+Entrevistado 3: ele normalmente tá la perto.
+Fogaça: é a área dele.
+Entrevistado 3: quando ta no seu turno, o cara ta perto.
+Fogaça: ta na região, ok. mas ele deveira... precisa consultar o painel, não vai ser uma coisa
+que né...
+Entrevistado 3: porque normalmente tu não desce nessas maquinas sem ninguem estar
+observando.
+Fogaça: entendi.
+Entrevistado 1: na sala de máquinas, lá da central, tem sempre uma pessoa
+Entrevistado 3: tem sempre uma pessoa.
+Entrevistado 1: o operador ta sempre la
+Fogaça: então ele ficaria... seria fácil dele perceber isso ai?
+Entrevistado 1: sim
+Fogaça: ótimo. falamos da resposta a este tipo de emergência, todo aquele ciclo de ações,
+tudo bem, tá anotadinho pra nós. recomendações, ficou uma recomendação adicional, seria a
+flashing light lá do sinal visual. todo mundo concorda que seria um bom sistema?
+Entrevistado 3: era barato, e podia salvar a colisão ou as pessoas que se machucaram.
+Fogaça: ok, ótimo. isso poderia ser acionado da própria cabine ou sala de controle?
+Entrevistado 3: o cara quando soa o alarme o cara já carrega no botão para acionar essa
+lâmpada. quanto ao paging, enquanto ele faz o paging e carrega no botão.
+Fogaça: seria algo, por exemplo, um stay away, quando tocar um alarme vai acender a luz ali,
+que viu aquela luz se afasta.
+Entrevistado 3: dá pra automatizar isso.
+Fogaça: entendi, então a gente tem recomendações de equipamentos acho que não, mais em
+relação a pessoal e procedimentos, treinamentos, erros humanos e recomendações... tá.
+Entrevistado 3: essas sondas são da ultima geração. em termos de equipamento é top.
+Fogaça: tá legal acho que a gente cobriu tudo, tá bacana. vocês tem mais algum comentário a
+respeito do caso aí?

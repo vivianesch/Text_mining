@@ -1,0 +1,590 @@
+---
+title: 'Teste de Text mining: análise humana e de máquina do Relatório P-36'
+author: "Viviane Schneider, PhD"
+date: 'Última versão: 26/01/2021'
+output:
+  html_document:
+    highlight: zenburn
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+  word_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+```
+
+# Contexto do estudo
+
+Este é um estudo exploratório de técnicas de Text Mining. O intuito é descobrir que técnicas que podem ser utilizadas para identificar fatores humanos em relatórios de acidentes fornecidos pela ANP.
+
+## Objetivo do estudo
+
+Formação de uma base de dados que possa ser utilizada para estimar a probabilidade de ocorrência de um acidente a partir de fatores humanos identificados. Para realizar este estudo foram feitas análises com algoritmos computacionais e análises feitas por humanos. Desta forma busca-se avaliar como um humano identifica determinadas palavras e frases em um texto, para então reproduzir o método em um algoritmo. Como resultado final, espera-se a criação de um método que possa identificar e estruturar em uma base de dados os fatores humanos descritos no modelo HF2.
+
+## Pergunta de pesquisa
+
+Como identificar fatores humanos relacionados ao modelo HF2 nos relatórios de investigação de acidentes da ANP?
+
+## Métodos, técnicas e materiais
+
+ **Descrever método ao finalizar as analises**
+
+```{r message=FALSE, warning=FALSE, cache=TRUE, include=FALSE}
+
+# Pacotes e Funções
+library(tidyverse) # Manipulacao eficiente de dados
+library(tidytext) # Manipulacao eficiente de texto
+library(textreadr) # Leitura de pdf para texto
+library(tm) # Pacote de mineracao de texto com stopwords 
+library(wordcloud) # Grafico nuvem de palavras
+library(igraph)
+library(ggraph)
+library(ggplot2)
+library(dplyr)
+library(pdftools)
+library(RRPP)
+```
+
+# Análise do documento P-36
+
+## Análise do contexto feita por humano  
+
+Quando lemos o contexto do relatório temos as seguintes informações:
+
+### Local do acidente
+
+Acidente ocorrido com a plataforma P-36, instalada no campo de Roncador, na Bacia de Campos. 
+
+### Agente investigador
+
+Agência Nacional do Petróleo (ANP) e a Diretoria de Portos e Costas (DPC) do Comando da Marinha do Brasil constituíram uma comissão conjunta de investigação
+
+### Objetivo da investigação
+
+O objetivo era examinar as causas do acidente e, em conseqüência, adquirir subsídios para implementar medidas corretivas e regulamentações visando à melhoria das práticas e procedimentos operacionais na execução de atividades marítimas de exploração e produção de petróleo e gás natural.
+
+### Causas mais prováveis
+
+A análise das causas mais prováveis do acidente permitiu identificar o evento crítico como sendo a operação de esgotamento de água do tanque de drenagem de emergência da coluna de popa bombordo, iniciada na noite do dia 14 de março de 2001. 
+
+A água contaminada com resíduos oleosos presente no tanque seria bombeada para o manifolde (header) de produção da plataforma que recebe o fluxo de petróleo e gás natural proveniente dos poços produtores. Daí, juntamente com produção de hidrocarbonetos, escoaria para a planta de processo.
+
+Entretanto, dificuldades operacionais para a partida da bomba de esgotamento desse tanque permitiram que houvesse fluxo reverso de óleo e gás pelas linhas de escoamento dos tanques e sua entrada no outro tanque (popa boreste) através de válvula presumivelmente danificada
+ou parcialmente aberta. A partida da bomba após 54 minutos fez diminuir o fluxo reverso de hidrocarbonetos e a água bombeada passou a entrar no tanque de popa boreste. 
+
+A pressurização contínua deste tanque levou a seu rompimento mecânico cerca de duas horas após o início da operação de esgotamento do outro tanque, caracterizando o evento relatado como sendo a primeira explosão, ocorrido às 0 h 22 min do dia 15 de março de 2001.
+
+Os fluidos do tanque rompido e de linhas e demais equipamentos também danificados passaram a ocupar o compartimento do quarto nível da coluna. Houve escapamento de gás para os conveses superiores através de aberturas nesse compartimento e por linhas de suspiro e ventilação rompidas. Cerca de 20 minutos após o rompimento do tanque, houve a explosão do gás que atingira a área do convés do tank top e segundo convés junto à coluna. 
+
+Estava, assim, caracterizado o evento relatado como a ocorrência da segunda explosão, quando foram vitimadas onze pessoas da brigada de incêndio da plataforma.
+
+### Possíveis não coonformidades 
+
+A análise realizada permitiu que fossem identificadas várias não conformidades relativas a procedimentos regulamentares de operação, manutenção e projeto, destacando-se aquelas referentes à movimentação freqüente de água nos tanques de drenagem de emergência, à operação de esgotamento do tanque de popa bombordo e à classificação da área de risco em torno desses tanques.
+
+O colapso mecânico do tanque de drenagem de emergência de popa boreste, seguido imediatamente pelo rompimento da linha de recalque de água salgada que passava pelo quarto nível, iniciou o alagamento da coluna. A migração de água para a parte inferior da coluna se deu quando a água no compartimento do quarto nível atingiu os dampers do sistema de
+ventilação que deveriam fechar automaticamente; porém, devido a falha no funcionamento de seus atuadores, permitiram a passagem de fluidos.
+
+A quantidade de líquido no interior da coluna e em parte do flutuador provocou o adernamento da plataforma que foi intensificado com a progressão da água para o tanque de lastro da coluna de popa boreste e para a caixa de estabilidade contígua. Esses espaços foram inundados porque as elipses de acesso aos mesmos haviam sido deixadas abertas desde o dia anterior ao acidente para possibilitar a inspeção do reparo de trinca verificada na caixa de estabilidade.
+
+Para compensar a inclinação da plataforma ocasionada pela entrada de água na coluna avariada, passou-se a admitir água no tanque de lastro situado no lado diametralmente oposto.
+
+Essa medida acelerou o aumento indesejável do calado da plataforma.
+A submersão contínua foi intensificada pelo alagamento da coluna avariada, da inundação do tanque de lastro de popa boreste, da caixa de estabilidade contígua e da admissão deliberada de água de lastro nos tanques de proa bombordo.
+
+A evacuação de 138 pessoas consideradas não essenciais às operações de emergência foi iniciada à 1 h 44 min de 15 de março e durou cerca de 2 h 30 min, tendo sido utilizados guindaste e cesta de transferência para tal finalidade. Às 6 h 03 min do mesmo dia, após esgotadas as possibilidades de manter a plataforma nivelada, a equipe que permanecera a bordo para operações de emergência abandonou a unidade.
+A análise dos eventos marcantes relativos ao alagamento da plataforma conduziu à identificação de várias não conformidades quanto a procedimentos regulamentares de operação e manutenção, destacando-se a não observância de estanqueidade e compartimentagem em áreas críticas para a preservação da estabilidade da unidade. 
+
+Além disso, cabe destacar a ineficácia das ações para conter o alagamento ou efetuar o desalagamento antes da plataforma ser inteiramente abandonada.Após o abandono da plataforma, foram efetuadas diversas tentativas de salvamento da unidade, particularmente a injeção de nitrogênio e ar comprimido nos compartimentos alagados
+para expulsão da água. 
+
+Contudo, não houve êxito em manter a unidade estabilizada e sua
+submersão lenta e progressiva teve continuidade até às 11 h e 40 min do dia 20 de março quando foi a pique.
+
+### Possíveis causas a partir de fatores humanos
+
+A análise efetuada pela Comissão de Investigação ANP/DPC permitiu constatar deficiências no sistema de gestão operacional das atividades marítimas de petróleo e gás natural da Petrobras, na condução das atividades específicas à plataforma P-36, caracterizadas por não
+conformidades identificadas quanto a procedimentos regulamentares de operação e manutenção. 
+
+Além disso, os planos de contingência para acidentes de grande proporção e os esquemas de resposta a emergência de grande risco necessitam ser imediatamente aprimorados, bem como a revisão de critérios de projetos de engenharia em unidades flutuantes de produção para assegurar maior proteção intrínseca.
+
+O acidente foi causado por uma série de fatores que, isoladamente, não seriam suficientes para determiná-lo. O exame desses fatores levou à classificação de alguns deles como críticos e determinantes, sendo o critério para essa classificação o de que a ausência de qualquer um
+deles interromperia a seqüência dos eventos que resultaram no desfecho verificado. 
+
+### Vitmas fatais
+
+Acidente com 11 vitimas fatais
+
+### Eventos de falhas
+
+O Encadeamento de eventos ocasionou o acidente, sendo que se um desses eventos tivesse sido barrado o acidente provavelmente não ocorreria com tanta gravidade.
+Foram relatados os seguintes eventos: 
+
+
+## Identificação de tipo de acidentes em relação com eventos causais e fatores humanos
+
+Nesta identificação foram escolhidos os termos que aparecem no sumário executivo e que apareceram também na análise feita por máquina.
+
+### Explosões
+
+#### Evento 1 - Movimentação freqüente de água nos tanques de drenagem de emergência 
+
+* **deficiência de projeto** foi constatada: • vulnerabilidade do esquema de ligação dos tanques de drenagem de emergência com o manifolde de produção por não apresentar nenhuma proteção adicional ou redundância no caso de falha simples de uma das válvulas de admissão dos tanques. (PLANEJAMENTO)
+
+* não conformidade quanto a **procedimentos de projeto**: • inadequação da classificação da área em torno do tanque de drenagem de emergência. (PLANEJAMENTO)
+
+*  não conformidade quanto a procedimentos regulamentares de **resposta a emergências**, particularmente no que tange a:• sistema de **comunicação** e **coordenação deficientes entre a equipe de resposta à emergência e o comando da plataforma**. (COMUNICAÇÃO) (RESPOSTA)
+
+* A principal não conformidade identificada diz respeito ao armazenamento de grande quantidade de água contaminada nos tanques de drenagem de emergência durante parte considerável do período em que a plataforma esteve em produção, **contrariando o Manual de Operações da Planta de Processo da Plataforma** (Operating Manual – Process – ET 3010.38-1200-941-AMK-924 e DE-3010.38-5336-943-AMK-033) (PROCEDIMENTOS)
+
+* não conformidades relativas a **procedimentos regulamentares de operação e manutenção**: • erros sistemáticos na sondagem volumétrica manual e inoperância dos indicadores de nível dos tanques de drenagem de emergência; • entupimento do vaso de dreno aberto, que recebe a água que escoa pelas bandejas dos equipamentos da plataforma.(PROCEDIMENTOS)
+
+#### Manutenção no tanque de drenagem de emergência de popa boreste
+
+* não conformidade relativa a **procedimentos regulamentares de operação** pode ser caracterizada: • Isolamento da linha de suspiro do tanque sem que sua linha de admissão fosse também isolada. (PROCEDIMENTOS)
+
+#### Operação de esgotamento do tanque de drenagem de emergência de popa bombordo 
+
+* não conformidades quanto a **procedimentos regulamentares de operação** e **manutenção**: • operação realizada **sem a supervisão do Coordenador da Plataforma ou do Supervisor de Produção** (não foi possível constatar se a válvula na linha do manifolde de produção, que, conforme depoimentos, exigia senha para sua abertura controlada, fora aberta com autorização do Coordenador da Plataforma); • falha mecânica ou fechamento incompleto da válvula de admissão do tanque de boreste. (PROCEDIMENTOS)
+
+
+### Naufrágio 
+
+#### Alagamento da coluna e flutuador
+
+* não conformidades relativas a **procedimentos de manutenção e operação**, conforme relatado a seguir: • falha no funcionamento dos dampers do sistema de ventilação da coluna, decorrente de defeito em seus atuadores eletro-hidráulicos; 
+
+• elipses de acesso ao tanque de lastro de popa boreste e à caixa de estabilidade contígua mantidas abertas por tempo além do necessário à realização de inspeção e reparo, alterando a compartimentagem da plataforma considerada nos estudos de estabilidade intacta e em avaria, **contrariando os procedimentos do Manual de Operação** – Item Casco e Estrutura – Estanqueidade à água; Embora não possa ser caracterizada como uma não conformidade, a utilização do sistema fail set para a válvula da caixa de mar impossibilitou qualquer atuação do operador no sentido de modificar seu estado após a falha, uma vez que o **sistema não dispunha de alternativas que permitissem contornar a restrição imposta.** (SISTEMA, MANUTENÇÃO E OPERAÇÃO, PROCEDIMENTOS)
+
+#### Admissão de água de lastro em proa bombordo
+
+* não conformidades No que tange ao controle de estabilidade de uma unidade flutuante em condições de avaria, as seguintes não conformidades puderam ser identificadas: • **ineficácia das ações para conter** o alagamento na coluna avariada, efetuar o seu desalagamento, ou promover a movimentação de água de lastro entre colunas não avariadas; (RESPOSTA), 
+
+• **coordenação e treinamento deficientes de pessoal nas ações de controle de estabilidade em emergência**. A seguinte **não conformidade quanto a procedimentos de manutenção** também foi identificada:
+• existência de duas bombas de recalque de água salgada fora de operação por **problemas de manutenção**. (MANUTENÇÃO, COORDENAÇÃO, TREINAMENTO)
+
+#### Submersão contínua da plataforma 
+
+* O fato do tanque de lastro e caixa de estabilidade mencionados terem sido mantidos abertos caracterizou uma **não conformidade crítica relativa a procedimentos regulamentares de operação em áreas que exigem estanqueidade e compartimentagem**, em desacordo com o Manual de Operação (MA-3010.38-1320-915-NBD-909-01) – Item de Estabilidade em Avaria, constituindo causa **determinante para o naufrágio**. (PROCEDIMENTOS DE OPERAÇÃO)
+
+
+* **a ineficácia das ações para conter** o alagamento ou efetuar o desalagamento pode ser identificado como uma não conformidade relativa a **procedimentos operacionais** de controle de estabilidade em avaria. (RESPOSTA,PROCEDIMENTOS DA OPERAÇÃO)
+
+### Recomendações a partir das lições aprendidas
+
+* **Aprimoramento do sistema de gestão operacional**: Revisão e aplicação do sistema de gestão de modo a assegurar estrita observância de procedimentos regulamentares , inclusive efetuando a revisão da definição de responsabilidades relativas à manutenção, operação e segurança.(GESTÃO OPERACIONAL)
+
+* **Revisão de critérios de projeto**: Efetuar a revisão de regras e procedimentos aplicáveis a projetos de forma a assegurar
+proteção intrínseca de sistemas e componentes críticos de unidades marítimas. (REVISÃO, REGRAS)
+
+* **Classificação de áreas de risco**: Estabelecer critérios adicionais para aplicação simultânea de normas relativas à classificação
+de Zonas de Risco. (GESTÃO DE RISCO)
+
+* **Ações simultâneas de comissionamento, manutenção e operação**: Estabelecer critérios para identificar limites para atividades de comissionamento concomitantes com a operação e manutenção de unidades marítimas. (MANUTENÇÃO)
+
+
+* **Dimensionamento e capacitação de pessoal** Reavaliar o dimensionamento e a qualificação das equipes de operação e manutenção de unidades marítimas, bem como daquelas responsáveis pela resposta a emergências de grande risco.(CAPACITAÇÃO)
+
+* **Gerenciamento de projetos de conversão de unidades**. Implementar regras e procedimentos para compatibilizar sistemas originais e as alterações de projeto de modo a garantir a segurança operacional e a proteção ambiental. (PROCEDIMENTOS, REGRAS)
+
+
+* **Código Internacional de Gerenciamento de Segurança**: Avaliar a conveniência de antecipar a adoção do Código Internacional de Gerenciamento de Segurança, aprovado pela Resolução A 741(18) da Organização Marítima Internacional (IMO), para unidades marítimas.(REGRAS E NORMAS)
+
+**Resposta a emergências de grande risco**: Elaboração de plano de emergência e implementação de esquema de resposta a situações
+que envolvam grande risco à salvaguarda de vidas humanas, segurança da navegação, proteção ambiental e propriedade. (RESPOSTA)
+
+
+### Conclusões gerais sobre análise feita por humano
+
+É possível identificar a correlação das falhas com fatores humanos apontados nos relatórios. A partir deste relatório foi possível identificar correlações que poderão ser utilizadas na formação de vetores de busca para fatores humanos, além da formação de uma base de dados que possa correlacionar eventos tipos de acidentes, eventos causais, fatores humanos e ações de resiliência (a partir das recomendações dos relatórios)
+
+# Analise do contexto feita por máquina
+
+Esta análise feita por máquina busca identificar se é possível chegar a alguma conclusão a partir dos resultados trazidos pela máquina. Todas as análises e códigos fontes, e gráficos estão detalhados no apêndice A. Alguns códigos fonte foram omitidos no documento para facilitar a leitura.
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# Text Normalization Function**
+
+# Função para normalizar texto
+NormalizaParaTextMining <- function(texto){
+ 
+  # Normaliza texto
+  texto %>% 
+    chartr(
+      old = "áéíóúÁÉÍÓÚýÝàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛãõÃÕñÑäëïöüÄËÏÖÜÿçÇ´`^~¨:.!?&$@#0123456789",
+      new = "aeiouAEIOUyYaeiouAEIOUaeiouAEIOUaoAOnNaeiouAEIOUycC                       ",
+      x = .) %>% # Elimina acentos e caracteres desnecessarios
+    str_squish() %>% # Elimina espacos excedentes 
+    tolower() %>% # Converte para minusculo
+    return() # Retorno da funcao
+ }
+
+
+
+```
+
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+# Função para Palavras que podem se retiradas
+
+# Lista de palavras para remover
+palavrasRemover <- c(stopwords(kind = "pt"), letters) %>%
+  as.tibble() %>% 
+  rename(Palavra = value) %>% 
+  mutate(Palavra = NormalizaParaTextMining(Palavra))
+
+my_stopwords <- tibble(Palavra = c(as.character(1:3), 
+                                    "www","http", ",", ".","www anp gov br","de","das","dos","da", "____________________________________________________________________________________"))
+
+```
+
+
+
+```{r include=FALSE}
+
+
+setwd("~/Text Mining")
+
+# Arquivo pdf
+arquivoPdf <- "~/Text Mining/Relatorio_P-36.pdf"
+
+```
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# Tidynd text
+
+TidyT <- arquivoPdf %>% 
+  read_pdf() %>% 
+  as.tibble() %>% 
+  select(text) 
+  
+``` 
+  
+
+
+```{r warning=FALSE, include=FALSE}
+
+# Cleaning useless words for single word analysis
+
+  CleanW <- TidyT  %>% 
+  unnest_tokens(Palavra, text) %>% 
+  mutate(Palavra = NormalizaParaTextMining(Palavra)) %>% 
+  anti_join(palavrasRemover)  %>% 
+  anti_join(my_stopwords)
+  
+``` 
+  
+
+Há diversos clusteres de palavras, dos quais destaca-se:
+
+1. Gás Natural, petróleo, liberado.
+2. Tanque devido ao  acesso.
+3. lastro avaria seguida consequencia contigua estabilidade em decorrencia torno proa. Bombordo popa boreste anexo.  Aguá, salgada, contaminada, nos tanques, os eventos marcantes compartimentos alagados.
+4. Evento relatado sendo bem como por seguinte. Não conformidades quanto conformidade criticas. Foi plataforma foram.
+5. regulamentares, procedimentos operacionais.
+6. Alagamento ou efetuar
+7. Efetuada análise realizada pela entrada comissão.
+8. Gestão operacional.
+9. Risco grande
+10. mesmo dia
+11. tank top
+12. dreno aberto
+13. Manutenção operação
+14. Segundo convés principal
+15. Linha na coluna avariada
+16. continua submersão
+17. ar comprimido
+18. Dreno aberto
+19: Linha na coluna avariada
+20. grande risco
+
+## Relação dos termos com os fatores do modelo HF2
+
+O acidente ocorrido em uma plataforma parece ser proveniente de uma emergência que ocorreu envolvendo equipamentos como boreste, popa, caixa de agúa, em uma coluna, talvez com a ocorrência de gas, água e tanque. Parece ter ocorrido uma alagamento e explosão, palavras que são bastante mensionadas. Quanto aos fatores humanos, parece haver ocorrido problemas de manutenção e não conformidade, problemas de procedimentos.
+
+
+* **Fator linha 94: Trabalho	Condições de Trabalho	Regras e procedimentos Desempenho sob estresse / emergência**. Termos de busca: "resposta a situações", "plano de emergência", "resposta a emergências de grande risco", "ineficácia das ações para conter".
+
+* **Fator linha 95: Trabalho	Condições de Trabalho	Regras e procedimentos	Flexibilidade		**. Termos de busca: "procedimentos", "procedimento", "regra" "regras", "conformidade", "conformidades","alternativas".
+
+* **Fator linha 105: Trabalho	Relações de Trabalho	Liderança de Equipe	Capacidade de coordenação**. Termos de busca: "comando da plataforma", "ineficácia das ações para conter", "coordenação deficientes".
+
+* **Fator linha 66 Trabalho	Condições de Trabalho	Design de interfaces	Inspeção / manutenção**. Termos de busca: "manutenção", "problemas de manutenção"
+
+* **Fator linha 122 Organização	Gestão e organização do trabalho 	Gerenciamento de mudanças**. Termos de busca: "mudança", "mudanças", gestão".
+
+* **Fator linha 100 Trabalho	Condições de Trabalho	Regras e procedimentos 	Gerenciamento de mudanças**. Termos de busca:  "contrariando os procedimentos", "mudança", "mudanças.
+
+* **Fator linha 114 Organização	Gestão e organização do trabalho 	Recursos	Conteúdos e Ferramentas	Habilidade**. Termos de busca: "ineficácia das ações para conter"
+
+
+## Identificação de frases com termos dos fatores do modelo HF2
+
+Nesta etapa buscou-se identificar as frases que contém os fatores humanos identificados, os quais mantém relação com o modelo HF2.
+
+Para realizar esta análise buscou-se resgatar as frases que contém os seguintes termos identificados no passo exploratório:
+
+### Fator linha 94 "Trabalho	Condições de Trabalho	Regras e procedimentos Desempenho sob estresse / emergência"
+
+```{r}
+
+# Tidying text
+
+Texto <- arquivoPdf %>% 
+  read_pdf() 
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "Resposta|resposta|emergências|emergência|plano|ineficácia"
+  )]
+
+
+
+```
+
+
+### Fator linha 95: Trabalho	Condições de Trabalho	Regras e procedimentos	Flexibilidade	
+
+
+```{r}
+
+# Tidying text
+
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "procedimentos|procedimento|regras|regra|conformidade|conformidades|alternativas"
+  )]
+
+
+```
+
+
+### Fator linha 105: Trabalho	Relações de Trabalho	Liderança de Equipe	Capacidade de coordenação 
+
+
+```{r}
+
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "comando|plataforma|ineficácia|ações|conter|coordenação| deficientes"
+  )]
+
+```
+
+### Fator linha 66 Trabalho	Condições de Trabalho	Design de interfaces	Inspeção / manutenção 
+
+```{r}
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "manutenção|problemas|problema"
+  )]
+
+
+```
+
+
+### Fator linha 122 Organização	Gestão e organização do trabalho 	Gerenciamento de mudanças
+
+
+```{r}
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "mudança|mudanças|gestão"
+  )]
+
+
+```
+
+
+
+### Fator linha 100 Trabalho	Condições de Trabalho	Regras e procedimentos 	Gerenciamento de mudanças
+
+
+
+```{r}
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "mudança|mudanças|gestão|procedimentos|contrariando"
+  )]
+
+
+```
+
+
+### Fator linha 114 Organização	Gestão e organização do trabalho 	Recursos	Conteúdos e Ferramentas	Habilidade**
+
+
+
+```{r}
+
+Texto$text[str_detect(
+  Texto$text,
+  pattern = "ineficácia|ações|conter"
+  )]
+
+
+```
+
+
+
+# Conclusões gerais
+ 
+ Quando realizada em somente um documento, a análise do contexto do relatório torna-se mais rápida, pois consistem somente em ler o sumário executivo do documento. Contudo, essa tarefa não pode ser replicada e automatizada. Já a análise por máquina demora mais em um primeiro documento, até o estabelecimento do algoritmo, contudo a análise poderá ser replicada para uma quantidade ilimitada de documentos.
+
+
+
+# Referências
+
+National Commission on the BP Deepwater Horizon Oil Spill and Offshore Drilling (NCDWHSOD). Deep Water: The Gulf Oil Disaster and the Future of Offshore Drilling. Report to the President. January 2011 Cover Photo: © Steadfast TV. ISBN: 978-0-16-087371-3. https://www.govinfo.gov/content/pkg/GPO-OILCOMMISSION/pdf/GPO-OILCOMMISSION.pdf
+
+http://data7.blog/grafo-de-palavras-anitta-twitter/
+
+Analise de palavras.  Disponivel em: https://www.ufrgs.br/wiki-r/index.php?title=Frequ%C3%AAncia_das_palavras_e_nuvem_de_palavras Esta página foi modificada pela última vez em 12 de dezembro de 2018, às 19h30min
+Conteúdo disponível sob Creative Commons - Atribuição - Compartilha nos Mesmos Termos, salvo indicação em contrário.
+
+https://p4husp.github.io/material/tutorial11/
+
+
+Principal: https://www.tidytextmining.com/ngrams.html
+
+Corpus and Machine Learning: https://rstudio-pubs-static.s3.amazonaws.com/265713_cbef910aee7642dc8b62996e38d2825d.html
+
+
+Machine learning: https://kenbenoit.net/pdfs/text_analysis_in_R.pdf
+
+Mineração de texto: 
+https://www.rpubs.com/LaionBoaventura/mineracaodetexto
+
+MANIPULAÇÃO DE STRINGS E TEXT MININGhttps://gomesfellipe.github.io/post/2017-12-17-string/string/
+
+
+@article{JSSv025i05,
+   author = {Ingo Feinerer and Kurt Hornik and David Meyer},
+   title = {Text Mining Infrastructure in R},
+   journal = {Journal of Statistical Software, Articles},
+   volume = {25},
+   number = {5},
+   year = {2008},
+   keywords = {},
+   abstract = {During the last decade text mining has become a widely used   discipline utilizing statistical and machine learning methods. We  present the tm package which provides a framework for text mining  applications within R. We give a survey on text mining facilities in R and explain how typical application tasks can be carried out using our framework. We present techniques for count-based analysis methods, text clustering, text classification and string kernels.},
+   issn = {1548-7660},
+   pages = {1--54},
+   doi = {10.18637/jss.v025.i05},
+   url = {https://www.jstatsoft.org/v025/i05}
+}
+
+# Apêndice A - Análise exploratória do contexto por máquina
+
+### Palavras mais frequentes
+
+Aqui é possível identificar as palavras mais frequentes que aparecem, para então tentar trazer contextos do que ocorreu, antes de uma análise humana.
+
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+# Counting single words**
+
+  frequenciaPalavras <-  CleanW  %>% 
+  count(Palavra, sort = TRUE) %>% 
+  filter(Palavra != "") %>%
+  arrange(desc(n)) 
+
+
+# Visualiza frequencia de palavras
+DT::datatable(frequenciaPalavras)
+
+```
+
+
+```{r echo=TRUE, warning=FALSE}
+
+
+head(frequenciaPalavras, n=20) %>%
+  ggplot(aes(Palavra, n)) +
+  geom_bar(stat = "identity", color = "black", fill = "#87CEFA") +
+  geom_text(aes(hjust = 1.3, label = n)) + 
+  coord_flip() + 
+  labs(title = "20 Palavras mais mencionadas",  x = "Palavras", y = "Número de usos")
+
+
+```
+
+
+```{r echo=TRUE, warning=FALSE}
+
+# Cria nuvem de palavras
+wordcloud(
+  words = frequenciaPalavras$Palavra, 
+  freq = frequenciaPalavras$n,
+  min.freq = 2,
+  max.words = 300, 
+  random.order = FALSE, 
+  rot.per = 0.35, 
+  colors = brewer.pal(8, "Dark2")
+)
+
+
+```
+
+
+### Rede de palavras
+
+A rede de palavras também pode ser um mapa para compreender mais rápido o que um documento revela. A rede apresentada aqui foi feita a partir de bigrams, que são estruturas que verificam a frequencia de pares de palavras de um documento.
+
+```{r echo=TRUE, warning=FALSE}
+
+par_Palavras <- TidyT %>%
+  unnest_tokens(Palavra, text, token = "ngrams", n = 2) %>% 
+  mutate(Palavra = na.omit(NormalizaParaTextMining(Palavra))) %>%
+  anti_join(palavrasRemover) %>%
+  anti_join(my_stopwords) %>%
+  separate(Palavra, c("word1", "word2"), sep = " ") %>%
+  filter(!word1 %in% stop_words$word) %>%
+  filter(!word2 %in% stop_words$word) %>%
+  filter(!word1 %in% my_stopwords$Palavra) %>%
+  filter(!word2 %in% my_stopwords$Palavra) %>%
+  count(word1, word2, sort = TRUE)
+
+# remove NA
+par_Palavras <- na.omit(par_Palavras)
+
+
+DT::datatable(par_Palavras)
+ 
+``` 
+
+Esses pares são agrupados e acabam formando uma rede, de acordo com a frequência em que existem no documento. As ligações dos nós representam essa frequência. Assim, quanto mais larga for a linha de conecta as palavras, maior é a frequência que ela aparece no texto.
+
+```{r echo=TRUE, warning=FALSE}
+
+## Function to show word network
+.Par_net = function(z) {
+  par_Palavras %>%
+  filter(n >= z) %>%
+  graph_from_data_frame() %>%
+  ggraph(layout = "fr") +
+  geom_edge_link(aes(edge_alpha = n, edge_width = n)) +
+  geom_node_point(color = "darkslategray4", size = 4) +
+  geom_node_text(color = "red", aes(label = name), vjust = 1.8, size=3) +
+  labs(title= "Word graph  - The Gulf Oil Disaster Report",
+       subtitle = paste("Pairwise analysis words >= ", z, " frequency",
+       x = "", y = ""))
+}
+
+.Par_net(3)
+
+
+```
+

@@ -1,0 +1,26 @@
+﻿Ordem;Dimensão;Tipo;Fator Humano;Vetor
+1;Indivíduo;Competência / Repertório de Ações;Saberes técnicos;c('não\\scumpriu', 'não\\spossui', 'ausentes?', 'normas?','regras?','procedimentos?','coerente')
+2;Indivíduo;Competência / Repertório de Ações;Conhecimento / estoque de conhecimento;c('conhecimentos?')
+3;Indivíduo;Competência / Repertório de Ações;Habilidades técnicas-Treinamentos;c('treinamentos?')
+4;Indivíduo;Competência / Repertório de Ações;Habilidades não técnicas-Comunicação;comunicou,comunicação
+5;Indivíduo;Competência / Repertório de Ações;Habilidades não técnicas-Trabalho em equipe;equipe, realizaram, 
+6;Indivíduo;Competência / Repertório de Ações;Habilidades não técnicas-Capacidade relacional;problemas//de//relacionamento
+7;Indivíduo;Competência / Repertório de Ações;Habilidades não técnicas-Tomada de decisão;tomada//de//decisão
+8;Indivíduo;Competência / Repertório de Ações;Habilidades não técnicas-Consciência situacional;consciencia
+9;Indivíduo;Competência / Repertório de Ações;Atitudes;agiu, agiram
+10;Indivíduo;Condições/Situações Psicológicas;;psicológico
+11;Indivíduo;Condições / situações Fisiológicas;Condições de Saúde;saúde
+12;Indivíduo;Condições sociais;Condições sociais;condição//social
+13;Indivíduo;Condições de trabalho;Design do trabalho;layout//de trabalho, trabalho
+14;Indivíduo;Condições sociais;Design de interfaces;interface
+16;Trabalho;Condições de Trabalho;Regras e procedimentos-Conteúdo, relevância e aplicabilidade ;conteúdo//das//regras
+17;Trabalho;Condições de Trabalho;Regras e procedimentos-Conteúdo, relevância e aplicabilidade ;
+18;Trabalho;Condições de Trabalho;Qualidade de vida no trabalho;qualidade
+19;Trabalho;Relações de Trabalho;Liderança de equipe;liderança
+20;Organização;Gestão e organização do trabalho ;Cultura de segurança ;cultura
+21;Organização;Gestão e organização do trabalho ;Organização de aprendizagem;aprendizagem
+22;Organização;Gestão e organização do trabalho ;Políticas ambientais;ambiental,política
+23;Organização;Gestão e organização do trabalho ;Planejamento e Práticas de trabalho;práticas
+24;Organização;Estrutura jurífico formal;Contratualização;contrato
+25;Organização;Comunicação;Comunicação;comunicação
+26;Organização;Gestão de pessoas;Gestão de pessoas;pessoas, gestão

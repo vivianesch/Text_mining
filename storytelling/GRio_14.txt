@@ -1,0 +1,1112 @@
+Bom então o caso que vocês relataram aqui foi um blowout causado por
+uma desconexão de emergência durante operação de perfilagem em
+sonda de perfuração com falha no sistema de posicionamento dinâmico e
+sem garantia de corte e vedação do cabo de perfilagem pelo BOP. O
+blowout ocorre devido à perda de dois conjuntos solidários de barreiras
+atuantes no momento da operação. Porque vocês escolheram esse caso?
+É algo que a gente vivencia essas análises de risco para esse tipo de
+operação, é algo, não vou dizer que é corriqueiro, mas que ocorre na empresa
+ao longo do ano. Então a gente tem algumas operações nesses moldes ao
+longo do ano e a gente faz a análise de risco e verifica todas as ações que a
+gente tem que tomar para mitigar essa possibilidade de ocorrência.
+Esse tipo de acidente ao longo do tempo, é 1 para 10.000.
+Na verdade os casos isolados eles acontecem direto, a gente está falando
+aqui, novamente, é um alinhamento de tudo isso aí que acontece todo dia, quer
+dizer, durante o ano acontece várias vezes, só que isolados. A gente faz de
+maneira que evite esse alinhamento, mas caso eles se alinhem aí se tornariam
+mesmo.
+A probabilidade nessa ordem e grandeza é 1 para 10.000. São várias
+sequencias ou combinação de falhas que acaba dando nessa probabilidade.
+O motivo que a gente escolheu também é...
+Mas que você viu que a gente mapeou que tem como evitar. A gente sabe
+como evitar. A nossa gerência justamente ta aí, não só a gente como os fiscais
+também, para evitar esse tipo de falha isoladas que elas aconteçam
+isoladamente fará então alinhadas, mas isso já é mapeado por todos nós, tu viu
+que foi um consenso, a gente pegou e falou a mesma coisa desde o início.
+Também um dos motivos para termos escolhido esse tema aí, acredito que
+seja, esse aí é um acidente ou cenário catastróficos, mas ele é um cenário bem
+direto no nosso trabalho, é diretamente relacionado ao nosso trabalho, é um
+acidente em que, digamos assim, seria o pior acidente que poderia acontecer
+da nossa atividade fim.
+E mais na situação atual.
+Apesar da probabilidade de ser baixa comparando aos outros tipos de
+ocorrência, essa aí tem uma probabilidade mais alta de ocorrer.
+Existe isoladamente os elementos que vai dar essa composição, isoladamente
+a probabilidade é alta, entendeu?
+- A probabilidade de cada um dos eventos acontecer é alta, mas a
+probabilidade de todos se alinharem é um pouco menor.
+É.
+Mas eu vou te falar que é o que mais nos preocupa atualmente.
+- Porque? Você comentou isso: “ah no cenário atual”, qual o
+constrangimento?
+Porque nós temos visto desconexões de emergência, entendeu.
+- Com mais frequência?
+Sim. Acontece é normal, sempre aconteceu. Só que atualmente a gente está
+percebendo que justamente esse quadro acontece. Porque que ele acontece?
+Não é por causa dessas falhas, é normal, porque as vezes tu tem uma
+condição de mar assim, pior e você tem que desconectar, acontece,
+emergência. Então é fazer tudo, é o trabalho de casa, para poder evitar que
+nesses momentos que são normais a desconexão, acontece uma desconexão
+de emergência, ás vezes é normal acontecer é feito pra isso, é pra você não
+sobrecarregar a cabeça do poço. Nosso medo é ter certeza que todo mundo
+estar preparado para caso isso aconteça, nada falhe, nada seja esquecido.
+Nenhum ponto desses da cadeia, desde o DPO novo, até o EDS correto, ou
+seja, análise de risco prévia e também as ações mitigadoras, no caso aí o
+plano de resposta. O nosso objetivo é esse, cada ponta, tem aquelas barreiras
+interdependentes, digamos assim, na verdade independentes porque assim,
+caso não aconteça, você tem outra para evitar o alinhamento dos buracos.
+Nosso foco é sempre trabalhar com dois conjuntos solidários de barreiras
+independentes entre si e a gente tem que, numa eventualidade, que a gente vá
+perder algum desses conjuntos solidários de barreira, a gente tem que garantir
+que o outro vai estar íntegro.
+- Está integro e vai ser acionado a tempo, no caso.
+Isso se tiver que acionar um BOP, algo do tipo, aí vai ser acionado.
+- Bom, vocês falaram do local, um blowout, por causa... é numa sonda de
+perfuração, os equipamentos, o cabo de aço da, como é o nome?.... da
+perfilagem, cabo de aço da perfilagem. Também poderia ser de ou de
+operação.
+Passagem de BH, ferramentas que não tem condição de corte, nesse
+momento, coincidentemente ocorre um problema, pode não conseguir cortar e
+perder a função do BOP. Aí pode dar blowout. E o poço tem que estar livre
+também.
+- Só por curiosidade, se acontece de fazer o corte de uma ferramenta
+dessas que cai dentro do poço, ela é recuperada ou ela é perdida?
+Sim ela é recuperada.
+Tem condições de recuperar, ou larga lá no fundo, faz o desvio e faz outro
+poço.
+E a gente vai aqui com sondas de mais de uma gaveta de corte e vedação. Aí
+a gente coloca um “premissas”, sempre que a gente for efetuar o corte com
+alguma gaveta, dado que a gente cortou algum elemento, a confiabilidade de
+vedação dela cai bastante. Então a gente coloca um “premissas” na escolha do
+módulo DS sempre cortar com uma das gavetas e vedar o poço com outra. A
+gente chama no vazio, mas na verdade, fecha no fluido só. Aí a gente tem uma
+confiabilidade de vedação bem alta. Então sempre a gente trabalha com isso,
+vê qual elemento que vai estar nessa BOP, qual é a expectativa de
+movimentação desse elemento, pode ser que ele desça, tem situações que ele
+sobe e a gente vai escolher ou o primeiro de cima e depois o de baixo, a
+gaveta, ou o inverso. Aí a gente faz uma análise prévia antes de operar.
+- Ah, dependendo do que vocês estão operando lá, vocês já tem todo o
+plano de contingência se precisar fazer?
+Se precisar desconectar sim.
+Se não fizer, não passa.
+É isso é premissa já de projeto.
+O papel impede de dar continuidade.
+- Vocês falaram que foi numa véspera de Natal, isso, mais ou menos teria
+algum dia da semana que seria mais crítico?
+Normalmente acho que ás sextas e sábados, domingo, no final de semana
+acho que é um período mais crítico porque naturalmente, em relação a sonda
+não faz diferença, mas a base, a vigilância que o pessoal da base vai ter, vai
+mudar um pouquinho. A gente tem o nossos centros de suporte a decisão que
+funciona 24hrs por dia, mas a equipe administrativa que tá olhando sobre o
+poço, que está verificando se está tudo conforme vai diminuir um pouco então
+acho que no fim de semana.
+Se for problema de falha, normalmente ocorre entre 11h, mudança de troca de
+turno. Das 11h da noite a 1h da manhã.
+Em dia de desembarque.
+Isso, isso faz diferença.
+Quando eu fiscalizava, eu ficava na boca do poço nesse horário.
+Mais atento.
+- E a troca de turno, como funciona? Vocês podem me explicar? A troca de
+turno é o mesmo como nas fábricas. Eles passam o trabalho, por exemplo,
+se eu vou assumir teu turno, tu vai me passar o trabalho? O cara chega um
+pouquinho antes, conversa rapidinho, tem uma reunião pré turno, é 5, 10
+minutos antes de a equipe toda subir, aí tem uma conversa antes, depois
+chega no local, conversa com quem estava executando a tarefa. Tem algumas
+vezes, alguns fazem passagem de serviço, no caso, DPO que é o responsável
+pelo coração da unidade, aí obrigatoriamente tem que preencher os
+documentos lá, é bem burocrático.
+Só que tem um dia da passagem de serviço deles que é um pouco mais crítico
+que é o dia que eles vão desembarcar. Aqueles que estão trabalhando de meio
+dia à meia noite, por exemplo, o cara não tem como largar, trabalhar das sete
+ás dez da manhã e de meio dia, é meio problemático. Então trabalha das sete,
+é seis quando você trabalha das seis da noite ás seis da manhã, aí o seu voo
+de helicóptero para desembarcar é oito da manhã, então é muito ruim, o cara
+largar o serviço as seis da manhã e ir embora, porque a outra equipe que vai
+chegar, vai ter que entrar no turno para trabalhar, então não dá para fazer isso.
+Aí o que eles fazem, eles cortam em intervalos menores e trabalham seis
+horas, só que eles descansam também menos tempo. Trabalham 12hrs e
+descansam só seis para trabalhar seis para que na hora que ele larga o serviço
+e vai desembarcar, a outra equipe esteja entrando no trabalho já descansada,
+que não é a equipe que vai embarcar. Sempre tem uma equipe que
+desembarca e uma que permanece a bordo, que eles passam duas semanas,
+então toda semana chega uma vez e elas são defasadas uma semana entre
+elas.
+Antes não era assim não.
+Antes trocava tudo?
+Não, trocava assim quase que, foram feitos ajustes ao longo do tempo.
+Antigamente determinadas funções só tinham um indivíduo, hoje em dia, na
+grande maioria das funções são dois para a mesma tarefa, embarcados. Antes
+tinha aquele negócio do cara ficar de sobreaviso na sonda. Hoje o cara
+trabalha 12, descansa 12. Até o fiscal é assim.
+Eu trabalhei seis anos, era sozinho, mas eram nas fixas como eu tava te
+falando.
+Ah é mole.
+Mole não senhor, eu só dormia quando tava descendo, quando manobrava,
+quando descia a coluna é que eu dormia. É mole porque a operação é mais
+barata, mas eu dormia eram 4/ 3 horas por dia.
+Isso vocês fala é no DP, essa é a diferença...
+Tudo bem, mas para você fazer um acidente dormindo só 3 horas por dia.
+Eu dormia 4.
+É coisa assim, era 20, o máximo que eu já fiquei foi ficar 24hrs ligado direto.
+Não tinha como, mas isso já acabou.
+De 2007 que começou isso, pra cá. Na verdade não tem muito tempo, tem uns
+dez anos que começou essa, e tem menos de um ano que, um ano e pouco,
+dois anos que, posso dizer que passou a ter três ficais a bordo.
+Na verdade as SS, as DPS já trabalham assim, sem sobrecarregar o fiscal há
+muito tempo. As fixas que...
+Não, há dez anos só.
+É, antes como eram? Era um fiscal só?
+Até 2010 eu trabalhei sozinho .
+Em SS?
+Em SS. Eu ficava duas horas acordado durante o dia e duas horas dormia. A
+tarde duas horas..
+É brabo, imagina você sozinho numa “duo ring”, “duo tag”, duas torres.
+Acho que duas torres...
+Não, mas eu embarquei sozinho, eram dois ficais só, aí por turno você ficava
+cuidando das duas operações. Ficava no meio das duas cabines olhando, é
+perfuração e revestimento na outra.
+Duas torres tem, quer ver, o drill Max que veio aqui no Brasil primeiro, tem uns
+dez anos. Furava na Bacia de Santos, furou o campo de Libra acho que uns
+cinco, seis poços, era da Shell. A Shell furou, furou, furou que não encontrou
+petróleo.
+- Você comentou que é crítico quando acontece a mudança de turno/
+desembarque... turno dentro, no intervalo de 12 para 12 e mudança de 14/ 14
+ou 28/ 28. Tem turno que troca, são 28 dias? Isso. Eu acho que o ponto crítico
+é a troca de turma, que aí o dia deles fica um pouco confuso e eles acabam...
+isso no 14/ 14 normalmente. Essa parte eu não entendi direito, quando a
+pessoa que vai desembarcar ela não faz uma jornada de 12hrs, ela faz
+seis, descansa seis e faz mais seis, é isso? Não, ela faz uma compensação
+lá, a dobradinha.
+É que assim, como eu posso te explicar, é dobradinha o nome do processo.
+Eu, por exemplo, eu to trabalhando, eu trabalho 12 hrs e descanso 12 sempre.
+E sempre o mesmo turno? O pessoal que trabalha de noite.. Sempre.
+Vamos colocar na hipótese de que eu esteja trabalhando, na segunda semana
+eu estou trabalhando de meia noite a meio dia, que eu sempre trabalho de
+meia noite ao meio dia, que acontece, ou seja meio dia é a hora que eu vou
+descansar e a outra turma que está trabalhando de meio dia a meia noite que
+vai substituir. Quando a turma de meio dia a meia noite vai desembarcar, o
+cara, ele trabalha de meio dia a meia noite, vai dormir meia noite e eu vou ficar
+trabalhando de meia noite até meio dia, mas se eu vou desembarcar, sete da
+manhã é o meu voo, ele não pode ficar descansando até meio dia para pegar
+no serviço, ele vai ter que acordar antes, seis horas antes, aí quando é seis da
+manhã ele veio me render, ele trabalhou 12, mas só descansou seis, ele foi
+dormir meia noite e acordou as seis, ele veio me render até o meio dia que é
+quando a outra turma que chega zerada embarca, eu vou pra casa e o cara
+descansa até meio dia e meio dia ele vai render o cara que está trabalhando
+cansado porque ele trabalhou doze horas, descansou só seis e teve que
+trabalhar mais seis. Então nesse período que ele vai trabalhar mais seis, é a
+única maneira que tem de ajustar, pelo menos até agora, quem sabe alguém
+invente aí pela frente, então o que acontece, nesse período e essa função cada
+um desempenha uma função, na sonda tem o plataformista, o torrista, o
+mecânico, o sondador, o guindasteiro, o auxiliar de sondador, então cada um
+desempenha um papel diferente e a equipe normalmente desembarca
+completa. Todo mundo vai no mesmo dia que volta.
+A equipe das 12hrs, quando faz 14/ 14, não troca toda a turma, é meia turma.
+E nesse período descansa pouco, assim o cara sai do trabalho, larga o turno,
+tem que tomar banho, tem que comer, aí quando acorda também ter que comer
+um pouquinho e trabalhar.
+O tempo que você leva para largar o trabalho e efetivamente estar dormindo,
+isso leva duas, três horas, então tu só tem 2/ 3 horas para descansar e se
+preparar para retomar o turno. Então nitidamente na reunião de pré turno,
+nesses horários, a fisionomia dos trabalhadores lá é bem batida, reduzida. Eles
+vão enfrentar uma jornada só de seis horas, mas são seis horas que o risco
+aumenta. Perda de foco, atenção.
+Eles estão cansados.
+Tem pessoal que, tem os mecânicos, eletricistas, tem alguma turma desse
+grupo da metade da turma que desembarca e outro que embarca, eles
+trabalham pesado, seria carregar peso mesmo, força, tem outros que são mais,
+tipo meio escritório, meio, pessoal de manutenção, por exemplo, quando eles
+tem que troca uma bomba, aí já começa a ficar pesado e não tem padrão, na
+medida que vai desenvolvendo trabalho pode ser pesado, pode ser leve.
+E o pessoal da manutenção, eles tem um trabalho programado, que não
+necessariamente precisa ser um trabalho contínuo, ele pode chegar e falar: ah
+não, eu não tenho nenhuma manutenção corretiva para fazer agora, então de
+repente eu posso ir tomar banho, descansar e pegar meu voo, ou então eu
+posso ficar essas seis horas fazendo trabalho mais leve, burocrático, mas na
+sonda não, a sonda mesmo, normalmente, quase sempre o pessoal da área
+tem o trabalho de dia a dia que é contínuo, a sonda tem que operar 24hrs, ela é
+contratada para operar essas 24hrs.
+- No caso desse acidente fictício aqui, hipotético, teria acontecido nesse
+horário, nessa troca?
+Não necessariamente.
+Essa aqui não tem relação com o cansaço da pessoa. Acho que a falha não foi
+por fadiga.
+Foi mais a questão da comunicação que não aconteceu.
+É um dos fatores que pode contribuir é isso.
+É porque assim, o risco seguinte, teve o problema no equipamento, esse
+problema pode ter inúmeros fatores, mas a gente não tomou a ação necessária
+naquele momento, no tempo certo, por conta da negligência da comunicação.
+Então talvez a data Natal, véspera de Natal, pode não ter sido tão
+expressiva. Pode ser, pode não ter sido expressiva nesse momento.
+Para baiano é Carnaval, São João.
+Mas, por exemplo, a gente recebe relatórios do sistema DP diariamente e isso
+o pessoal do “ex”, eles fazem um acompanhamento, uma estatística, aí, por
+exemplo, de repente a gente poderia ter recebido esse relatório e é um pouco
+por amostragem, acho que eles não veem isso diariamente tudo, mas de
+repente a gente poderia ter esbarrado num relatório indicando que aquele
+sistema estava com problema, aí seria uma barreira, que aí nesse caso, por
+exemplo, o Natal influenciou para a gente não estar tendo essa vigilância.
+Mas a questão emocional, eu acho assim, a gente pode ter pensado somente
+no lado assim, ah o pessoal está com saudades da família, se descuidou fez
+um trabalho e deu um acidente, não é bem isso, mas se tu está preocupado
+com aquele Natal que tu não passou em casa, que tu nunca vai recuperar, é
+um Natal a menos que tu vai ter na vida, comemorando com tua família, isso
+pode ser um motivo para tirar o foco do trabalho, seja para fazer um desvio e
+dar um acidente imediato, seja para simplesmente não fazer o trabalho como
+deveria ser feito, por exemplo, ele ter visto um troço e por desatenção
+esqueceu de informar quem deveria ter informado que tava com o sistema
+degradado e aí outras pessoas poderiam ter tomado conta da situação antes e
+não tomou e virou uma bola de neve. Um problema é um vazamento, ele só
+aumenta. Então por isso que Natal poderia influenciar nesse caso.
+Falando no extremo do comportamento do indivíduo, toda vez que tem um
+indivíduo assim com um problema familiar em terra, a gente desembarca. Eu to
+falando de situações extremas, morreu é extremo. Tem um filho doente,
+desembarca. Da um jeito de substituir, se der para substituir com tempo, a
+gente substitui, se não der desembarca da forma mais rápida. Morreu um
+parente, não sei o que, desembarca. O cara identifica um problema de saúde,
+ou mental, ou física, desembarca.
+Outro ponto que a gente esqueceu de mencionar no segundo problema que a
+gente teve, o primeiro foi o sistema acústico e o segundo foi do GPS que deve
+ter dado problema, o operador de DP se ele estiver atento a situação, ele
+poderia identificar essa condição, o sistema ta maluco, isso não tem nada a ver
+como a gente estava em cima do poço, ele pode baypassar esse comando do
+computador e colocar no modo manual, tentar corrigir e manter a sonda no
+modo manual, aí numa situação desse tipo que a gente baixa a guarda, ele não
+estava atendo para atuar de forma bem rápida.
+- Vocês já vivenciaram, já viram acontecer alguma situação, não que
+causou acidente, mas que foi relativa a esses períodos do ano assim, é
+comum, vocês já viram?
+Acidente é comum nessa época, carnaval, final do ano, São João.
+Essas datas assim você fica atento, ou fica atento ou faz algum evento para
+não perder o foco.
+São João, Carnaval principalmente porque o cara ta a bordo é casado aí tem
+que ficar ligando para a mulher dele. Mas então realmente acontecem
+incidentes nessas datas? Não, não é que acontecem, pode acontecer
+dependendo.
+A gente acha que não é foco desse acidente aqui em si, a gente só colocou
+esse cenário porque pedia ali, mas ele não é determinante.
+Você pode mitigar através de ações ou do OIM ou do fiscal para evitar. Faz
+uma festinha, libera não sei o que. Quando dá greve, por exemplo, quando
+tinha sonda Petrobrás, pessoal parava aí ficava tudo tenso, na época de greve,
+foi qual sonda, acho que P10, eu tava lá, foi várias pessoas, das 100 e poucas
+pessoas, várias pessoas foram para a enfermaria pegar remédios para tentar
+dar uma acalmada. Vai fazer o que? A sonda ta parada. Eu peguei cinco dias
+assim.
+Nas fixas eu já peguei greve também, mas a gente parava porque a produção
+parava e a gente não podia.
+Isso em plataforma de produção né?
+É, aí a gente não podia direcionar o poço para produção e tinha que parar.
+Então você vê muito desvio de comportamento, por causa da tensão que
+causa, então isso tem grande chance de dar continuidade a acidentes, de
+provocar desvio de atenção, ser um fator contribuinte, mas não significa
+também, por isso que você para.
+- Bom as condições metereológicas vocês falaram que era dia tranquilo,
+não tinha muitos problemas de vento, de chuva, nada.
+Mas é como esse negócio de comportamento humano, dependendo das
+condições metrológicas pode contribuir, pode ser um fator contribuinte.
+É como ele falou, a própria desconexão pode ser condições metereológicas
+que a sonda não conseguiu ficar em cima do poço e vai ter que desconectar.
+Mas nesse cenário, por exemplo, ta piorando, ta piorando, a gente ta vendo
+que já teria puxado o cabo a bastante tempo. Sim, vocês não deixam chegar
+na situação crítica de ter que fazer uma desconexão de emergência. Por
+isso que a gente falou em condição boa, sabe por quê? Porque quem ta na
+sonda, pó o mar ta bom, nunca ia imaginar que teria um estado degradado. A
+condição de alerta baixa. A condição de mar ruim, a gente mesmo já começa
+a ligar pro DP, pro pessoal lá.
+Tem um corte, vários cortes assim, tal condição você vai avisando e vai
+informado inclusive em boletim também.
+E a gente interrompe a operação se for preciso e aguarda melhorar.
+Tem autorização para parar.
+Então pelo visto quando é uma situação que tem um cenário mais crítico
+ao redor, o alerta situacional é alto e a operação ocorre normal como ela
+deveria ser, vai ter que interromper, vai interromper. Isso. E quando a
+operação ta mais tranquila, em ritmo descontraído, a chance de acidente
+é maior, mais inerente.
+- Bom então a gente está falando das pessoas que estão envolvidas, que
+tipo de pressão, bom vocês comentaram o tipo de pressão que essas
+pessoas que foram envolvidas no acidente sofreram, seriam pressões por
+não parar a sonda por causa do prejuízo que é causado para a contratada.
+No final de contrato.
+Também tem isso quando a sonda está no final do contrato e não tem
+renovação, são mais suscetíveis, tem chance de dar. Como assim?
+Mas isso aí é outro problema, o que você está falando ai, só explicando em
+linhas gerais, para a gente passar para a parte do fim do contrato aí, é o
+seguinte: a sonda vê um problema que teoricamente naquele momento ele não
+é impeditivo para a operação, que é o caso da sonda estar em estado
+degradado. Mas tem alguns cuidados que tem que ser tomados. O problema é
+que para tomar esses cuidados, a fiscalização, a Petrobras tem que
+tomar ciência, uma vez que eu passo a ciência para Petrobras e ele queira
+parar a operação para resolver este problema, se precisar parar operação para
+resolver este problema, a sonda entra numa taxa que não recebe o valor da
+diária dela naquele momento, como a gente comentou contigo a diária é
+alta. Então ele acha que consegue resolver sozinho até que normaliza a
+situação e aí não informa nada para ninguém para não tomar este
+prejuízo, este que é o problema que ele tenta resolver sozinho, uma vez que
+ele consiga, ninguém vê, mas uma vez que ele consiga, que ele não consiga é
+um problema, essa que é a motivação dele possivelmente não ter
+avisado, pode ter sido um esquecimento, uma falha emocional mas pode ter
+sido uma questão financeira também, de negligencia.
+Tem duas hipóteses da falha de comunicação, uma pela condição
+psicológica ou para evitar um downtime para sonda, a gente não diz qual que
+foi. Qual foi a mais provável? As duas acontecem por isso que a gente tocou
+no assunto das duas.
+Tem situação eles realmente esqueceram mesmo, a gente sabe que não
+implicaria nada para sonda.
+É coisa recente, com a saída de várias sondas, o pessoal começa a perder os
+postos de trabalho, não tem 3 anos o mercado está em baixa, caiu de 70 para
+umas 30 sondas, mais da metade das sondas. Aí quem é bom fica numa outra
+sonda, então elimina todos os postos, tava asssim, então é preocupante para a
+operação ter pessoas assim tensas do dia seguinte. Pessoas nervosas sem
+saber se vão perder o emprego ou não são um fator contribuinte. É teve
+situação aqui na Petrobras que o sujeito soube que iria ser demitido, ele tava
+na sonda ainda, aí ele ficou p da vida e disse: quer saber, jogou um martelo
+dentro do poço. E assim, o martelo por si só não causa nenhum risco, mas a
+gente tem o trabalho de descer uma coluna para tirar o martelo são dias de
+sonda por causa de uma besteira dessa. Foram quantos dias? Ah isso faz
+tempo, quando eu entrei na Petrobras eu fiquei sabendo dessa história, mas
+por exemplo, vamos supor que aconteça a mesma coisa só que numa
+perfilagem e a ideia do cara não seja jogar um martelo e sim acionar o painel
+de DS, ah vou apertar o botão de DS aqui, sei lá o cara está p da vida, aí ele
+não sabe o que está acontecendo no poço, aciona e a gente não consegue
+cortar o cabo e acontece a mesma coisa de dar um problema, pode ser, pode
+ser um risco emocional.
+Quem tem acesso a esses painéis, qualquer pessoa? Não, não assim, não
+tem a autoridade para utilizar, mas o pessoal da área que tem acesso à cabine
+do sondador ou lá em cima a cabine do topusher, algo do tipo, consegue
+acionar, só não é, tu tem que ser bem intencional, tu não consegue, ele tem
+que apertar dois botões ao mesmo tempo e tal, não é um negócio simples, tem
+uma capa de proteção, não é assim: opa esbarrei desculpa, não é assim. Ao
+apertar os botões ele tem uma confirmação, se alguém apertar os dois
+botões, ele vai perguntar se você realmente quer efetuar, quer fazer isso.
+Ainda relacionado a isso, o fato da negligência realmente não tem muito o
+que fazer, é uma pressão organizacional muitas vezes. Eu pergunto para
+vocês, seria interessante rever o contrato? Sim. Seria uma forma de
+mitigar isso? Sim. Que o contrato fosse feito de forma que não trouxesse
+prejuízo para nenhuma das partes em caso de ter que fazer uma parada
+dessas. Seria interessante? Sim. E no caso de ser um
+esquecimento, talvez mais treinamento? Talvez duas pessoas para fazer a
+mesma tarefa? É pode ser uma para fazer e uma para conferir.
+Porque que vocês veem em dois? Para fazer a entrevista? A gente vem em
+dois porque há muito trabalho, um conduz e o outro tomar nota, é a
+redundância. Mesma coisa, a nossa atividade também tem esse tipo de
+coisa. Precisa de redundância que as vezes não tem. É e na Aviação
+também se você for pegar, tem um comissário lá que fecha a porta, tem outro
+que vai ver se a porta está fechada, nunca é a mesma pessoa e na plataforma
+não deveria ser, mas às vezes é, tem algumas atividades que é um só que
+realiza, é nisso que a gente tem que aumentar o nosso policiamento. No caso
+isso envolveria mais uma contratação? Não necessariamente ou mudança
+no processo. Não é um processo, a palavra processo já mudou aqui na
+Petrobras, é procedimento. Isso é uma palavra interessante.
+Não é interessante, é o pessoal que deturpou durante muitos anos a palavra
+processo.
+Mas hoje em dia a gente acaba usando.
+Mas usa essa palavra de forma errônea conforme ensinaram vocês. Mas
+porque, o procedimento é mal escrito é mal planejado? Não, é usado de
+forma errada durante muito tempo. Mas a palavra certa é processo ou
+procedimento? Procedimento ou atividade ou tarefa. Mas um procedimento
+pressupõe um texto escrito que diz como uma pessoa, processo é um
+conjunto de atividades, isso e o procedimento é uma norma. Procedimento é
+uma sequência de atividades, mas tem erro nesses procedimentos? Porque
+é um problema de procedimento? A palavra processo foi usada como
+sequência de atividades e tá errado. Processo é o conjunto de atividades, onde
+ela está inserida. A palavra processo é conjunto de atividade.
+Isso, mas você pega esse conjunto e diz onde elas estão inseridas? Dentro de
+um processo. Você faz tudo aquilo, por exemplo, construir poço é um
+processo, aí quais são as atividades.
+Construir poço não, a construção de poço, recursos, as atividades, é que são
+chamadas de processo, o conjunto desses elementos é que é chamado de
+processo. As tarefas, as formas de fazer, são os elementos do processo, não é
+sutileza não, está na própria ISSO, está na norma dizer o que é processo. Não
+é processo de refinaria, jurídico, não é nada disso, quando você fala em
+gestão, a palavra processo é conjunto de atividades e recursos.
+Eu perguntei se há um tipo específico de treinamento para essa situação
+para que não ocorra? Não, sempre tem que treinar e mesmo assim as vezes
+ocorre. Você pode fazer simulados. E eles fazem? Agora o pessoal do exa, do
+DP está fazendo um simulado com o DPO sim.
+Toda vez que ele sai do poço, a gente faz, não toda vez que sai do poço, mas
+uma vez por ano, por exemplo, numa situação em que a gente não esteja
+sobre um poço, a gente faz uns treinamentos no sistema DP, aí eles simulam
+algumas falhas, por exemplo, um blackout na sonda, aí vem em quanto tempo
+o blackout é restabelecido ou uma falha no sistema de DP, esse tipo de falha,
+por exemplo, aí operador é obrigado a passar para o modo manual, o cara põe
+a sonda no modo joystic.
+Para enganar né?
+Eu nunca vi o teste em si, não posso julgar um pouco.
+Os treinamentos são efetivos, como eles são feitos?
+Aparentemente não.
+A gente fazia os treinamentos e ficava danado da vida nos simulados para
+detecção de Kick.
+Teste do sistema ou simulado?
+É simulado de fechamento de poço.
+Aí tinha uma empresa contratada que vinha cuidar, só para ficar observando os
+monitores para identificar se havia ou não indício de Kick. E o cara aconteceu
+que passou, não sabia se era normal e não avisava. Esse ficou durante uns 3,
+4 anos, aí até que botaram essa turma para fazer treinamento e detecção de
+Kick obrigatoriamente.
+Mas por exemplo esse cenário lá a nossa gerência trabalha bastante em cima
+disso, aí foi um artifício que a gente viu para melhorar como irá funcionar todo o
+procedimento.
+Existindo ou não eu ignorava porque os caras não atuavam.
+Por mais que tudo estivesse escrito de forma correta, a atuação não estava a
+contento, o pessoal baypassava algumas funções.
+O sondador, esse indivíduo contratado monitorando exclusivamente para
+isso, pagava, mas não identificada.
+A gente sempre fez simulados, só que a gente identificava o problema e ficava
+por ali, aí a partir de agora a gente começou a instalar o sistema de
+consequência que é previsto em contrato.
+Tem 3 anos que mudou esse contrato. A primeira vez que uma contratada
+falha num simulado desses, a gente dá uma advertência e não faz nada, a
+partir da segunda vez já toma uma multa, uma multa pesada, inclusive se for
+reincidência de alguma ator, a gente pede para que, não demissão, mas que
+não opere mais com a Petrobras, aí na prática ele vai ser demitido.
+E que tipo de experiência é necessária para as pessoa envolvidas nesse
+tipo de situação que tu falou? O DPO tem uma matriz de treinamento que ele
+tem que obedecer isso e o fiscal também tem os cursos obrigatórios dele, tem
+agora, por exemplo, a gente tem um posto de prática e segurança em sonda
+DP, esse é o posto que iniciou lá em noventa e pouco e começaram a ter as
+operações em sonda DP e agora ele está internamente obrigatório na
+Petrobras, aí todos os fiscais fazem.
+Esse aí eu não concordo.
+Não concorda ser obrigatório?
+Para fiscal não.
+Não concorda é a sua opinião, mas que vai ser vai.
+Pode até fazer eu estou falando que não concordo, pois isso é ingerência. Tem
+uma coisa chamada papel do fiscal e papel de quem é o proprietário da
+sonda e que tem que cuidar do assunto. O treinamento, a cobrança do
+treinamento, a execução isso daí, a efetividade da execução, tem que ser do
+proprietário da sonda, não do fiscal de entrar na verificação se o cara sabe ou
+não sabe, aí o cara está fazendo um papel de ingerência numa atividade que
+não é dele. Mesma coisa que eu chegar, checar se você tem habilidade em
+storytelling, aí eu vou fazer um teste antes de você começar a entrevista para
+ver se você sabe mesmo. Aí eu vou me treinar para storytelling para primeiro
+checar se você tem capacidade, é mais ou menos isso, então a gente tem que
+mudar isso.
+Eu entendo o teu lado.
+Daqui a pouco vai fazer como nesse convés de SMS, o cara que cuida dos
+contratos de sonda de fazer auditoria de subcontratada, nem contratada pode
+estar fazendo de subcontrata, é ingerência pura. Tá errado.
+Hoje a parte da fiscalização, mas para mim é justamente para verificar se está
+tudo certo. 
+Tá errado, o pessoal tem que aprender, vocês do soex, segup, tem que
+aprender o que é gestão primeiro antes de ficar exigindo coisa que é
+ingerência, é o que eu tô falando o exemplo que eu dei é ingerência, não
+gestão, eu tenho que acreditar que quem mandou vocês, que você está
+habilitado e eu tenho que acreditar nisso ponto final. E a qualificação da
+habilitação, é interna da organização de vocês, não é da minha organização
+porque eu sou cliente, é por aí, então pode até prosseguir, mas nessa linha de
+ingerência, nesse erro.
+Você não concorda, mas.... Mas você está errado, vocês estão errados.
+Tudo bem, mas não fala quem tá errado não.
+O Segup, Soex está errado.
+Isso que ele está falando tem um fundamento e o que está sendo proposto
+também tem uma razão de ser, quando aconteceu em Macondo, quem que era
+a sonda? Não se fala. Quem que era a operadora? A operadora é muito mais
+prejudicada, a imagem, do que a dona da sonda, então o que acontece é que
+algumas falhas foram detectadas no passado e a maneira como está se
+tentando corrigir isso daí ou minimizar isso, é através da fiscalização da perícia
+do contratado, é isso que ele está falando e ele não concorda.
+Quer ver uma área jurídica, não sei se vocês sabem, mas na experiência que
+eu tenho, eu trabalhei uns 10 anos na elaboração de contratos, então uma das
+coisas que a gente fazia na época quando não tinha muita gente, a gente
+elaborar o contrato até à tomada de preço e a licitação toda e depois ainda
+trabalhava na análise dos litígios de contrato, porque tinha só quatro
+advogados em toda a sede aqui da Petrobras e a gente fazia esse papel de
+análise dos litígios, uma das coisas que a Petrobras foi acionada, é quando
+você dá a ordem direta para um subordinado da organização, caracteriza que
+aquela pessoa empregado sua. Tanto é que os contratos recentes da
+Petrobras, você contratava o serviço e não o indivíduo, para não caracterizar
+vínculo empregatício, porque se a pessoa reclamasse tinha todos os direitos
+trabalhistas.
+Você sabia que já tem casos que a gerência foi responsabilizada por quê a
+fiscalização chegou a pedir uma ou outra coisa para uma pessoa fazer, um
+cafezinho, um plataformista e o cara colocou a Petrobras na justiça e ganhou e
+teve que receber tudo como se trabalhasse para Petrobras.
+Então, exatamente isso, então esses cuidados você tem que, por isso que eu
+posso falar com propriedade isso porque eu vi isso, eu evitava isso, mas
+algumas pessoas faziam isso e depois se fundiam mesmo, é ilegal, tá na
+CLT, a não ser que acabe com a CLT.
+Peguei só um pedacinho aqui, mas a grande dificuldade é saber separar até
+onde vai o trabalho, a fiscalização do contrato e onde começa a ingerência na
+gestão da contratada, aqui é muito acinzentado essa situação da Petrobrás.
+Não é não, para mim eu tenho bastante experiência.
+Você pensa assim, eu estou dizendo o que acontece na Petrobras que essa
+separação não é muito clara.
+Não é que assim, é que só é ensinado de forma errada e continuam ensinando
+errado, é coisa do Segup, Soex.
+É isso que e estou dizendo, você está concordando comigo, você não está
+discordando, você está concordando, é exatamente a mesma coisa que você
+está dizendo, que a fiscalização e a ingerência estão muito, até onde vai a
+fiscalização, se os níveis do contrato estão sendo cumpridos, esse é o trabalho
+da fiscalização, à medida que você entra dentro da rotina da gestão da
+contratada, você começa assumir habilities, que é muito pior até que o cara
+pedir um emprego ou receber dizendo que é empregado da Petrobras, porque
+você acaba dividindo responsabilidades, dá uma merda aí você fica dizendo
+que isso foi a fiscalização da Petrobras que determinou, mas o que é que a
+fiscalização tem que ver com isso, foi por causa do cara, o cara lá que tem que
+fazer o negócio dele, aí se você começa a se misturar e o cara que é o fiscal
+coordenador, eu posso fazer assina aqui, bota o teu nome aqui, aí passa para
+a Petrobras responsabilidade que é dele.
+Nos anos 90 a 2010 era assim que funcionava e não era para ser.
+Afundou a sonda aí, tu afundou a sonda?
+Não, não sem afundar a sonda.
+Então tem alguns treinamentos que a gente tem que deixar delegado para o
+contratado, tarefa que tem que ser delegadas, então essa ação é jurídica legal,
+não pode você assumir responsabilidade do outro para você, trazer para você,
+que é mais prático e que você tem mais atuação, sem dúvida nenhuma porque
+você está com instrumento, mas não pode, tá com instrumento está atuando de
+forma errada.
+- Então questão de experiência, de treinamento já tem uma discussão
+legal. Do ponto de vista fisiológico e psicológico, vai depender do caso,
+se foi uma questão de negligência, não foi fator contribuinte, se não, se
+for uma questão de descuido ou sobrecarga de trabalho. Ah me lembrei
+que tinha que fazer uma pergunta, vocês comentaram que o DPO, é DPO
+né? Isso, é operador de DP é Dynamic Position Operator.
+É o cara responsável pelo coração do motor dos controles, seria um dos
+decisores principais, só olha os painéis e os botõezinhos.
+Ele controla a posição do navio em relação a cabeça do poço.
+Ele é responsável pelo sistema que controla o navio na posição da locação.
+Deu um vazamentozinho aqui, o cara tem que ter a informação online,
+instantânea, ele tem que ver se o alarme está funcionando, tem alarme falso. É
+uma função que realmente é fundamental, não tem chance de erro, e aí
+vocês falaram que as vezes eles contratam pessoas com pouca
+experiência para fazer essa função, isso dá para se dizer que é um
+problema.
+Porque quanto mais o cara tem de tempo de experiência, o poder de decisão
+dele é melhor, é o que acontece é que o cara já passou por várias situações,
+então ele sabe: ah aconteceu esse problema aqui, eu posso desativar
+aqui, operar com outro lado aqui, mexer aqui.
+É a mesma situação do motorista, a mesma coisa você tem o motorista,
+é como o piloto de avião, quando ele tem muitas horas de voo ele pode, é mas
+quando está muito velho, tá cansado não é bom não. Eu por exemplo, sou
+fudido em termos de direção. Um amigo meu que é DPO, eu conheço ele há
+muito tempo e ele mora lá no condomínio que eu moro, ele fala, o problema do
+pessoal que tá indo para a Petrobras é falta de experiência por questão
+contratual. 
+A minha proposta seria, e se pegasse essas pessoas mais
+experientes, detalhe toda sonda tem um DPO que é sênior e tem os DPOS
+que são menos graduados. Então o sênior é responsável pelos outros? É
+isso? É, mas ele não fica ali ligado 24 horas, ele faz o turno de trabalho
+dele e depois os outros DPOS fazem os turnos de trabalho deles, é assim
+que funciona? Como é lá agora? Eles têm ás vezes, dois ou três na
+ponte sempre, na ponte de comando, é a ponte onde fica os painéis.
+O sênior qual é o papel dele? Ele reveza ou ele fica?
+Ele fica supervisionando, ele trabalha de noite, porque de noite não tem o
+capitão tem o imediato, varia um pouco, depende da contratada também e
+depende da complexidade do sistema.
+Passou a idade, como meu caso assim, eu não posso mais dirigir carro
+assim com a mesma habilidade de 30 a 40 anos atrás. Ganha experiência,
+mas perde talvez agilidade, o reflexo, e na sonda é importante quando a
+luzinha tá, saber combinar, tem alguns backups assim, tem alguma coisa
+funcionando outra não, saber identificar essas distorções é fundamental. A
+minha proposta seria pegar essas pessoas mais experientes de trabalho e
+elaborar cenários de treinamentos que seriam cenário base trainins para
+aplicar para essas pessoas mais jovens, isso vocês acham que tornaria a
+experiência delas melhor para um caso desse tipo de operação?
+Fazer uns simulados seria interessante, fazer de forma não avisada e chegar lá
+e fazer como se fosse uma auditoria com o operador de DP, falar: ó se nesse
+momento acontecesse tal coisa e tal coisa, o cenário é esse, o que deveria ser
+feito? Isso existe.
+Existe um programa do pessoal do SMS que é auditoria de competência, ele
+sai catando várias pessoas com funções diferentes, desde plataformista até
+DPO, técnico de segurança e sai perguntando, sai criando cenários e
+perguntando o que o cara tem que fazer, o que ele tem que saber, o que é isso,
+o que é que aquilo.
+Isso eu não conhecia do SMS.
+Justamente no último simulado que eu fiz recente.
+Nessa linha que a gente falou, por exemplo, porque você faz
+treinamento semanal de abandono de plataforma, porque isso tem
+possibilidade de ocorrer. Porque semanal, porque não pode ser uma vez por
+mês, uma vez por ano, como treinamento de combate a incêndio, uma vez a
+cada 4, 5 anos, por que não faz treinamento de abandono? É porque quando
+treina o nível de atenção fica lá em cima, quando você deixa muito tempo sem
+treinar, vai caindo ao longo do tempo e quando chegar depois do quarto ou
+quinto embarque, já está lá embaixo, então nessa semana não teve, o cara não
+fica atento, então treinamento em DPO nessa situação, no coração lá da
+sonda, ele tem que fazer um simulado toda hora, a todo momento lá para ver
+se o cara está atendo ou não está atento, quase que diário o cara tem que
+checar se o cara está sabendo fazer ou não, então o cara mais experiente tem
+que dar essa checada porque daí mantém atento o indivíduo. Aí fica uma
+serrinha assim, a atenção cai pouco. Isso acontece? É para acontecer.
+O que é o treinamento? Isso. Isso é lei todos tem que fazer isso, mas se você
+deixar a cada mês aparece um auditor para não sei o que e tem que deixar isso
+daí de responsabilidade para quem é dono daquele local, não para quem é
+contratante, não para quem é fiscal. O fiscal chega lá, vamos ver se você está
+sabendo acionar determinado, identificar alguns sinais, o fiscal ficar fazendo
+isso, é para quem já fica especializado mesmo, quem está na operação
+diária. Então isso vale para mecânico, elétrico, se não o cara relaxa, aí
+acontece um problema. Aí quando se já está embarcado uns 14 ou 28 dias, a
+atenção cai mesmo ao longo do tempo, perto do dia de folga cai.
+Vocês assistiram o filme da deepwater horizon? Eu vi alguns documentários
+no YouTube, eu nunca vi o filme. É o filme, ele é legalzinho, tem um nível
+técnico, é fidedigno? na parte técnica parece ser fidedigno não na parte da
+relação das pessoas que ele meio que joga a responsabilidade em cima de
+uma certa empresa e essa parte não é tão real.
+Lá não ficou muito claro o erro de projeto, o cara quis economizar.
+Mas acho que retrata bem o dia a dia para quem não conhece, nunca pisou
+numa sonda é legal, até a hora do blowout em si ele retrata bem o dia-a-dia da
+sonda. 
+Eu fiquei na época que houve o blowout de Macondo quase que diariamente
+olhando câmeras, os relatórios do congresso, está tudo documentado isso.
+E depois dessa história toda que a gente contou vale a pena ver porque tem
+várias relações e tem o resultado da análise da Petrobras sobre o pessoal.
+Tem um livro também bem interessante sobre o acidente de Macondo que se
+chama Desasters Decisions do Hopkins, aí o comitê de gestão aqui, de
+gerentes gerais, os gerente de Staff, eles fizeram o estudo desse livro, cada um
+pegou um capítulo e eles tentaram traçar planos de ação em cima de cada
+capítulo que ele falava exatamente sobre o acidente de Macondo e tem
+algumas ações atuais que a gente colocou em prática surgiram dali.
+- Algum procedimento falhou que deveria existir ou deveria existir algum
+procedimento que não tinha? Sim a comunicação, o DPO tinha que ter
+comunicado, é contratual, da situação da sonda que degradou e não avisou e
+também poderia ter atuado no momento que a sonda entrou dryoff que aquela
+descontrolada lá, que poderia ter colocado o sistema no manual. Também por
+uma desatenção talvez ou por falta de experiência, desatenção, muitos
+fatores. Poderia existir algum mecanismo automático de aviso que essa
+sonda entrou em modo degradado? Porque que não é automático? Por
+que a contratante não fica sabendo automaticamente? Ela fica, a
+contratante? A contratada você falou. Sim, a contratada que tem que ficar
+sabendo da sonda, ela tem que me avisar. Mas a contratada fica sabendo
+da sonda quando ela entra em estado degradado? O DPO tem que avisar
+a contratada, mas por que isso não é automático? Porque que a sonda já
+não avisa? Porque assim, por exemplo, o piloto de uma companhia aérea
+qualquer, tem um problema no avião na turbina e precisa fazer um pouso de
+emergência, se ele não avisar o aeroporto que tem que pousar, ninguém vai
+saber, mas o piloto tem que avisar.
+É por que são dois mundos dentro do navio sonda. É como aquilo da
+Chapecoense lá que o cara quis continuar voando com pouca gasolina,
+querosene de aviação, tem uma pressão econômica aí também, é porque o
+que ele está falando é o seguinte o cara recebeu um alarme, ele soube
+identificar que estava em estado degradado, então para ele, mas é como igual
+ao do avião da Chapecoense, ele perguntou porque que a Petrobras não está
+sabendo.
+Porque que nesse sistema não poderia ter um filtro avisando a
+Petrobras assim, Petrobras nós estamos em estado degradado, é porque tem
+zilhões de problemas que podem acontecer ao mesmo tempo e esse
+julgamento, é claro que a gente traça uma tabela identificando quais são os
+problemas vão acarretar no estado degradado e eles podem acontecer de
+forma alternada, uma falha de equipamento significa um estado
+degradado? Em outro momento a mesma falha pode não significar um estado
+degradado, então é o cara que tem que julgar isso, tem uma analise.
+É o conjunto, a combinação do conjunto que vai colocar em decisão, não
+adianta você pegar só um caso isolado.
+No caso da sobrecarga de traster que a gente comentou antes, se a sonda não
+tiver iniciado o poço ainda por exemplo, você não está com conectado ainda, o
+poço nem existe ainda, tem que iniciar o poço, mas você está preparando para
+começar, mas você ter que interromper, pode perder posição e etc e pode ter
+um blackout, você não vai ter, esse desastre não aconteceria, então tem uma
+condição temporal aí que entra em caráter da análise técnica para dizer. É uma
+análise e ela é subjetiva, ela depende de uma pessoa. Não, ela é bem
+objetiva, tem um fluxograma para isso. O subjetivo no modo que eu quero
+dizer que não tem um computador que faça essa análise pós, ainda não
+tem essa inteligência criando um fluxograma gigante dizendo: se acontecer
+isso isso isso, automaticamente já vai ter um alarme, nós estamos em estado
+degradado. O decisor ainda é humano. Isso é muito interessante. São
+muitas variáveis que influenciam.
+É como piloto e copiloto, para quê ter piloto e copiloto, é redundância, não é
+para ficar olhando os painéis mesmo.
+- O que torna essa atividade ou esse procedimento particularmente
+difícil. Não é difícil, ou é pouco treinando, o cara aprende a fazer, uma vez
+aprendido não é difícil fazer.
+Mas ela é crítica, requer atenção, requer treinamento.
+O cara tem que ter condições ideais de atuação, como o piloto.
+E ela não é isenta de erro humano, de falha humana, então sempre que a
+gente tem um ponto de falha humana é difícil a gente garantir que não vai
+falhar, até a máquina mesmo pode falhar.
+- A gente já conversou que a comunicação poderia ter facilitado na hora,
+o treinamento também. Sistemas mais modernos poderiam ter facilitado a
+operação de forma a não acontecer um acidente? Um BOP mais robusto.
+Só que envolve um investimento maior.Não, a gente até tem já, a gente só
+não utilizou no poço correto por falta de disponibilidade porque estava em outra
+operação. Se eu for pensar em termos de ser moderno ou não, realmente a
+gente tem já essa tecnologia. Só não foi empregada, a gente tem a tecnologia
+antiga e não vai simplesmente pegar uma sonda e jogar fora porque nossos
+poços requerem um pouquinho mais, aí a gente acaba tendo que operar com
+isso. Vocês fazem uma análise de risco ali. Falando da questão do DPO,
+existem outras prioridades que não essa do momento exato do acidente?
+Ele poderia estar fazendo outra coisa que estaria tomando a sua atenção
+e que fosse mais importante nesse momento? Não pode e não deve. Mas
+acontece? Não pode e não deve.
+Acho que nesse cenário eu não vejo.
+O cara pode sair para tomar um cafezinho, mas tem que ficar atento.
+É difícil falar, isso é igual você me perguntar assim: o motorista de táxi que
+você veio lá do aeroporto para cá, ele pode conversar no celular enquanto ele
+está no volante? Não deve e não pode. Mas acontece? Acontece e é
+crime. Não pode, não deve, mas o cara chega e faz, coincidentemente tem um
+barbeiro lá que dá uma freada, o cara está desatento, são fatores que
+contribuem. Então se não pode e não deve, eu deduzo que a política de
+atenção dentro das sondas, dentro daquele período que ele está trabalhando
+ele tem que estar lá, é que nem piloto de táxi mesmo.
+Por isso que necessariamente tem que ter mais um também na
+ponte, eventualmente se um precisar ir no banheiro, comer. Tem alguém que
+supervisiona esse trabalho? Não fiscaliza supervisiona. Se não teria que
+colocar dois motoristas de táxi, aí não dá.
+O DPO tem, mas não é nosso.
+É o OIM, existe uma figura na sonda que é OIM, que é o gerente geral offshore
+installation management, ele é o chefe, normalmente é o capitão ou
+superintendente de perfuração. E ele fica na ponte de comando? Ele não
+trabalha 24 horas, ele trabalha apenas 12 horas e às vezes ele fica de
+sobreaviso, quando OIM é o capitão, o capitão tem um back que é o imediato
+que trabalha à noite e que responde por ele também. Ele é responsável por
+vistoriar, esse tipo de acompanhamento de atividades, seria isso. É
+como, por exemplo, tem uma atividade na sonda lá na boca do poço, é o papel
+do sondador, eu nunca aceitei se o telefone do sondador não está, porque o
+coração do faturamento é lá, o cara não pode se ausentar do posto. Pelo
+menos que não tenha ninguém substituindo ele e não pode ser qualquer
+um, tem que ser um cara melhor do que ele. Ele é um dos caras que pode
+acionar uma desconexão, então não pode sair, eu sempre dava a ordem dessa
+forma, eu ficava tranquilo, de vez em quando eu checava, lógico, telefonava, ta
+tudo bem por aí? Se não tiver ferrou. Tem funções que não tem, rádio operador
+não pode e não deve abandonar o posto, rádio operador não é importante? Só
+existe radio operador em sondas, porque rádio operador em navios é o
+imediato, papel do rádio operador é invenção do Brasil aqui.
+- Erros humanos e falhas ativas a gente já discutiu bastante, tinham
+condições latentes nesse momento? Latentes são condições que estão
+presentes na atividade como um todo, são coisas que não deveriam estar
+acontecendo, mas que estão acontecendo e não necessariamente elas
+estão relacionadas ao acidente, mais que elas são um fator
+contribuinte, por exemplo, vamos dizer que o DPO está numa sala, mas a
+sala estava muito quente por que quebrou o ar-condicionado, isso ela é
+uma condição latente e por causa disso ele errou. Existiram condições
+latentes? O ar condicionado que eu falei é só um exemplo. A descarga do
+banheiro está entupida em toda a sonda, aí tem que parar sonda, já aconteceu,
+faltou água, é condição latente. Condições do ambiente que acabam
+interferindo e mais a níveis operacionais? Um indicador lá que sempre dá
+problema, sempre da indicação falsa. Isso é uma condição latente nunca
+deu nada, mas naquele dia ela foi uma condição que contribuiu. Existem
+falhas, mas relacionado a esse problema em si não estou enxergando.
+Uma condição latente aí que talvez encaixa, por exemplo, pessoas que
+trabalham no turno da noite, ela trabalham das 6 da noite às 6 da manhã e elas
+vão dormir das 6 da manhã às 6 da noite, só que da seis da manhã às seis da
+noite, que a maioria das pessoas que estão a bordo estão no turno, aí a
+plataforma naturalmente tem o nível de ruído, então é um pouco mais difícil
+para alguns pessoas descansarem nesse período, então de repente se tu tem
+na área externa do casario um serviço de Picapau, que o cara está tratando
+corrosão de ferro e batendo para tirar na careca de corrosão, isso incomoda o
+cara durante o dia inteiro e ele não consegue descansar, ele vai pegar o turno
+como? Destruído, cansado porque ele não descansou. Isso é uma condição
+latente, o cara pode perder o foco pelo cansaço depois, tem que evitar isso,
+mas não pelo cansaço porque ele teve que trabalhar, foi porque ele não teve
+como descansar naquele dia, por causa de fatores externos.
+Então esse negócio do ar condicionado, da falta de água.
+Tu tá dormindo e o cara resolveu fazer a manutenção do ar condicionado e
+desliga todo o ar condicionado do casario, aí meia hora tu acorda suado e para
+voltar a dormir você vai perder mais umas 2 ou 3 horas horas e quando tu volta
+a dormir já tem que começar a trabalhar, é outro fator e por aí vai e isso
+acontece.
+Outro risco que a gente tem é por infecção alimentar, todo mundo come no
+mesmo lugar.
+Eu peguei uma sonda uma vez, foi a SS 55, o cara colocou uma comida
+estragada, tinha 90 pessoas naquela época, 72 pessoas passaram pela
+enfermaria, 9 pessoas tiveram a ponto de ter que ficar na enfermaria, não tinha
+nem cama mais praticamente, aí era uma situação de não condição de
+trabalho, aí é melhor parar a sonda, precisando entrar nutricionista, médico,
+helicóptero, desembarque da turma, não tem condições, é uma situação
+crítica.
+- Que processos organizacionais vocês atribuem a esse acidente?
+Processos organizacionais, pressões organizacionais? Acho que a
+pressão contratual que foi falado. Pode ser também uma questão
+de performance, o contrato pode ser mal feito. A busca pela melhora da
+performance das sondas, o controle, pressão organizacional. Da supervisão a
+gente falou, vocês falaram, tem DPO sênior que tem o turno de trabalho
+dele, acima dele tem alguém? Tem o capitão? Tem o OIM. Mas ele não
+supervisiona só as atividades, ele supervisiona toda a sonda? Isso, o DPO
+é quase do Staff, é do Staff. Existem outras funções críticas? Eu vi que o
+DPO é uma função crítica, tem o sondador, o rádio operador, o to pusher
+também, o pessoal da mecânica, elétrica, todo mundo, são várias funções
+críticas, tudo é crítico, sim são todas relacionadas. Essas são as que se os
+caras tomaram uma decisão errada, o nível da besteira e alto.
+O cara que cuida da área da movimentação de cargas, dependendo da
+movimentação da carga pode prejudicar a estabilidade da embarcação. Então
+o cara tem que saber e o cara fica em comunicação, é o cara do laço junto com
+o DPO, o cara da área tem que estar toda hora em contato, fazendo trabalho
+em conjunto para não distribuir a carga de qualquer jeito.
+- Como os operadores ficam sabendo de quaisquer mudanças que
+possam vir a afetar esse tipo de atividade? Por exemplo, os operadores, o
+DPO, como ele fica sabendo ou os operadores que estão abaixo dele.Toda
+mudança de turno tem um briefing, uma pré-reunião.
+A gente tem um relatório diário do sistema DP.
+De hora em hora, de meia em meia hora, o cara tá anotando e tem que passar
+essa informação para base, para fiscalização, tem que passar para o OIM, tem
+que estar todo mundo nivelado cobrando.
+Esse relatório para nós hoje em dia é o mais confiável. 
+Então a sede da Petrobras e a sede da contratada ele tem que ficar de olho em
+qualquer hora alteração dos parâmetros esperados e se não mandar esses
+parâmetros.
+O fiscal fica sabendo desse relatório e para a equipe de base tem documento
+que a gente coloca a situação operacional das sondas, aí tem bem
+resumidamente lá como está o sistema DP da sonda que vai para o
+gerente, ele vai ver aquilo lá e vai ver se está com alguma falha e vai fazer o
+caminho inverso, qual o problema, como é que a gente pode atuar.
+Hoje em dia tem muita gente, a redundância é maior. O que são feitos com
+esses relatórios? Eles fazem tratamento estatístico ou só leem e
+arquivam. Aí tem a equipe do Soex, do Segup, eles fazem o tratamento, é
+obrigação deles, eles vivenciam isso.
+Tem uma gerência focada em cada um dos equipamentos críticos das
+operações de sonda, isso já é a nível Petrobras também? Mas eles também
+têm o deles.
+Mas todo o incidente que tem situação DP, a gente trata, a gente gera um
+banco de dados e tem como saber quantos estados degradados.
+Entrou em estado degradado, o cara tem que informar, o cara tem que tratar,
+porque deu degradado.
+Dá para fazer um filtro e ver todas as falhas antigas. No tratamento
+estatístico o que eu me referiria seria assim, por exemplo, eles
+reportam estado degradado uma vez por mês, só que os últimos 10
+reportes que eles fizeram foi porque deu problema no sistema acústico,
+eles vêm isso e vão lá? Sim aí tem um negócio chamado Auditoria da
+Petrobras, tem auditoria deles também, a nossa é de inspeção, a deles
+é auditoria para corrigir esses problemas, se a Petrobras descobrir, nós temos
+um prazo para corrigir.
+Inclusive sempre que a gente tem uma operação crítica, que a gente considera
+como uma operação crítica, a gente verifica o histórico anterior do sistema DP
+da sonda, deu vários problemas nos últimos seis meses, o que a gente
+consideraria como um risco moderado, já vai subir para um risco mais alto na
+classificação. Nós temos um sistema também que é web, ele armazena todas
+as informações de DP, drilling, auditoria, então ele gera um indicador nosso,
+esse indicador é de segurança de processo de sonda e todo mundo tem
+acesso a ele então a gente também pode mapear por ali e mensalmente as
+gerências, os comitês de gestão da Petrobrás eles acompanham esse
+indicador para ver como anda, no nível desde a gerência até o micro que é a
+sonda, a gente sabe cada sonda como estão os indicadores dela. Vocês
+fazem uma acompanhamento bem preciso.
+- Foi falado um pouco também sobre resposta à emergência, diriam que
+resposta a emergência em caso de situações em sonda ela é efetiva, ela é
+rápida? Melhorou bastante, mas graças a deus eu espero que a gente não
+precise utilizar, mas hoje em dia pelo que a gente vê nos simulados a nossa
+organização já melhorou bem e a gente já consegue mover uma estrutura de
+forma bem mais rápida e treinada.
+Eu lembro de um momento logo depois da p-36 eu ligava para um celular que
+existia que era do plantão de emergência, deixe seu recado que mais tarde
+entrarei em contato, vai tomar naquele lugar.
+Hoje a gente tem uma cultura do telefone vermelho na sonda que você ligava
+e alguém vai atender lá.
+Quem atendia era o enfermeiro, o negócio não existia. Podiam ter ocorrido
+muito mais acidentes então, é foi a P, eu está 55, a P34 que adernou em
+2001, acho que setembro, outubro, adernou com 60 graus inclinado, o que é
+bastante.
+60 graus, não afundou não?
+60 graus em relação ao.... de repende 90 é o zero.
+É 30 graus, aí adernou por problema de falha eletrônica, o software falhou. Aí
+eu liguei para a emergência, não é minha área, antigo 222, aí liguei para o
+celular, deixe seu recado. Eu estava há uns 5 quilômetros mais ou menos, eu
+estava com três embarcações, eu estava desconectado na época e desloquei 3
+embarcações para socorrer a turma que estava pulando na água, foram
+socorridos 70 e poucas pessoas.
+Essa situação é meio crítica, adernamento é meio crítico.
+Foi a P34 que adernou, tava fazendo a Barracuda Caratinga na época, então a
+emergência naquela época, eu liguei para o meu chefe não tava, o chefe acima
+não tava, aí liguei para o gerente geral, aí que o cara atendeu e chegou em
+pouco tempo a diretoria da SMS da Petrobras.
+Hoje a gente tem uma estrutura de comunicação melhor, tem uma central de
+atendimento à emergência.
+- O antes e o depois que é 2011 quando eles começaram com o sistema
+de operações remotas ou eu antes disso? Eu acho que é um pouquinho
+mais antigo. A Petrobras começou com operações remotas em 2011 não
+foi? Eu Li em algum lugar, não lembro. Operação remota de que? Isso é de
+produção, essa operação remota é de produção. Eu achei que era perfuração
+também. O pessoal controla válvula e tudo lá do escritório. Desconsidera.
+Hoje em dia tem o pessoal da ponte e também na sala, ás vezes até na sala de
+rádio, tem um telefone que é só você tirar do gancho e ele já liga para central.
+Colocaram um cara melhor lá agora.
+E toda semana quando tem um simulado de abandono, você faz o teste do
+telefone.
+A Central de tempos em tempos tem várias estruturas de resposta, tem ação
+de produção, tem ação de perfuração, aí de tempos em tempos ela liga para
+todo mundo do suporte a estrutura para saber se todo mundo realmente está
+atendendo, se é realmente aquele pessoa que o número está associado.
+Antes o telefone ficava lá quase pegando teia de aranha.
+- Sobre as recomendações de segurança que possam vir a prevenir que
+aconteça esse tipo de acidente, vocês elencaram várias aqui, mas só para
+a gente retomar elas. Recomendações relacionadas a equipamentos, o
+que você diria em relação a isso? Melhoria do BOP.
+Sempre colocar o melhor que tiver no mercado, mas isso envolve custos? O
+problema de custo é relativo, não tem esse negócio de é mais caro, o pré-sal é
+muito caro para explorar, mas depende da produtividade, é custo
+benefício, não tem esse negócio de custo não. 
+Na verdade o que ele falou sobre o mercado, é o melhor que se enquadra no
+projeto. Não adianta colocar um BOP de 15.000 libras se o poço não vai
+chegar a 20.000. Melhor que tem no mercado, logicamente o mais
+adequado, a gente não tem 15.000 PSI aqui, não vai ficar colocando BOP de
+15.000 aqui, á toa, tem de 11.000, mas não chega a 11 ainda, mas não vai
+colocar de 15 aqui, a gente tem alguns aqui, é então não tem necessidade de
+você colocar tecnicamente o melhor do mercado.
+Mas nesse cenário a classe de pressão é um dos itens, mas tem a capacidade
+de corte é outro, pressão, temperatura, confiabilidade número de gavetas, tem
+todas as suas características, cada poço tem o seu BOP ótimo que dá para
+utilizar que é o calculado para ser melhor. E recomendações para pessoal,
+escalas, turnos de serviço o que vocês diriam? Esse é o mais difícil de
+trabalhar em cima disso, agora tá sobrando gente e pode colocar quantos
+quiser, é que a gente esbarra em algumas limitações na sonda, por exemplo,
+se quiser trabalhar menos tem que colocar mais gente na sonda, só que aí tem
+limitação de espaço.
+No começo era 60, 70 e a Petrobras poderia colocar no máximo 26
+pessoas, quando eu comecei era 4, 5 pessoas só no máximo, o que no
+camarote? Não, de disponibilidade da plataforma inteira.
+Hoje em dia tem BOP de 150, 180 pessoas, é um cruzeiro praticamente.
+Lembra que tinha camarote de quatro, cinco, seis pessoas.
+É porque é o seguinte, tem staff da sonda que é dividido em staff da sonda
+mecânico, staff da sonda mesmo em si, da parte de navio, marinharia, tem
+vários setores deles, na contratada sonda e tem um staff que é contratada
+terceirizada Petrobras, que é o pessoal que trabalha com o BH de perfuração,
+a própria perfilagem, então tem um staff que trabalha para Petrobras mas não
+necessariamente está trabalhando na sonda. Isso dá umas 60 pessoas e
+mais uma 120 que é contratada. Não, 120 tu ta falando na melhor sonda,
+o que cabe mais é 80, 90 pessoas. Na terceirizada Petrobras não chega a 60,
+chega, chega, mas por contrato não chega no máximo a 50, a maior sonda que
+eu vi foi de 50, mas isso é negociável, quando chega no teste de fundação, aí
+tem 60, mas fora do contrato, para não jogar óleo na água, aí a equipe de
+teste chega colocar 22, 24 pessoas, só do teste. Então realmente, escala e
+turnos de serviço é uma coisa que é difícil de trabalhar em cima disso,
+relacionada ao que a gente já tem hoje.
+Nós temos um tal de cornesk, o que é isso? É o corno, coordenador não
+oficial? A gente chama de cornesk, o coordenador não oficial ou
+corninfo, coordenador informal. O quê esse cara faz? Ele cuida das escalas
+dos fiscais, ah é esse, a gente chamava de carneiro, lá em Macaé chamava de
+carneiro, é o corno que cuida da escala.
+Mas ele está falando de jornada de trabalho, a organização da escala da
+plataforma toda.
+Isso é dentro da sonda contratada, tem um grupo que cuida só da escala, cada
+sonda dessas em terra eles precisam de cerca de 100 a 200 pessoas a equipe
+deles para cuidar dos 150/100 embarcados, seria mis ou menos isso, tem o
+staff deles.
+Para melhorar só tem duas formas, ou aumentaram muito o casaril, o que
+encarece também, ou você acaba com a atividade 24 horas por dia e coloca só
+de oito da manhã às 6 da tarde, mas isso aí inviável. Mas é que o custo é
+relativo, mas nas sondas aparecem por causa da produtividade alta, quando
+você fala em SPM né.
+Nas fixas quase não tem lugar no casaril.
+Eu tive dias com cinco, dividia com cinco, seis do camarote, é 6, 8 pessoas no
+camarote, a gente chamava de Carandiru.
+E recomendações para prevenir erros humanos? Essa é difícil, não é difícil
+não, tem que ter alguém monitorando essas coisas, treinamentos, desvios para
+ver se o cara não está maluco.
+É chato falar, mas eu só percebi a importância do treinamento da reciclagem
+do pessoal depois que a gente começou o sistema de consequências, seja
+notificado pelo gerente de contrato a sonda, solicitando que eles fossem
+treinados, aí ali a gente conseguiu, através do sistema infelizmente, a multa na
+sonda aumentou a evidência do treinamento, que a gente recebe, a gente
+cobra, assina com eles uma ação corretiva que eles assinam e concordam que
+vão fazer e depois eles mandam uma ficha para a gente constando o que
+foi reciclado e as pessoas na lista assinam e mandam para a gente, só a partir
+daí eu comecei a ver que o pessoal começou a errar menos, em fechamento
+de poço, ou seja, os nossos procedimentos de segurança também.
+Igual aquele caso da detecção de kicks, os caras cagavam e andavam, mudou
+o contrato, o cara tinha que passar por um teste e um certificado para habilitar
+o indivíduo para saber que ele estava para aquilo e não fazer o papel.
+Uma mudança grande que teve, por exemplo, antigamente na perfuração de
+poço, se o sondador falhasse, a gente sabia que ele falhou, advertia e ficava
+por isso, agora não a gente mudou para o seguinte, uma vez que tem uma
+falha, toda uma cadeia sofre por essa falha, inclusive gerentes agora a gente
+tem acompanhado tudo, tem indicadores de fechamento de poço, tem de DS e
+tal, então quando tem uma falha isso vai impactar no indicador e os gerentes
+hoje em dia são avaliados de acordo com os indicadores do BSC, o
+desempenho deles, o salário deles, só vai aumentar o salário, isso é
+interessante, atrelado ao indicador, então ele não vai querer que o sondador lá
+falhe e não só no salário, até o cargo dele como gerente pode estar
+ameaçado se os índices dele começa uma baixar, o cara não está gerenciando
+o direito a questão.
+Então muita coisa que é pedido, ah a Petrobras tem que fazer isso, então eu
+diria que 99% das tarefas feitos na sonda, são feitas por contratadas, tem
+contratadas que fazem o serviço especializado no posto e tem contratada da
+sonda que são essas 80, 90 pessoas das 150 pessoas a bordo, umas 20 a 30
+pessoas são especializadas em prestação de serviços no poço, tipo direcionar
+o teste de fundação, perfilagem, então quando você fala em treinamento da
+turma, quem tem que se encarregar com o treinamento ou com o
+comportamento desses indivíduos são as empresas contratadas que prestam o
+serviço ou do poço ou da sonda, se a gente começar a cobrar um a um
+deles, começar a exigir se o cara está qualificado, se o cara ta bom de cabeça,
+aí tem que montar um departamento para isso, tem que delegar, por isso que
+eu falo desse negócio da ingerência, você não pode entrar dentro de uma
+atividade que é deles ou entrar no seu treinamento como PUC se você está
+treinando ou não está treinando, se você está qualificado não está
+qualificado, quem tem que provar isso é quem assinou o contrato, então você
+pergunta umas coisas assim, a gente pode falar dos fiscais que é da
+Petrobras, a gente pode exigir deles mas delegando.
+- Uma última pergunta e recomendações para condições latentes ou
+processos organizacionais, vocês tem algum? Manutenção, inspeção
+periódica, preventiva, preditiva, fazer todos esses negócios tanto do indivíduo
+como do equipamento, corretiva, o que tiver de tipo de manutenção.
+É que às vezes cai naquele lance da pressão, a gente teve a pouco tempo um
+problema de deriva por falta de manutenção, que ele sempre postergava a
+manutenção e chegou no ponto que super aquecimento e foi aquela
+capacidade toda e foi a deriva, isso porque ele ficava empurrando,
+postergando, postergando a manutenção o momento que aconteceu porque
+eles acharam, ah não é tranquilo, dá para empurrar para a próxima, tranquilo,
+até o momento que não aguentou mais.
+É a mesma coisa do indivíduo, o indivíduo derruba uma vez o copo aqui, aí
+vem outra vez e derruba de novo, derruba a terceira, tem alguma coisa
+errada, então tem que chamar quem é responsável seu para uma espécie de
+verificação sobre o que você tem de desvio e trocar até parar de derrubar
+copo.
+Muitas vezes, eu vou falar por mim e talvez vocês concordem ou não, eu vejo o
+ás vezes o DP com uma caixa preta que se eles quiserem eles escondem esse
+tipo de manutenção e a gente não enxerga, porque que a gente não enxerga,
+porque esse superaquecimento não tinha nenhuma falha evidente, mas eles
+sabiam que tinha um equipamento que tinha que ser trocado e eles não
+trocavam, o que eles faziam na verdade em vez de trocar era uma limpeza, a
+limpeza ia fazer com que a temperatura baixasse e aguentasse mais um
+tempo.
+Só um parêntes aí, todas as sondas tem um plano de manutenção, eles têm
+um sistema de gerenciamento desse plano de manutenção e esse
+gerenciamento é feito com base em datas, existe manutenções que vão vencer
+e acusa pendência, o sistema é encarregado de controlar, agendar e gerar uma
+pendência, então toda manutenção que não é feita se ela for postergada existe
+uma necessidade de se fazer uma avaliação com base no risco para se
+prosseguir sem ela, que eles chamam de Moc.
+Existem três tipos de manutenção, a mais moderna é a preditiva, a gente está
+falando de manutenção preventiva, a preditiva você pode instalar
+sensores para identificar por exemplo superaquecimento, o aquecimento dentro
+de uma faixa, mesmo o óleo por exemplo ter sido trocado na semana
+passada, então essas preditivas podem ser feitas, quantidade de sólido no...
+E no caso a preditiva como tem sensores, existe uma caixa preta que não é tão
+preta assim, que é o GETLOG, ele registra todos os alarmes na sonda e todos
+os equipamentos e sensores da sonda e ele tem a hora que essa alarme
+começou a soar e a hora que termina de soar, então se alguém for lá e
+desabilitar o alarme ou baypassar o alarme, também vai registrar nesse
+GETLOG, ele é um registro, é um dedo-duro, então a sonda não tem como
+ficar escondendo muita coisa. Uma hora alguém vai ver.
+Foi o que aconteceu nessa investigação, quando teve a deriva foram fazer a
+investigação e percebeu que eles estavam aumentando a frequência da
+limpeza que eles perceberam que tinham algumas válvula que era para trocar e
+não foi trocada.
+Não existe auditoria do GETLOG em si, a não ser a investigação, é
+diferente, mas, por exemplo, pendência de manutenção existe sim. Outra coisa
+que recentemente foi aplicado também pelo pessoal do ex, foi uma matriz de
+decisão de manutenção que diz, ah estamos em estado de alerta, estamos
+numa atividade crítica, então todo mundo chegava, todas as
+manutenções daqui para a frente estão proibidas, porque tu pode tiraram um
+traster de operação, aí tem uma condição adversa, tá só com 7 traster e tem
+que desconectar, então é ex fez um trabalho que na minha opinião é
+excelente em relação a isso, que eles fizeram uma matriz de operação por
+manutenção, aí listaram listaram todas as manutenções críticas e as vários
+tipos de manutenção críticas também ou não, e você joga na matriz e encontra
+um ponto que ela te disse se dá para fazer ou não dá para fazer ou se dá para
+fazer sem consultar ninguém ou ter necessidade, se dá para fazer com a
+autorização do próprio ex, que são o pessoal especialista em DP da Petrobrás,
+se precisa apenas deixar a gente ciente, então tem lá o que tu pode fazer e
+para tu fazer, o que tu precisa fazer, para fazer aquela manutenção, a quem tu
+precisa informar, então existe um certo controle sobre isso.
+Agora uma coisa é controle, o que a gente tem que começar a exigir mais é
+que façam uma coisa sistemática assim das contratadas que a gente não atua
+muito, é que a própria contratada faça da sede deles, audita esses caras que
+ficam olhando esses controles, não a Petrobras chegar e tentar identificar
+isso depois de um acidente ou de um incidente, tem que ser mais preditiva,
+tem que ser da sede da unidade operacional, preditiva ou preventiva nunca ser
+reativa depois do incidente. Ainda a gente está fraco nesse sentido, então a
+sonda fica esperando a Petrobras fazer as tais a auditoria que na verdade é
+uma inspeções, do soex, do segup, coisas desse tipo, que eu não vejo como
+correto isso, o mais correto é eles fazerem e a gente verificar se a base deles
+está fazendo isso, aí é contratual mesmo.
+- Só para finalizar, de maneira geral, vocês tem mais alguma coisa que
+vocês gostariam de falar. O que foi levantado é só isso mesmo. O que tira o
+meu sono em relação as nossas tarefas, algumas atividades nossas, é que os
+nossos procedimentos estão mal escritos.
+Mas os procedimentos são vivos ou seja eles estão sempre atualizando e
+revisando, sim senhor, nós temos o espaço lá que toda a força de trabalho ela
+tem aberto a ferramenta para pedir revisão, ela coloca o que acha que está
+errado e a gente tem pessoal.
+Eu já mandei uma meia dúzia lá para o Segup, não é impossível, me desculpe
+mas é só tu falar qual é o padrão que a gente vai ver, porque chega e só
+largam para gente, a gente revisa ele dentro da fila, você diz qual é o padrão
+para ver se ainda não foi revisado ou está em revisão. Qual é o padrão? Ta la
+na minha mesa. Mas qual é o padrão? Padrão falando de que? Nós temos uns
+20 padrões nossos. Você estava no Paulo Rio agora? Sempre estive lá.

@@ -1,0 +1,24 @@
+[
+    {
+        "Interview" : 1,
+        "year" : 2019,
+        "title" : "TRANSCRIÇÃO ENTREVISTA SANTOS 21/09, Produção – Grupo COI/ UOBS",
+        "info" : {
+            "group" : [ "Produção - G COI/UOBS"],
+            "release_date" : "09-21-2019",
+            "subject" : ["work process"],
+            "image_url" : "https://viviane.ijas.me/wp-content/uploads/2020/10/GCOI-UOBS_21-09.txt",
+       },
+    {
+        "Interview" : 1,
+        "year" : 2019,
+        "title" : "TRANSCRIÇÃO ENTREVISTA SANTOS 21/09, Produção – Grupo COI/ UOBS",
+        "info" : {
+            "group" : [ "Produção - G COI/UOBS"],
+            "release_date" : "09-21-2019",
+            "subject" : ["work process"],
+            "image_url" : "https://viviane.ijas.me/wp-content/uploads/2020/10/GCOI-UOBS_21-09.txt",
+       }
+    
+ ]
+

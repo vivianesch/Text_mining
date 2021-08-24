@@ -1,0 +1,624 @@
+---
+title: "Bag of words tecnique to stablish sense of unity indicator into Oil and gas industry project"
+author: "Viviane Schneider, PhD"
+date: "09 de abril de 2020 - Last version: 23/09/2020"
+output: 
+  html_document: 
+    highlight: zenburn
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+
+setwd("~/Text Mining")
+```
+
+# Context of study
+
+
+
+# Study goal
+
+
+
+## Research question
+
+
+
+# Methods, Materials and Techniques
+
+
+
+## Materials
+
+
+**R Packages**
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+# Pacotes e Funções
+library(tidyverse) # Manipulacao eficiente de dados
+library(tidytext) # Manipulacao eficiente de texto
+library(textreadr) # Leitura de pdf para texto
+library(tm) # Pacote de mineracao de texto com stopwords 
+library(wordcloud) # Grafico nuvem de palavras
+library(igraph)
+library(ggraph)
+library(ggplot2)
+library(dplyr)
+library(pdftools)
+library(RRPP)
+```
+
+## Make a Corpus
+
+```{r}
+ txt <- system.file("texts", "txt", package = "tm")
+(corpus <- VCorpus(DirSource("C:/Users/Jacob/Documents/Text Mining/storytelling", encoding = "UTF-8"),
+ readerControl = list(language = "lat")))
+
+```
+
+
+## Text Cleaning Function
+
+```{r message=FALSE, warning=FALSE}
+my_stops <- c("entrevistado", "fogaça", "que", "não", "tem", "uma", "ele", "você", "voce", "gente", "mas", "cara", "com", "por", "está", "esta", "isso", "vai", "então", "então", "pode", "assim", "acho", "uma", "coisa", "aqui", "ser", "ter", "sempre", "faz", "outro", "outra", "porque", "fazer", "tudo", "ali", "pra", "alguma", "vezes", "sim", "ver", "ser", "estar", "todo", "tipo", "da", "do", "feito", "fazer", "tal", "vou", "sei", "francisco", "fica", "dois", "dentro", "bom", "coisas", "felipe", "bem", "nesse", "caso", "menos", "questão", "falando", "dia", "dias", "algumas", "posso", "hoje", "falar", "vez", "exemplo", "quantas", "cada", "mundo", "acho", "cara", "entendi", "toda", "meio", "todos", "viu", "deu", "sendo", "podem", "caras", "pois", "vem", "outras", "algo", "desse", "nada", "nenhum", "naquele", "tanto", "vamos", "chegar", "sobre", "certo", "parte", "ainda", "parte", "bordo", "anos", "dizer", "aí", "ai", "é", "e", "né", "ne")
+
+clean_corpus <- function(x){
+  y <- tm_map(x, removePunctuation)
+  x <- tm_map(y, content_transformer(tolower))
+  x <- tm_map(x, removeNumbers)
+  x <- tm_map(x, removeWords, words = c(stopwords("pt"), my_stops))
+  x <- tm_map(x, stripWhitespace)
+  return(x)
+}
+
+clean_corp <- clean_corpus(corpus)
+```
+
+
+# Bag of word text mining techinique
+Bag of words is a technique form text mining methodology que consiste em analisar 
+
+## Term Document Matrix (TDM)
+
+the term-document matrix  has terms in the first column and documents across the top as individual column names.
+The TDM is often the matrix used for language analysis. This is because you likely have more terms than authors or documents and life is generally easier when you have more rows than columns. An easy way to start analyzing the information is to change the matrix into a simple matrix using as.matrix() on the TDM.
+
+
+```{r message=FALSE, warning=FALSE}
+# Create a term-document matrix from the corpus
+ST_tdm <- TermDocumentMatrix(clean_corp)
+
+# Print coffee_tdm data
+ST_tdm 
+
+# Convert to a matrix
+ST_m <- as.matrix(ST_tdm)
+
+# Print the dimensions of the matrix
+dim(ST_m)
+
+
+```
+
+
+
+## Document Term Matrix (DTM)
+
+The document-term matrix is used when you want to have each document represented as a row. This can be useful if you are comparing authors within rows, or the data is arranged chronologically, and you want to preserve the time series. The tm package uses a "simple triplet matrix" class. However, it is often easier to manipulate and examine the object by re-classifying the DTM with as.matrix()
+
+
+```{r}
+# Create the document-term matrix from the corpus
+ST_dtm <- DocumentTermMatrix(clean_corp)
+
+# Print out coffee_dtm data
+ST_dtm
+
+# Convert coffee_dtm to a matrix
+ST_m <- as.matrix (ST_dtm)
+
+# Print the dimensions of coffee_m
+dim(ST_m)
+
+# Review a portion of the matrix to get some Starbucks
+
+```
+
+
+# Coherence of Sense of Unity
+
+# Context
+
+```{r message=FALSE, warning=FALSE}
+
+library(qdap)
+
+# Convert to a matrix
+ST_m <- as.matrix(ST_tdm)
+
+# Calculate the row sums 
+term_frequency <- rowSums(ST_m)
+
+# Sort term_frequency in decreasing order
+term_frequency <- sort(term_frequency, decreasing = TRUE)
+
+
+# Plot a barchart of the 10 most common words
+barplot(term_frequency[1:10], col = "tan", las = 2)
+
+
+# Create frequency
+frequency <- freq_terms(
+clean_corp,
+top = 10,
+at.least = 3,
+stopwords("pt"))
+
+plot(frequency)
+
+# Load wordcloud package
+library(wordcloud)
+
+# Print the first 10 entries in term_frequency
+
+term_frequency[1:10]
+
+# Vector of terms
+terms_vec <-names(term_frequency)
+
+# Create a word cloud for the values in word_freqs
+wordcloud(terms_vec,term_frequency, max.words = 30, colors = "red")
+
+
+
+```
+
+
+Remove some words
+
+```{r message=FALSE, warning=FALSE}
+
+# Add to stopwords
+stops <- c(stopwords(kind = 'pt'), 'ah', 'ahh', 'ahhh')
+
+# Review last 6 stopwords 
+tail(stops)
+
+# Apply to a corpus
+cleaned_2_corp <- tm_map(clean_corp, removeWords,stops)
+
+```
+
+```{r message=FALSE, warning=FALSE}
+library(viridisLite)
+# Sort in descending order
+sorted_corp_words <- sort(term_frequency, decreasing = TRUE)
+
+# Print the 6 most frequent chardonnay terms
+head(sorted_corp_words, 6)
+
+# Get a terms vector
+terms_vec <- names(term_frequency)
+
+# Create a wordcloud for the values in word_freqs
+wordcloud(terms_vec,term_frequency,
+          max.words = 50, colors = "red")
+
+
+# Print the word cloud with the specified colors
+wordcloud(terms_vec,term_frequency,
+    max.words = 80,
+    colors = c("grey80", "darkgoldenrod1","tomato"))
+
+# Select 5 colors 
+color_pal <- cividis(n=5)
+
+# Examine the palette output
+color_pal
+
+# Create a word cloud with the selected palette
+wordcloud(terms_vec,term_frequency, 
+          max.words = 100,
+          colors = color_pal
+          )
+
+```
+
+# Common Words
+
+## Create one corpus
+
+```{r}
+ txt <- system.file("texts", "txt", package = "tm")
+(corpus_m_o <- VCorpus(DirSource("C:/Users/Jacob/Documents/Text Mining/storytelling_m_o", encoding = "UTF-8"),
+ readerControl = list(language = "lat")))
+
+clean_m_o <- clean_corpus(corpus_m_o)
+
+ 
+```
+
+
+
+## Find common words
+
+```{r message=FALSE, warning=FALSE}
+O_M_tdm <- TermDocumentMatrix(clean_m_o)
+
+O_M_m <- as.matrix(O_M_tdm)
+
+# Print a commonality cloud
+commonality.cloud(O_M_m, max.words = 100,colors = "steelblue1")
+
+```
+
+
+## Visualize dissimilar words
+
+```{r message=FALSE, warning=FALSE}
+
+
+# Give the columns distinct names
+colnames(O_M_m) <- c("Gerentes", "Operadores")
+
+# Create all_m
+all_M_O <- as.matrix(O_M_m)
+
+# Create comparison cloud
+comparison.cloud(all_M_O,colors = c("orange", "blue"), max.words = 50)
+```
+
+## Polarized tag cloud
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(plotrix)
+library(dplyr)
+
+# Identify terms shared by both documents
+common_words <- subset(all_M_O,
+                       all_M_O[, 1] > 0 & all_M_O[, 2] > 0)
+# Find most commonly shared words
+difference <- abs(common_words[, 1] - common_words[, 2])
+common_words <- cbind(common_words, difference)
+common_words <- common_words[order(common_words[, 3],
+decreasing = TRUE), ]
+
+top25_df <- data.frame(
+               Gerentes = common_words[1:25, 1],
+               Operadores = common_words[1:25, 2],
+               Palavras = rownames(common_words[1:25, ]))
+
+pyramid.plot(top25_df$Gerentes, top25_df$Operadores, 
+  labels = top25_df$Palavras, 
+  top.labels = c("Gerentes", "Palavras", "Operadores"), 
+  main = "Palavras em comum", 
+  unit = NULL, raxlab = NULL, 
+  gap = 38 )
+
+Top200Words <- rownames(common_words[1:200, ])
+
+
+
+```
+
+## Visualize word networks
+
+
+
+
+```{r message=FALSE, warning=FALSE}
+# Word association
+
+stops_clouds <- rownames(common_words[20:nrow(common_words), ])
+
+word_associate(content(clean_m_o[[1]]), match.string = "operação", 
+               stopwords = c(stops_clouds, my_stops, stopwords("pt")),
+               network.plot = TRUE, cloud.colors = c("gray85", "darkred"))
+title(main = "Associações de palavras dos gerentes com o termo operação")
+
+```
+
+
+# Distance matrix and dendrogram
+
+
+
+# Make a dendrogram friendly TDM
+
+
+```{r message=FALSE, warning=FALSE}
+n_w <- 200
+
+stops_corpus <- rownames(common_words[n_w:nrow(common_words), ])
+
+common_corpus <- tm_map(clean_corp, removeWords, 
+                        words = c(stopwords("pt"), my_stops, stops_corpus))
+
+tdm <- TermDocumentMatrix(common_corpus)
+
+# Create tdm1
+tdm1 <- removeSparseTerms(ST_tdm,sparse = 0.95)
+
+# Create tdm2
+tdm2 <- removeSparseTerms(ST_tdm, sparse = 0.975)
+
+# Print tdm1
+tdm1
+
+# Print tdm2
+tdm2
+
+```
+
+
+#  Put it all together: a text-based dendrogram
+
+
+
+
+```{r}
+
+common_wordsMO <- subset(all_M_O,
+                       all_M_O[, 1] > 20 & all_M_O[, 2] > 20)
+
+
+ST_dist <- dist(common_wordsMO)
+
+# Create hc
+hc <- hclust(ST_dist)
+
+# Plot the dendrogram
+plot(hc)
+```
+
+
+# Dendrogram aesthetics
+
+
+
+```{r}
+library(dendextend)
+
+# Create hcd
+hcd <- as.dendrogram(hc)
+
+# Print the labels in hcd
+labels(hcd)
+
+# Change the branch color to red for "marvin" and "gaye"
+hcd_colored <- branches_attr_by_labels(hcd,c("problema", "sonda"), color = "red")
+
+# Plot hcd_colored
+plot(hcd_colored, main = "Better Dendrogram")
+
+# Add cluster rectangles
+rect.dendrogram(hcd_colored,k = 2,border = "grey50")
+```
+
+
+# Using word association
+
+
+```{r}
+library(ggthemes)
+
+n_w <- 30
+
+stops_corpus <- rownames(common_words[n_w:nrow(common_words), ])
+
+common_corpus <- tm_map(clean_corp, removeWords, 
+                        words = c(stopwords("pt"), my_stops, stops_corpus))
+tdm <- TermDocumentMatrix(common_corpus)
+
+
+# Create associations
+associations <- findAssocs(tdm,"problema",0.2)
+
+# View the venti associations
+associations
+
+# Create associations_df
+associations_df <- list_vect2df(associations,col2 = "Palavra",col3 = "score")
+
+associations_df <- arrange(associations_df, score)
+
+associations_df[1:30,1:3]
+
+# Plot the associations_df values
+ggplot(associations_df[1:20,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+# Plot the associations_df values
+ggplot(associations_df[40:70,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+ggplot(associations_df[110:130,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+ggplot(associations_df[300:330,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+```
+
+# N-gram tokenization
+
+## Changing n-grams
+
+
+
+```{r}
+library(RWeka)
+
+# Make tokenizer function 
+tokenizer <- function(x) {
+  NGramTokenizer(x, Weka_control(min = 2, max = 2))
+}
+
+# Create unigram_dtm
+unigram_dtm <- DocumentTermMatrix(common_corpus)
+
+# Create bigram_dtm
+bigram_dtm <- DocumentTermMatrix(common_corpus,
+  control = list(tokenize = tokenizer) 
+  )
+
+# Print unigram_dtm
+unigram_dtm
+
+# Print bigram_dtm
+bigram_dtm
+
+```
+
+
+# How do bigrams affect word clouds?
+
+
+```{r}
+# Create bigram_dtm_m
+bigram_dtm_m <- as.matrix(bigram_dtm)
+
+# Create freq
+freq <- colSums(bigram_dtm_m)
+
+# Create bi_words
+bi_words <- names(freq)
+
+# Examine part of bi_words
+str_subset(bi_words,"^sonda")
+
+# Plot a word cloud
+wordcloud(bi_words,freq,max.words = 15)
+```
+
+
+# Different frequency criteria
+
+## Changing frequency weights
+.
+
+```{r}
+
+# Create a TDM
+tdm <- TermDocumentMatrix(corpus_m_o)
+
+# Convert it to a matrix
+tdm_m <- as.matrix(tdm)
+
+# Examine part of the matrix
+tdm_m[c("problema")]
+
+
+# Edit the controls to use Tfidf weighting
+tdm <- TermDocumentMatrix(corpus_m_o, 
+       control = list(weighting = weightTfIdf))
+
+# Convert to matrix again
+tdm_m <- as.matrix(tdm)
+
+# Examine the same part: how has it changed?
+tdm_m[c("problema")]
+
+```
+
+
+# Capturing metadata in tm
+
+
+```{r}
+
+# Examine the first doc content
+content(corpus_m_o[[1]])
+
+# Access the first doc metadata
+meta(corpus_m_o[1])
+
+
+```
+
+
+# Step 1 - Define the problem and question
+
+
+
+# Step 2: Identifying the text sources
+
+
+
+# Step 3: Text organization
+
+Apply qdap_clean()
+
+```{r}
+
+tokenizer <- function(x) 
+  NGramTokenizer(x, Weka_control(min = 2, max = 2))
+
+clean_m_o <- clean_corpus(corpus_m_o)
+
+# Create amzn_p_tdm
+m_o_p_tdm <- TermDocumentMatrix(clean_m_o, 
+control = list(tokenize = tokenizer)
+ )
+
+# Create amzn_p_tdm_m
+m_o_p_tdm_m <- as.matrix(m_o_p_tdm)
+
+# Create amzn_p_freq
+m_o_p_freq <- rowSums(m_o_p_tdm_m)
+
+# Plot a word cloud using amzn_p_freq values
+wordcloud(names(m_o_p_freq),m_o_p_freq,max.words = 25, color = "blue" )
+```
+
+
+```{r eval=FALSE, include=FALSE}
+# Create amzn_c_tdm
+m_o_c_tdm <- 
+  TermDocumentMatrix(clean_m_o,
+  control = list(tokenize = tokenizer)
+)
+
+# Create amzn_c_tdm_m
+m_o_n_c_tdm_m <- as.matrix(m_o_c_tdm)
+
+# Create amzn_c_freq
+m_o_c_freq <- rowSums(m_o_n_c_tdm_m)
+
+# Plot a word cloud of negative Amazon bigrams
+wordcloud(names(m_o_c_freq),m_o_c_freq, max.words = 25, color = "red" )
+
+
+# Create amzn_c_tdm2 by removing sparse terms 
+m_o_c_tdm2 <-removeSparseTerms(m_o_n_c_tdm_m, sparse = .993)
+
+# Create hc as a cluster of distance values
+hc <- hclust(dist(m_o_c_tdm2),method = "complete")
+
+# Produce a plot of hc                  
+plot(hc)
+
+```
+
+
+
+http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+
+https://eight2late.wordpress.com/2015/05/27/a-gentle-introduction-to-text-mining-using-r/
+
+https://cran.r-project.org/web/packages/corpus/vignettes/corpus.html
+
+https://rpubs.com/malkoves/DS_project

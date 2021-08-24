@@ -1,0 +1,78 @@
+---
+title: "NPL"
+author: "Viviane Schneider"
+date: "15 de outubro de 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# NPL
+
+Practicing syntax with grep
+You have just completed an ice-breaker exercise at work and you recorded 10 facts about your boss. You saved these 10 facts into a vector named text. Using regular expressions, you want to summarize your bosses' responses.
+
+A few notes on regular expressions in R:
+
+When using grep(), setting value = TRUE will print the text instead of the indices.
+You can combine patterns such as a digit, "\\d", followed by a period "\\.", with "\\d\\."
+Spaces can be found using "\\s".
+You can search for a word by simply using the word as your pattern. pattern = 'word'
+Instructions
+100 XP
+Using grep(), print the text of the responses that contained a numeric number.
+Find all items with a number followed by a space. Use a regular expression for the number and the space.
+Use length() and grep() to find out how many times you wrote down the word "favorite".
+
+```{r}
+# Print off each item that contained a numeric number
+grep(pattern = "\\d", x = text, value = TRUE)
+
+# Find all items with a number followed by a space
+grep(pattern = "\\d\\s", x = text)
+
+# How many times did you write down 'favorite'?
+length(grep(pattern = "favorite", x = text))
+```
+
+Exercise
+Exploring regular expression functions.
+You have a vector of ten facts about your boss saved as a vector called text. In order to create a new ice-breaker for your team at work, you need to remove the name of your boss, John, from each fact that you have written down. This can easily be done using regular expressions (as well as other search/replace functions). Use regular expressions to correctly replace "John" from the facts you have written about him.
+
+
+Use grep() to find all items in text that contain your boss's name, John. Print off the text instead of the index.
+
+
+```{r}
+# Print off the text for every time you used your boss's name, John
+grep('John', x = text, value = TRUE)
+
+# Try replacing all occurences of "John" with "He"
+gsub(pattern = 'John', replacement = 'He', x = text)
+
+# Replace all occurences of "John " with 'He '.
+clean_text <- gsub(pattern = 'John\\s', replacement = 'He ', x = text)
+clean_text
+
+# Replace all occurences of "John's" with 'His'
+gsub(pattern = "John\\'s", replacement = 'His', x = clean_text)
+```
+
+Tokenization: sentences
+Animal Farm is a popular book for middle school English teachers to assign to their students. You have decided to do some exploration on the text and provide summary statistics for teachers to use when assigning this book to their students. You already know that there are 10 chapters, but you also know that you can use tokenization to help count the number of sentences, words, and even paragraphs. In this exercise, you will use the tokenization techniques learned in the video to help split Animal Farm into sentences and count them by chapter.
+
+Instructions 1/3
+35 XP
+1
+2
+3
+Split the code into sentences.
+
+
+
+```{r}
+
+```
+

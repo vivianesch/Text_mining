@@ -2,12 +2,16 @@
 title: 'Text mining: The Human Factors Project Framework'
 author: "Viviane Schneider"
 date: "6 de abril de 2020"
-output: 
-  html_document: 
+output:
+  html_document:
     highlight: zenburn
     keep_md: yes
     number_sections: yes
     theme: cerulean
+    toc: yes
+  pdf_document:
+    toc: yes
+  word_document:
     toc: yes
 ---
 
@@ -126,27 +130,12 @@ DT::datatable(frequenciaPalavras)
 
 ```{r echo=TRUE, warning=FALSE}
 
-Top_15 <- arrange(frequenciaPalavras[1:15,1:2], desc(n)) 
-
-
-# plotando as top 15 palavras.
-Top_15 %>%
-  ggplot(aes(x = Palavra, y = n)) +
-  geom_col() +
-  xlab(NULL) +
-  coord_flip() +
-  labs(y = "Contagem",
-       x = "Palavras únicas",
-       title = "Contagem de palavras únicas encontradas no Relatório")
-
-barplot(frequenciaPalavras[1:15,1:2]$n,
-        names.arg=frequenciaPalavras[1:15,1:2]$Palavra,
-        ylab="Quantidade",
-        ylim = c(40, 100),
-        las = 2,
-        col=rainbow(8),
-        main="Top 15")
-
+head(frequenciaPalavras, n=15) %>%
+  ggplot(aes(Palavra, n)) +
+  geom_bar(stat = "identity", color = "black", fill = "#87CEFA") +
+  geom_text(aes(hjust = 1.3, label = n)) + 
+  coord_flip() + 
+  labs(title = "20 Palavras mais mencionadas",  x = "Palavras", y = "Número de usos")
 
 ```
 

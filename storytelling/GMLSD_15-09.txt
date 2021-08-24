@@ -1,0 +1,496 @@
+Entrevista 15.09 –  Grupo Misto Libra e Sea Drill
+
+Fogaça: queria que vocês comentassem só a experiência de vocês e a função que vocês desenvolvem, pode ser total de profissão e na função atual.
+
+Entrevistado 1: eu... trabalho como "decero alguma coisa leader", sou supervisor responsável por toda área de perfuração. e eu tenho 27 anos de experiência, se eu não me engano. e na função tenho oito anos de experiência. 
+
+Entrevistado 2: na área que eu trabalho eu já to desde de... eu tenho 10 anos no mercado, no que eu exerço que é segurança no trabalho em óleo e gás, e na função são seis anos de líder de segurança e técnico de segurança.
+
+Entrevistado 3: eu sou engenheiro de segurança no trabalho e meio ambiente. sou técnico de segurança do trabalho também e tenho 10 anos de experiência com um todo, e sete anos de experiência em óleo e gás. e nunca trabalhei embarcado, só em terra. 
+
+Fogaça: Ok, então passando a limpo a estória: nós tivemos um caso de queda de BOP com Riser com danos estruturais severos na plataformas e danos pessoais. isso foi por um... processo durante a perfuração do poço. mais ou menos no meio do processo de perfuração do poço.
+
+Entrevistado 1: isso, num dos passos de perfuração do poço, depois que a gente completa a fase de fazer o revestimento da superficie, a gente instala o BOP que é um equipamento de segurança, para realizar a perfuração e a completação.
+
+Fogaça: E o BOP é a peça que faz a prevenção e os Risers nesse conjunto fazem? 
+
+Entrevistado 1: o Riser faz a ligação do BOP do poço que nesse caso é a lamina dagua de 2800m até superfície, ou seja até o navio, é o que dá continuidade do BOP até o navio. 
+
+Fogaça: mas vai passar o BOP por dentro e outras ferramentas. 
+
+Entrevistado 2: é o canal de comunicação. 
+
+Entrevistado 1: BOP é um equipamento de segurança, pra você ter uma ideia do tamanho, ele pesa 450 toneladas. 
+
+Entrevistado 2: tamanho de um prédio pequeno de quatro andares. 
+
+Entrevistado 1: você tem 14,8 metros mais ou menos e de lado deve ter uns quatro por quatro metros. 
+
+Fogaça: esse é o BOP. O caso então foi... ahh sim muito importante, de todas as possibilidade, por que vocês escolheram esse caso?
+
+Entrevistado 3: Porque a gente como, isso é um estudo né, feito pela empresa, com relação a tendência que a gente tava tendo nos ultimos anos, como foi falado aqui. e é uma coisa que tava preocupando. Então a gente pegou essa possibildiade, com relação a queda de objeto, trazendo essa questão de queda de objeto para um cenário mais catastrófico. Foi uma tendência que se desenhou nos últimos três anos. 
+
+Fogaça: e combinaram com a queda do BOP. 
+
+Entrevistado 3: e combinamos a queda do BOP. Então até hoje nas aguas que estamos trabalhando, por isso que a gente simulou uma profundidade mais alta da que a gente tá trabalhando agora, porque estamos indo para o limite do equipamento entendeu? e não tem jeito, a operação você tem que fazer porque é um dos principais equipamentos na perfuração, é o BOP. Você tem que instala-lo e ele é muito pesado, vai nos limites do equipamento. qualquer acidente de ruptura de qualquer parte no transporte do BOP é catastrófico, como foi visto na simulação. por isso a gente escolheu, encaixou com a ideia de ter queda de objeto, do "bigfive" que a gente falou, que são grandes acidentes. então a gente escolheu por conta disso. 
+
+Fogaça: tá, a questão de criticidade, é mais fundo. o limite de sonda é 3000 metros e vai estar operando em 2800 metros, perto do limite. Isso eu estou falando de cabo de guindaste ou alcance dele ou ...
+
+Entrevistado 2: não, é peso. O Riser pesa, se eu não me engano, 14 toneladas, cada Riser. 
+
+Fogaça: então terá o peso da coluna dos Riser e mais o BOP na coluna de 3000 metros. Tá, em termos de outras sondas que vocês têm conhecimento, é mais ou menos esse o limite da indústria hoje em 3000 metros?
+
+Entrevistado 1: não, nós estamos com navios, esses navios de sexta e sétima geração, para águas superprofundas. Né, tem sondas com capacidades menores. Esses navios com essas profundidades a gente só conhece com navios mais modernos de sexta e sétima geração. 
+
+Fogaça: essa seria a vanguarda de perfuração. o que tem de melhor
+
+Entrevistado 1: é a tendência de mercado hoje. principalmente no Brasil, em que nos temos reservatórios imensos. e a tendencia é que a gente fure em águas cada vez... 
+
+Fogaça: então podemos dizer que 3000 metros é o limite da sétima geração.
+
+Entrevistado 1: sim, hoje o que temos na industria é, mas já deve estar em desenvolvimento alguma coisa para águas mais profundas. 
+
+Fogaça: então tá, vamos lá. Local foi a plataforma, os equipamentos vocês mensionaram ali, a respito dos risers e mostraram os vídeos, que depois vou querer pegar o link com voces. não tinha o semana específico, mas tinha o horário: noturno, em troca de turno e dia de embarque né. O embarque e desembarque tem horário certo para acontecer? 
+
+Entrevistado 1: sim, todo dia tem embarque e desembar das turmas, você tem manutenção, de perfuração e... normalmente é na parte da manhã, 7h da manhã, pode ser de meio dia, pode ser às 10h. isso é determinado pelo cliente. 
+
+Fogaça: quanto tempo o helicóptero constuma ficar na platafoma para fazer o embarque e desembarque? 
+
+Entrevistado 1: em torno de meia hora e vinte minutos, sem cortar os motores.
+
+Entrevistado 2: (alguns ruídos, não deu para entender). 
+
+Fogaça: e vocês usam o superpuma? quantos passageiros vão?
+
+Entrevistado 3: não, a gente usa um sikorsky que vão 18 passageiros mais tripulação
+
+Fogaça: seguindo, condições meteorológicas da ocorrencia. Vocês comentaram então: mar agitado, sol e vento. algo mais?
+
+Entrevistado 3: estava no limite da operação. 
+
+Fogaça: no limite regulamentar do contrato
+
+Entrevistado 3: sim, e a gente estava se aproximando dos limites. Então, tava bem ruim por causa do perído que a gente tava. inverno, mês de agosto. Então
+
+Entrevistado 2: e isso agrava numa situação, por que o navio acaba balançando, então você imagina, acaba que ela fica mais (algo que não entendi), o navio sobe e desce, cria uma força maior, o peso é maior.
+
+Fogaça: e a estabilização é tudo por thruster. OK. a parte das pessoas. a gente falou então de algumas pessoas. as pressões que essas pessoas poderiam estar sofrendo de tempo e de produção. a gente falou, que não era muito o caso de pressão. 
+
+(ruidos)
+
+Entrevistado 1: o fiscal passa a pressão para o "autopusher", o qual se relaciona mais diretamente.
+
+Fogaça: vocês mencionaram também que ele deveria demosntrar serviço para continuar embarcado. Ok. O plataformista estava sofrendo alguma pressão?
+
+Entrevistado 2: ele tinha problema em casa
+
+Fogaça: não esse era o driller 
+
+Entrevistado 2: aqui é o plataformista, ele não tava sofrendo de nenhuma pressão. 
+
+Entrevistado 1: mas as vezes exite o self-pressure, o cara pode ser novo na função. a gente não pode determinar se isso existiu ou não. Mas eles normalmente os novatos querem mostrar serviço e estar atendendo os requisitos. 
+
+Fogaça: a gente ver em outros casos, até mesmo da aviação, auto motivação pra fazer o negocio acontecer e dar certo e produzir e atingir a meta. tá. mais alguma coisa em termos de pressão por tempo ou produção?
+
+Entrevistado 1: não é isso mesmo
+
+Fogaça: existe treinamento especifico para essa manobra de colocação de BOP?
+
+Entrevistado 3: nós temos uma verificação da competência.
+
+Fogaça: como vocês treinam a equipe inteira, é on job training, é na hora. a primeira vez que tiver lá vai treinar, ou tem um simulador lá que ele vai treinar. 
+
+Entrevistado 2: nós sempre trabalhamos com a equipe que tem experiência anteriores em ja ter feito isso. e você nunca tera uma equipe totalmente novata, isso é repassado. os mais experiêntes replicam para os mais novos.
+
+Fogaça: mas não tem simulador disso então
+
+Entrevistado 2: não, não tem simulador. nem fora.
+
+Entrevistado 3: achei que o fabricante oferecesse.  
+
+Entrevistado 2: não, não especificamente para descida de BOP. 
+
+Fogaça: existe algo similar que possa preparar o pessoal para chegar menos verde? 
+
+Entrevistado 2: não, a gente tem os treinamentos de "CRVs" e (alguma outra coisa que não deu para entender). é um treinamento para você... Porque ali você opera da mesma forma que esta descendo um BOP, uma coluna de perfuração uma coluna de produção. Você treina para operar o equipamento em si. Para descer uma ferramenta ou equipamento, como no caso o BOP, não temos o treinamento. 
+
+Fogaça: o "runing to" é só o engate. 
+
+Entrevistado 2: ele fica preso no top-drive. 
+
+Fogaça: que é a mesma que gira a broca e tudo mais. Entre o "running to" e o top-driver não tem nada? 
+
+Entrevistado 1: não, é direto. É um elevador, tipo um gancho que você desce e trava ele la em cima, mas é uma trava mecânica e você deixa ela isolada.
+
+Fogaça: a catarina não tem a ver com isso?
+
+Entrevistado 1: tem, a catarina é que segura o top-drive, e que conduz ele para cima e para baixo. 
+
+Fogaça: entendi. eu li o livrinho aquele e tava pensando...
+
+Entrevistado 1: a catarina que é o sistema elevatório, e o top-drive fica pendurado nele e no final o top-drive fica (alguma coisa) e a catarina sobe e desce nele. 
+
+Fogaça: então o treinamento é na plataforma mesmo? tem que ver acontecer e ir aprendendo. Só de curioso, existe rotatividade de função para o cara aprender mais alguma... o sistema toda ta acontecendo ou o cara aprende só a colocar pino e tirar pino e fica vinte anos tirando e colocando pino. 
+
+Entrevistado 2: nao todo mundo aprende a fazer tudo. tem que existir uma rotatividade. 
+
+Entrevistado 3: a função de plataformista tem algumas tarefas especificas e não é só uma são várias. não existe isso.
+
+Fogaça: qual seria o tipo de experiência necessária para esse tipo de função. Vocês comentaram que o cara tem que ter visto isso antes. mas eles tem algum tipo de linha de corte, tipo: esse cara não vai participar da operação, pois está muito cru, ou algo assim.
+
+Entrevistado 1: tem. se eu pegar o cara para treinar a primeira vez que ele tiver na plataforma, eu vou deixar ele observando pelo tamanho e perigo que é a manobra. então ele vai observar algumas vezes da "doghouse", é o onde ficam o soldador. e ele fica vendo a manobra e entendedo a manobra para depois realizar.
+
+Fogaça: e tem algum número máximo de capacete verde que pode ser utilizado ou é a critério de quem está gerenciando a operação. 
+
+Entrevistado 2: não, para cada capacete verde você tem que ter um mentor. como em um descida de riser você tem entre cinco e seis plataformistas, é questão de bom senso, você não pode ter mais do que dois capacete verde. é o máximo aceitável, mais do que isso já fica perigoso. Então tem que ter um numero igual de mentores. e eles vão se deslocar muito no que ele ta fazendo para estar mentorizando...
+
+Fogaça: e no caso do driller e do pusher la em cima. eu to imaginando que ele fica mais alto. 
+
+Entrevistado 2: não, fica tudo no mesmo nível.
+
+Fogaça: e eles também pode ter um novato, capacete verde ali com eles?
+
+Entrevistado 3: sim eles podem ser capacete verde
+
+Fogaça: e vai ter outro do pusher observando ele?
+
+Entrevistado 1: não, na realidade o top-pusher, a carreira é aceita driller, driller e top-pusher. Então o pusher conhece todo o processo só que ele ta em uma funçao nova que é mais de liderança. Então para capacete verde ser identificado que é novo da função. o mentor dele seria um "DSL" mas não necessariamente deveria estar acompanhando, pois ele conhece as operações.
+
+Fogaça: tá, ele não vai estar fisicamente com ele.
+
+Entrevistado 1: isso, ele sabe o que está acontecendo, ele sabe o que está fazendo. 
+
+Entrevistado 3: o coaching é mais de relação a supervisão
+
+Fogaça: é mais de procedimento é o Manual Geral de Operações ali. 
+
+Entrevistado 1: é a mesma coisa que você pega o copiloto. ele pode ser comandante nao necessária pode ser comandante depois de dois anos.
+
+Fogaça: isso, pode levar 10 anos sendo copiloto.
+
+Entrevistado 1: vai depender muito do desempenho dele.
+
+Fogaça: e das vagas. Então ta, então vai treinando. entendi. Seguindo. Fisiologicamente o pessoal estava bem, ninguem estava doente. tava tudo tranquilo. tinha algumas coisas do ponto de vista psicologico e problema em casa. isso é muito comum?
+
+Entrevistados: sim, mas tem problema de reporte.
+
+Entrevisado 3: tem muita gente que não reporta, esse é um problema. a gente ainda não tem uma ferramenta eficaz para verificar se o cara tem ou não algum problema. além de um checklist só
+
+Fogaça: vamos imaginar ai em um mundo paralelo, que o pessoal reporta. tu tem em quantos, em média, embarcados na plataforma total?
+
+Entrevistado 1: em torno de 150 pessoas.
+
+Fogaça: tá, na plataforma, num dia que eu embarcar lá, vou encontrar 150 pessoas. 
+
+Entrevistado 1: mas estamos falando em todos a bordo, pois, técnico em perfuração temos de oito a 10 pessoas. que são os plataformistas.
+
+Fogaça: o resto desse pessoal, imagino que metade seja o pessoal em folga para cumprir o próximo turno. mas gente para manter a plataforma, que não ta diretamente na operação?
+
+Entrevistado 1: marinehrio e homens de área tem que ter por que é uma determinação da marinha. (discussão com outro entrevistado) é então 15% a 20% do pessoal embarcado não estaria envolvido com a operação de drilling.
+
+Entrevistado 2: não 15% é o pessoal de drilling. de 15% a 20%. 
+
+Fogaça: e o resto é para manter o navio.
+
+Entrevistado 1: dar suporte ao drilling. 
+
+Fogaça: e são funcionários seadrill?
+
+(parece uma informação importante mais não entendi o que foi dito) 17:13. 
+
+Fogaça: entendi. então vamos supor que 10% dos 150 que estão embarcados reportem que estão com problemas psicológicos. o que se faz com esse pessoal?
+
+Entrevistado 3: bom, se for todo mundo de um departamento...
+
+Fogaça: não, a aleatório da plataforma inteira. um cara de máquina, um cara de driller e por ai vai...
+
+Entrevistado 1: é uma situação inusitada, eu nunca vi acontecer. são 27 anos de experiência. (alguma coisa que não entendi) o mais facil de acontecer que as pessoas estão se sentindo mais a vontade para falar.
+
+Fogaça: o que vocês ja viram? dois ou três ao mesmo tempo?
+
+Entrevistado 1: um exemplo de um acidente grande, depois que acontenceu e ninguem se machucou e parou tudo. e nesse caso a gente desembarcou essas pessoas.
+
+Entrevistado 3: isso que eu ia falar. essas pessoas são atendidas pelos enfermeiros, já que eles ter um melhor preparo e treinamento.  
+
+Entrevistado 2: exite também uma acessoria que se chama "conta comigo". o cara pode ligar e reportar problema psicologico, canceira e etc. a empresa também tem assistencia social. Claro que em um caso muito extremo, o capitão ou DSL vai reportar para o RH da empresa, para o gerente para decidir se desembarca o cara. aí tem a assistência social que pode receber o cara no porto.
+
+Entrevistado 3: a gente ja teve, esse caso aconteceu em uma unidade e as pessoas não ficaram bem com esse acidente da aeronave. essas pessoas então foram desembarcadas, pois elas não estavam bem psicologicamente.
+
+Entrevistado 1: aconteceu a mesma coisa com o acidente la do BOP que não morreu ninguem e tal, mas como a coisa foi tão feia e depois levar todos para a enfermaria e as pessoas estavam tão abaladas, desembarcou todo mundo. vieram para petrobras, conversaram com os psicólogos. e ficaram uns 10 dias fora. 
+
+Entrevistado 2: nos casos mais críticos, pode ser feito antecipadamente a troca de turno. 
+
+Fogaça: e quando acontece alguma ocorrencia, não precisa ser psicológica, pode ser médica, o voo que conduz o desembarque, já vem alguem para fazer a susbtituição? 
+
+Entrevistado 2: muitas vezes sim, mas outras não
+
+Entrevistado 1: é muitas das vezes a gente substitui com a alguem que ja está "aspirando" (alguma coisa que não entendi) para função. mas via de regra a gente tem que trazer alguem para substituir. 
+
+Fogaça: o cara fica dobrando a função temporária, ou um turno, até chegar alguem. 
+
+Entrevistado 3: a gente até vai ter um pool agora, que fica de reserva. isso não tinha antes, que vão poder ficar de reserva para caso alguma coisa como essa acontença.
+
+Fogaça: a aviação trabalha bastente com isso, legal... Vamo lá, algum procedimento falhou ou deveria existir relacionado a esse acidente? vocês acham que faltou algum procedimento ou havia procedimento demais, aquela história, havia algum procedimento sobrando ali?
+
+Entrevistado 1: eu acho que não, aquele procedimento já está de bom tamanho. aí a questão é realmente é conseguir inserir o fator humano no procedimento. 
+
+Fogaça: ok. vamos pensar na falha em si, mas na, aqui foi uma queda de BOP. como seria o nome dessa manobra... colocação de BOP? 
+
+Entrevistado 1: descida de BOP ou running BOP, em inglês. 
+
+Fogaça: tá vou chamar de descida de BOP. pensando nos dois extremos. e voces começaram o dia falando quando se faz uma operação complicada a gente nunca se sente muito super liso assim, tem que ficar de olho. pois exige atenção. mas vocês me deram um situação marginal em que o mar estava batido, tava em mes ruim, houve troca de turno. Sem querer recorrer ao (alguma coisa que não entendi). tipo tudo ao contrário seria melhor. mas o que seria uma descida de BOP tranquila. Qual é a condição ideal para fazer isso. se pudesse escolhar.
+
+Entrevistado 2: não sei né, mas pelo que eu ja vi a bordo, toda operação de BOP não é tranquila. 
+
+Entrevistado 3: não é tranquilo. mas o ideal seria equipe experiente, condições climáticas favoráveis. pessoal descançado, sem compromisso de performance 
+
+Fogaça: em que situação voces trabalhariam sem compromisso de performance? existe isso?
+
+Entrevistado 1: nesse contrato de agora não. mas existem contratos que apesar de que (alguma coisa que não entendi) a gente podia ficar a vontade para só fazer a nossa velocidade limite que a gente considera seguro. 
+
+Fogaça: tudo bem, mas existe na industria contrato que não preciona desse jeito?
+
+Entrevistado 1: existe. e funciona igual. você acaba tendo um padrão de performace. aí eu sei que desço isso aqui em 72 horas. na outra pode ser 74. na outra pode ser 70. você tem um padrão. a medida que o cara tem o compromisso. mas não aqui a gente tem que ter performance. isso leva você a fazer shutcut (shortcuts) também... 
+
+Fogaça: e para eu entender. o pagamento é por contrato, não é por hora de trabalho. se vocês demorarem mais vocês não ganham a mais por isso. 
+
+Entrevitado 1: o pagamento é por diária né, da sonda. que você ta falando da sonda né?
+
+Fogaça: não, da operação. 
+
+Entrevistado 1: mas é do pessoal?
+
+Fogaça: é
+
+Entrevistado 1: ai é mensal né.
+
+Fogaça: tá, mas da operação.
+
+Entrevistado 3: o pacto financeiro é diário né. é por hora. 
+
+Entrevistado 1: é por horá, eu sou penalizado a cada meia hora. eu posso ser penalizada em tempos de 30 min. eu não sou penalizado em atrasos de 15 min, mas sou penalizado quando o atraso é de meia hora. Meia hora custa 20 mil dolares para empresa. 
+
+Fogaça: entendi. tá bom.  
+
+Entrevistado 3: só um ponto que gostaria de acrescentar sobre essa questao do desempenho. pelo que a gente tem analisado através de levantamentos estatisticos, é que quando a gente consegue trabalhar com mais segurança. por exemplo: com menos pressão, a performance e o desempenho dos caras é melhor. 
+
+Fogaça: essa estatística me enteressaria
+
+Entrevistado 3: e como a gente tá com muitos incidentes a bordo, mesmo que pequenos, a gente sabe e sente que a tripulação se sente mais insegura de fazer o trabalho, a performance diminui e acaba acontecendo um acidente. 
+
+Entrevistado 1: eu duvido um pouco desses avisos. eu sou meio cético em relação a isso. mas enfim... se a gente for...
+
+Fogaça: a gente tem um dizer na aviação que é a antiga foto do iceberg. para cada 10 reportes tem 100 não reportes... e por aí vai. 
+
+Entrevistados: todos concordam (mas não dá para entender o que cada um diz)
+
+Fogaça: tá bom. mas boa informação. então isso poderia ter facilitado a atividade. entao para torna-la mais dificil acho que vocês ja pegaram a situação que tornaria mais dificil a atividade. entendi assim né. e vocês teriam algum tipo de priorização nessa condução. o que é prioridade aqui, vocês tem a pressão por tempo, tem a pressão para manter a seguraça. 
+
+Entrevistado 2: segurança não como prioridade né, a gente não usa essa expressão. a segurança para gente tem que ser como valor. mas a gente não faz nenhum trabalho que comprometa a segurança. então essa pra gente é nossa premissa. 
+
+Entrevistado 1: essa é a filosofia dessa tua fala (acho que foi isso que ele falou) 
+
+Entrevistado 2: exceto a segurança. se segurança não puder andar ao lado da performance, a gente diminui a performance para trabalhar com mais segurança. mas a gente nunca sobrepoe nada a segurança. não com prioridade.
+
+Entrevistado 1: é que as vezes esse é o problema. por que a performance tá ali assobrando você o tempo todo. e isso pode lhe dar. você segura a segurança aqui (desse lado) mas como tem o negócio te assombrando (do outro lado) você acaba involuntáriamente ao que a gente prega ao contrátio. mas a gente, ou melhor, todo mundo pois isso é inerente ao ser humano. Então a gente acaba fazendo alguma coisa que sem perceber, você ficou mais inseguro pois a performance lhe induziu a isso. Não sou inimigo da performance, mas eu acho que tem que haver muito cuidado.
+
+Fogaça: é, mas de repente, como a gente é medido, a gente trabalha diferente. de repente a sonda com mais produto não tenha um ranking bom. talvez a sonda que menos tenha acidente tenha um ranking bom. 
+
+Entrevistado 1: exato, hoje já existe essa premissa no mercado aí. 
+
+Fogaça: Ok. talvez eu precise desse procedimento ai do... de descida do BOP. para entender melhor o que se faz primeiro o que é feito depois. 
+
+Entrevistado 1: pode ser importante você ter. 
+
+Fogaça: é ajuda a entender. mas tranquilo. sobre erros humanos e falhas ativas, ficou bem claro. acho que não tem muito o que comentar. to satisfeito. Processos organizacionais a respeito de supervisão ou mudanças na atividade. Voces poderiam me dizer... bom a gente falou que se o cara viu alguma coisa que não está legal ele pode pedir o timeout. seria o procedimento a fazer. existe algum outro procedimento negócio. se o cara viu alguma coisa que tá estranha...
+
+Entrevistado 3: por exemplo, se o cara viu isso no dia anterior, a gente tem uma ferramenta chamada debriefing, no final de cada operação a gente tem que reuinir a equipe e fazer um debriefing no final da operação. 
+
+Fogaça: seria no final do turno né, pois a operação continuou?
+
+Entrevistado 1: é isso, no final do turno a gente captura as lições aprendidas, o que serviu de melhor e o que você viu que poderia fazer melhor.
+
+Fogaça: quanto tempo dura o debriefing?
+
+Entrevistado 1: vai de um minuto, dois ou três, não tem tempo determinado. depende da quantidade de coisas que você capturou. 
+
+Fogaça: entendi. 
+
+Entrevistado 3: e aí nós podemos realizar o step-by-step procedure. de acordo com feedback deles, conduzindo um análise de risco. 
+
+Entrevistado 2: e tambem outro tipo de procedimento que pode ser escrito (acho que foi isso que ele falou) 
+
+Fogaça: e esse debriefing é um bate-bola informal? quem conduz o debriefing?
+
+Entrevistado 1: normalmente o supervisor conduz o debriefing, mas não necessariamente é uma coisa formal. então é um bate-bola informal mesmo.  você chama o pessoal, estimula eles a participar. 
+
+Fogaça: e o pessoal costuma contribuir legal? ta na cultura já?
+
+Entrevistado 3: sim faz parte da rotina.
+
+Fogaça: muito bom. o controle dessa atividade como um todo de descida do BOP, tem alguem que tá. quem é o dono da tarefa. quem é que... supervisiona toda a operação. 
+
+Entrevistado 1: é o DSL que é o drilling section leader. que sou eu. 
+
+Fogaça: o que tu tem que olhar quando ta acontecendo um negócio desses? durante a operação o que tu cuida?
+ 
+Entrevistado 1: na verdade eu sou o responsável por toda operação, mas você delega a operação para toda a cadeia. mas eu cuido é disso. certificar que os procedimentos para cada função estão sendo seguidos. me certificar que os "debricks" (foi o que eu entendi - não sei o que é isso) a cada 12 horas estão sendo feitos. e que o pessoal tá capturando alguma coisa que é necessário resolver de imediato. 
+
+Entrevistado 3: faz auditoria da operação. 
+
+Entrevistado 1: audito a operação. 
+
+Fogaça: essa é uma operação que envolve uma parte grande da plataforma, em termos de pessoa. como é que tu operacionaliza isso? da uma caminhada, dá uma olhada para o que o pessoal está fazendo, conversa com o pessoal entrando em turno ou saindo de turno.
+
+Entrevistado 1: exatamente, saio e faço duas ou tres vezes por dia. 
+
+Entrevistado 2: a gente (o cargo do entrevistado 2) faz isso também. a gente entende que devemos dar o suporte ali para DSL. a gente entende que a superação da perfuranção é do DSL, mas a gente tá ali para dar o suporte para ele. uma manobra de segurança por exemplo, acompanha a manobra o máximo possível. 
+
+Fogaça: se alguem fosse para porque chegou pra ti no fim do turno e disesse: oh cara tem um rangido estranho é tu que pararia a operação?
+
+Entrevistado 1: não, qualquer um pode parar a operaçao. 
+
+Fogaça: mas eu digo, nesses espaços cinzas ai, eu não sei se tá bom ou não.
+
+Entrevistado 1: a transmissão que a gente passa é que na dúvida pode parar. ah se não deu nada, beleza não deu nada... mas poderia ter dado. então é melhor você parar antes de que... para, avalia, pô não tem nada e aí segue. esse cara vai ser parabenizado pois ele achou que tinha alguma coisa errada, mas não necessariamente tem que ter alguma coisa errada. se voce não está confortável com o que está acontecendo.
+
+Fogaça: parabens pela boa cultura e pelo bom entendimento. tá e se tu precisasse dar um aviso é PA mesmo? chama lá e avisa: oh pessoal... alguma coisa assim. nesse caso, se tu viu alguma coisa. 
+
+Entrevistado 1: no meu caso, se eu for ver eu já vou ver no local de trabalho. eles se forem ver (pessoal de segurança) já vão ver no local de trabalho. então é você ta do lado ali dos operadores.
+
+Fogaça: então é nessa ronda ai que vai pegar...
+
+Entrevistado 1: isso.
+
+Fogaça: legal. em relação a resposta a emergência. vocês fizeram bem organizadinho ali com os tempos... mas o pusher avisaria a sala de controle e a partir da li a sala de controle distribui a informação? em três horas estaremos com todo mundo atendido e vai. em três horas o cara que caiu na agua já estaria a bordo. e não é crítica, é só de curioso mesmo, mas o cara que caiu na agua morreu, o resgate dele demora mais por isso, pois eu imagino que não seja prioridade. nessa três horas ele já estaria de volta?
+
+Entrevistado 1: provalvelmente. 
+
+Fogaça: quem é que desce lá para buscar o cara?
+
+Entrevistado 1: então, essa é até uma coisa que ficou (não entendi o que eles falaram - mas eles falaram que vão ter que discutir mais...) essas coisas são boas porque a gente nunca tem na plataforma alguma coisa que saiu daqui. 
+
+Entrevistado 2: a gente tem equipe de resgate para fazer isso. 
+
+Fogaça: desceria com uma baleieria, depois sobre a baleieira ou não tem como subir.
+
+Entrevistados: não
+
+Fogaça: a baleieira não sobe mais, então. 
+
+Entrevistado 2: não é possível a gente ter baleieira ou bote de resgate num navio. 
+
+(falas cruzadas não deu pra entender) 31:58.
+
+Entrevistado 2: numa plataforma semi-submersível. .
+
+Entrevistado 2: numa plataforma semi-submersível. numa SS né. que ela tem as pernas diferente, aí você tem... caiu no mar a equipe de bote e resgate vai buscar. Num navio nos temos a equipe de resgate, só que como que a equipe de resgate, eu não saberia te dizer, eu sei como a gente iria fazer, mas isso não está escrito em nenhum lugar.
+
+Fogaça: não está procedimentalizado. 
+
+Entrevistado 1: uma coisa que a gente tem que levantar é procedimentalizar isso aí.
+
+Fogaça: é ter uma ideia para qual lado correr. é, tá ótimo. recomendações de segurança para sinalizar que vocês colocaram. checar o com fabricante o interlock, seria iluminação, procedimentalizar handover de funções... pequenos handovers. hoje vocês não tem isso?
+
+Entevistado 2: o cara faz mas não é procedimentalizado. 
+
+Fogaça: tá, acham que o procedimento ajudaria ou só complicaria mais? 
+
+Entrevistado 1: não, ajudaria. 
+
+Entrevistado 2: o procedimento ajudaria porque quando você tem alguma coisa por escrito, uma coisa que antes era informal agora é...
+
+Fogaça: tem que passar as informações para 
+
+Entrevistado 1: principalmente nas operações de grande risco. 
+
+Fogaça: tá. nesse caso de certificar se na ausencia do me, vocês comentaram de que olha se não tiver como deixar o cara para a operação. conseguiria parar tipo, olha tenho que ir no banheiro ali e tal, para a operação dez minutos ai...
+
+Entrevistado 1: para, avisa o fiscal que por falta de gente ou o cara se sentiu mal e ele vai tá lá, teve que ir no banheiro e acabou. vamos parar! aí o cara: "vou te penaizar". "Tá bom". paciencia né, pois a prioridade é manter a operação segura. ou seja, pararia. 
+
+Entrevistado 2: a gente ia tentar achar alguem para substituir. 
+
+(falas cruzadas não deu pra entender)
+
+Entrevistado 2: pega um torrista, um assitente, para a mesa auxiliar 
+
+Entrevistado 1: exatamente 
+
+Entrevistado 2: a gente vai tentar achar outra pessoa.
+
+Fogaça: normalmente não precisa parar, se consegue uma alternativa. 
+
+Entrevistado 1: sim, consegue alternativa. por exemplo eu tenho um torrista de backup, um plataformista de backup, tem um cara de apoio ao plataformista. então eu posso deslocar ele para lá. para o que ele tá fazendo lá em baixo, que é o caminho crítico. a gente chama de caminho crítico o poço. fora do poço exitem varias operaçoes acessórias. que é bijoteria, então para a bijoteria e vamos nos concentrar. 
+
+Fogaça: funciona bem?
+
+Entrevistado 1: sim 
+
+Fogaça: excenlente. a revisão step-by-step antes do incio da tarefa, seria a revisão de procedimento? pensar se o procedimento está adequado, ou não, só ler o procedimento? 
+
+Entrevistado 2: não, revisar seria ler o procedimento para capturalizar o espaço que a gente vai fazer.
+
+Fogaça: o pessoal no briefing né... toolbox que vocês falaram né. é... vocês dão highlights ou destacam alguma coisa ao que? eventos recentes ou é do feeling de que esta fazendo o brieifing? 
+
+Entrevistado 1: não, não é com base em alguns incidentes com operações parecidas, que a gente recebe da indústria aqui e ali. 
+
+Entrevistado 2: também é com base nos eventos que a gente já passou.  
+
+Fogaça: é daquela trava mecânica... 
+
+Entrevistado 1: isso, lembra que aquela chave caiu porque na sonda tal caiu e machucou o braço do cara.
+
+Fogaça: é mais do feeling de que tá fazendo o briefing então, do que o cara acha mais relevante assim?
+
+Entrevistado 1: a gente vai ter o suporte do pessoal da segurança para ajudar
+
+(falas cruzadas não deu pra entender) 35:33
+
+Fogaça: tipo aconteceu tal coisa dá uma destacada no briefing...
+
+Entevistado 2: a gente tem um processo para distribuição de alertas, chamado de "sinergi" que é um sistema que a gente controla desde alertas e riscos de acidentes e melhorias. então a gente coloca ações para que técnicos de segurança e o pessoal apropriado distribua as informaçoes daquele alerta. nós colocamos as evidencias para gente ter os registros.
+
+Fogaça: em relação a equipamentos acho que teria recomendações e tal, em relação a escala de pessoal e turno de serviço. a gente escuta vira e mexe que esses turnos de viradinha aí é bem crítico, o padrão da indústria é esse mesmo? não acharam uma solução melhor? pensa em alguma solução? alguma alternativa para deixar o pessoal menos cansado?
+
+Entrevistado 1: ou não fazendo a dobradinha, alternar entre... 
+
+(falas cruzadas não deu pra entender)
+
+Entrevistado 2: numa quinzena fazer um turno e em outra quinzena fazer em outro turno. numa quinzena trabalhariam quatorze dias de dia e em outra quinzena trabalhariam quatorze dias a noite. 
+
+Entrevistado 1: essa já se cogitou algumas vezes aí mas acaba que ninguem quer. 
+
+Entrevistado 2: o problema é que cada um ia preferir um período de trabalho. honestamente não sei como seria a distribuiçao.
+
+Fogaça: talvez o relogio biologico do cara fique bem esquizitão ficar invertendo de quinze em quinze dias. 
+
+Entrevistado 1: quando eu trabalhava muito no periodo da noite, eu trabalhava 28 dias a noite, virava num vampiro tinha 24 horas de fuso horário até aqui. quando eu chegava de folga nos primeiros dias, cinco horas da tarde eu tava morrendo de sono e duas da manha eu tava acordado. 
+
+Entrevistado 2: quem desembarca ta trabalhando de noite ou de dia? quem desembaca tava trabalhando de meia noite ao meio dia. 
+
+Entrevistado 1: ele larga as seis da manhã e vai embora. a turma que largou a meia noite pega e espera a outra turma chegar.
+
+Fogaça: o turno é sempre de meia noite ao meio dia ou tem um que é...
+
+Entrevistado 2: tem da meia noite ao meio dia, tem das seis da manhã as seis da tarde. 
+
+Fogaça: e isso varia como?
+
+Entrevistado 2: é por departamento 
+
+Fogaça: é por função?
+
+Entrevistado 2: sim é por função. 
+
+Fogaça: entendi. o driller é 12/12?
+
+Entrevistado 1: o drilling, o departamento de drilling, é 12/12
+
+Fogaça: tá, erros humanos a gente já falou alguma coisinha de recomendações. e... processo organizacional condições latentes e recomendações adicionais?
+
+Entrevistado 1: acho que a gente ja cobriu ai tudo
+
+Fogaça: mais algum comentário sobre o caso?
+
+Entrevistado: eu achei legal.
+

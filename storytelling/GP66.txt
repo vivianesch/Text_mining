@@ -1,0 +1,472 @@
+Entrevista 19.09 – Grupo P-66
+Francisco: bom, então a primeira pergunta é para representar o que foi o caso. então o caso
+foi uma partida de um FPSO num comissionamento da descarga de um compressor né, que
+teve vazamento e esse vazamento foi associado junto com ignição, causada por uma lâmpada
+que foi danificada durante uma movimentação de carga. por que vocês escolheram esse caso?
+Entrevistado 1: é que a gente sabe que tem eventos na indústria né, de vazamentos aí
+seguindos de explosão né. o nosso caso especifico aí, no pré-sal como um todo aí a gente
+trabalha com injeção de gás a alta pressão, então o impacto de um vazamento, de gás né, é
+relativamente maior do que em outras unidades aí né, que já estão em operação a mais
+tempo, tipo na bacia de campos. E a questão aí de falha de equipamentos a prova de explosão
+é um desafio né, a gente manter aí né, todos os equipamentos em condição integra, são
+muitos equipamentos em uma plataforma com uma equipe reduzida. Então, você pode ter um
+ponto de fragílidade e durante a partida, a gente optou durante a partida, porque por mais
+que você faça alguns testes anteriores, é a primeira vez que você vai estar colocando aquele
+equipamento numa condição de pressão de operação, temperatura de operação e vazão né,
+que pode gerar vibração, e também com aquele determinado fluído que vai ser operado
+normalmente. Então, de novo, por mais que você faça os testes anteriores, tentando fazer
+pressurizações anteriores para tentar reduzir a probabilidade de vazamentos, esses
+vazamentos podem ocorrer em vários pontos daquele compressor que você está colocando
+em operação, né. em vários pontos possíveis de vazamento né. cada flange é um possível
+ponto de vazamento. cada tomada de um instrumento, é um possível ponto de vazamento.
+então, é uma condição mais crítica do que uma condição normal de operação, onde... em
+operação você também pode ter situação, por exemplo, depois de intervir naquele
+equipamento, fazer um determinada manutenção que gerou a necessidade de abrir uma linha,
+só que aí, geralmente seu ponto de fragilidade é... são menos pontos de fragilidade né. é um
+determinado flange, ou dois flanges que eu intervir né. então, no caso da primeira partida não.
+supostamente todos os possiveis pontos de vazamento são pontos de tensão né.
+Francisco: logo no ínicio, quando a gente tava fazendo o brainstorming tu levantaste como um
+problema o offloading. qual foi o motivo, assim, que o grupo resolveu utilizar esse caso como
+sendo o storytelling e não o offloading. Pois, eu vejo o offloading como sendo um caso que se
+tenha a participação de muito mais atores do que em um evento como esse levantado hoje.
+Entrevistado 2: é talvez tenha sido pelo, como o entrevistado 1 já disse, pelas altas pressões
+que a gente tem no pré-sal e pelas consequencias caso a gente tenha um evento desse, a
+criticidade de um vazamento desses grandes de gás. o que pode ter ali consequencias muito
+maiores. apesar de offloading ser uma questão também que o cara tá diretamente exposto ao
+risco ali e tal. Mas seria um risco menor comparado ao vazamento de gás dessas proporções,
+que é uma particularidade nossa do pré-sal, essas altas pressões ali que estamos trabalhando.
+Que acabou gerando um risco maior de vazamento.
+Entrevistado 1: e offloading o risco maior né, assim o risco de catastrofe, maior é do ponto de
+vista ambiental né. bem, pode ter fatalidade, mas assim...
+Entrevistado 2: mesmo num caso mais crítico, normalmente a fatalidade vai ser de um cara
+que tava ali, não vai ser como num caso de explosão que você pode ter várias fatálidades. a
+críticidade dos eventos é bem maior caso você tenha vazamento de gás. 
+Entrevistado 1: é a gente falou em uma fatalidade e um ferido, mas assim, que a gente
+assumiu um cenário onde algumas pessoas, só ficaram... levou certo tempo para ignição, mas
+a ignição pode ser imediata.
+Entrevistado 2: é nesse caso todos iriam a óbito.
+Entrevistado 3: nós estabelecemos um cenário em que os fatores de risco que envolvem
+sistemas pressurizados e sistemas eletricos, quero dizer, teria uma associação de sistemas
+críticos da platafoma. então sistemas pressurizados, petrobrás tem matriz de isolamento,
+sistemas elétricos, a petrobrás também estabelece procedimentos e matriz de isolamento, né.
+neste caso, em conceto, para este estudo de caso aí né, associação da pressão nos campos do
+pré-sal é muito alta, então nós estamos falando de pressões aí de 550 bar, associado com um
+problema de um sistema eletrico. então é uma conjunção de fatores que pode ser catastrófico,
+foi por isso que foi eleito esse cenário, esse caso, como o mais crítico para uma unidade
+operacional, num FPSO, nos campos do pré-sal.
+Entrevistado 2: tem inclusive um caso recente né, que foi são mateus lá, algo até similar com
+esse cenário, que foi um vazamento de gás com ignição que acabou matando nove pessoas.
+então um caso similar até, até a pressão é menor lá no caso deles né, mas o cenário era
+parecido, vazamento de gás com centelhamento que inclusive acho que foi de um luminária,
+mesmo, com...
+Entrevistado 1: eles não sabem ainda, eles suspeitam que tenha sido a luminária.
+Entrevistado 3: e foi vazamento de gás na praça de máquinas né, da plataforma. no nosso
+cenário, a gente tá colocando um cenário no top side né, quer dizer, na parte, nos módulos
+acima do convés né. esse do são mateus foi confinamento de gás numa área praticamente
+fechada, que é mais perigoso ainda, se não tomar todas as providências cabíveis.
+Francisco: e quando o vazamento de hidrocabonetos acontece abaixo do convés, dentro do
+casco, não é mais difícil a retirada desse hidrocarboneto? pelo fato da densidade tender a...
+Entrevistado 3: é mais difícil porque você não tem dispersão né...
+Entrevistado 2: tem que usar o sistemas de exaustão né da própria plataforma.
+Entrevistado 3: você não tem a dispersão natural dos gáses.
+Entrevistado 2: tem que ser uma exaustão forçada. então fica mais complicado ainda de fazer,
+mas isso depende muito das decisões da liderança, quem que tá assumindo a emergência e
+tomar as decisões. me parece que em são mateus as decisões foram tardias e por isso veio a
+esse. e na dúvida pare né. se você está em uma condição ou cenário de emergência, se você vê
+que as condições críticas de risco é muito grande, você para a unidade. é muito melhor parar a
+unidade e retornar com segurança depois. tá, então eu acho que na cultura da petrobrás
+hoje... antigamente eu até posso dizer para parar uma unidade era muito difícil, mas hoje, as
+palavras do presidente da companhia, as de alta administração da empresa, ela mesma coloca,
+que na dúvida você pare a plataforma, depois você vai verificar, você retorna com segurança a
+produção. acho que essa aí é a máxima né, dentro da gestão da empresa hoje, dentro do foco
+de segurança, meio ambiente e saúde, na dúvida pare.
+Francisco: sim, então teve uma mudança de perspectiva para tentar mudar a cultura de
+operação de segurança dentro da empresa, será que... sei lá, algum evento como esse que foi 
+recente, são mateus, não é uma inércia ainda da cultura antiga, em que a petrobras queria
+produzir em vez de parar
+Entrevistado 2: nesse caso de são mateus não
+Entrevistado 3: são mateus é uma unidade afretada, existe um gerente lá na unidade afretada,
+o OIM, no caso o GEPLAT aqui nas plataformas próprias, mas essa é uma decisão... você vê, se
+você pegar nosso plano de resposta a emergência, existe um comite de crise, existe uma...
+dentro da plataforma, existe uma equipe de equipe de emergência. não só o GEPLAT que toma
+as decisões, claro que ele é o gerente da plataforma, vai tomar decisões, mas ele tem que está
+acessorado por todos os coordenadores, técnicos de segurança, enfermeira do trabalho, para
+tomar determinadas decisões, mas a decisão é dele, do líder da emergência né. nessas
+unidades aí afretadas, eu não como é, se existe esse comite.
+Observador: eles tem uma estrutura de resposta dele, mas é o IOM, não o GEPLAT.
+Entrevistado 3: no são mateus houve, me paresse, pela investigação do acidente que houve
+uma demora para tomar decisões, era para fechar tudo, parar tudo, despressurizar e não
+expor os trabalhadores né, no meio do risco.
+Entrevistado 2: eu comentei do são mateus como um exemplo de que pode acontecer, um
+cenário bem parecido com o nosso né, foi mais esse comparativo mesmo para demonstrar que
+pode acontecer.
+Entrevistado 3: antigamente era a produção em primeiro lugar. hoje é segurança em primeiro
+lugar, petrobrás leva... usa isso como carro chefe da gestão de suas unidades. segurança em
+primeiro lugar, produção depois.
+Francisco: é que minha pergunta anterior tentando associar o ato de liderança ou proatividade
+que aquele nosso trabalhador ficar ali, em detrimento da segurança, tentar resolver o
+problema e não interromper a produção, por exemplo.
+Entrevistado 3: esse trabalhador pode ter sido proativo, mas ele tomou uma decisão unilateral,
+ou ele não soube avaliar o risco associado, que é o que o entrevistado 1 falou agora e o
+entrevistado 2. você pode até tomar ações imediatas para por exemplo apagar um princípio de
+incêndio, aquilo ali pode ter consequencias muito maiores.mas a pessoa tem que ter esse
+discernimento do que é você dá o primeiro ataque né, naquele momento ali é fechar alguma
+válvula fazer alguma coisa, do que ficar muito tempo ali no local da emergÊncia e ser... e
+morrer por conta disso né. petrobrás fala no procedimento de resposta a emergência que todo
+mundo tem que seguir para o ponto de reunião, e ali serão tomadas as decisões. pode ter sido
+uma decisão unilateral ou uma proatividade que acabou ceifando a vida dele, ta certo?
+Francisco: certo. aqui no meu roteiro tem uma pergunta que é: há algum tipo de treinamento
+específico para essa situação de vazamento...
+Entrevistado 3: a petrobras ela faz treinamentos periódicos de cenários acidentais. então, por
+exemplo uma plataforma de petróleo semanalmente é feito os treinamentos com hipóteses
+acidentais da indústria do petróleo. então, todo mundo, toda força de trabalho, tripulação ou
+visitante, quem quer que seja, participam desse treinamento.
+Entrevistado 2: e os cenários são diversos cenários. vazamento de óleo, vazamento de gás,
+então todos os cenários, todas as equipes e o pessoal da segurança que ajudam bastante a
+gente nesse ponto, eles elencam város cenários, pode ser vazamento de óleo, vazamento de 
+gás, inclusive no offloading eles podem simular alguma coisa, diversos cenários que já
+ocorreram são simulados. então, cada semana é um cenário diferente.
+Francisco: e aproveitando, esses treinamentos baseados em cenários, eles são... a plataforma
+ou a sonda não para para fazer esse tipo de treinamento, ela continua operando, como
+funciona?.
+Entrevistado 1: a plataforma não para se todo mundo parar, é um processo contínuo né,
+então, teoricamente se todo mundo né, largar o posto, a plataforma continua operando.
+Entrevistado 3: mas por questões de segurança, o líder da emergência, ele a pedido dos
+coordenadores, algumas pessoas podem não fazer parte do treinamento. mas via de regra
+todos participam.
+Entrevistado 2: todos participam, os que estão descansando e os que estão no período de
+trabalho. inclusive porque eles têm funções diferentes nas equipes de IOE, o pessoal que está
+em descanso ou que esta... todos eles tem um função ali e todos eles treinam. o pessoal do
+controle fica no controle, porque em caso de emergência eles ficam lá mesmo. então eles
+ficam acompanhando a operação da unidade ali pela sala de conrole.
+Entrevistado 3: eventualmente ele tá numa manobra operacional e ele ser... operador ele
+pode ser... pode não participar do treinamento. mas a pedido do... isso é pontual tá.
+Entrevistado 1: os operadores de controle continum no controle monitorando o processo.
+Entrevistado 3: porque a sala de controle é a sala de controle da emergência. uma parte é lá da
+sala de controle.
+Francisco: é trivial que tenha alguem lá monitorando... que tipo de expeeriência é necessária
+para a situação elencada para aquele trabalhador ali, naquele posto de trabalho? ele tem que
+ter uma experiência de treinamento, ou assim... a experiência que ele ganha somente
+trabalhando, que não vem de procedimento ou treinamento, ou da troca de experiêcia com
+um colega dele.
+Entrevistado 3: para exercer qualquer função na empresa né, uma função operacional na
+plataforma, em tese todos precisam estar capacitados... treinados e capacitados para exercer
+aquela função. o operador de produção precisa passar por um treinamento no local de
+trabalho, leitura de procedimentos.
+Entrevistado 1: inicialmente eles têm o curso de formação.
+Entrevistado 3: tem o curso de formação.
+Entrevistado 1: o cara é treinado para aquele cargo, o cara é operador, então tem todo um
+curso de formação que ele vai ter com as diversas áreas que ele vai atuar ali, ele vai fazer
+várias coisas. além disso, tem o treinamento no local, tem os procedimentos e tal que é
+específico de cada unidade, que o cara no local de trabalho ele vai treinar.
+Entrevistado 3: os operadores do sistema eletrico por exemplo, tem toda uma capacitação,
+treinamento, eles precisam passar pelo treinamento da NR 10, existem procedimentos que são
+normativos, além dos treinamentos de capacitação que a petrobras dispõe para exercer
+aquela função. 
+Francisco: sim, e aí depois que ele embarca ele tem algum acompanhamento durante algum
+período antes dele estar solo, digamos assim, naquele posto?
+Entrevistado 1: olha a gente tem, a nossa condição é bem específica, é uma partida de
+unidade. então assim você tá... teoricamente não exite ninguem experiente naquela unidade
+né. é diferente de uma situação normal de regime que você recebe um novo operador. quando
+a gente recebe um novo operado, a gente tem um procedimento de gestão de pessoas né, até
+passando por revisão e elaboração final ali né, mas via de regra a gente mantém ali três
+embarques sendo tutorado. onde ele não vai executar as operações de forma isolada né,
+sempre vai ser atendido por alguem mais experiente ou supervisor, nem emitir as permissões
+de trabalho. inclusive esses procedimentos de gestão de mudança está em mudança né. agora
+nesse cenário do acidente, você está começando a operar a unidade, então as pessoas que são
+julgadas experientes são aquelas que passaram por treinamentos nos padrões, durante a
+etapa do estaleiro, passaram por treinamentos normativos né, NR13, e seria basicamente isso.
+é uma situação bem diferente
+Entrevistado 3: nós, antes de operarmos a plataforma, nós mapeamos os procedimentos... os
+processos. e dentro desses procedimentos e processos nós identificamos por exemplo tarefas
+críticas, tanto para embarcação, comando ou COPROD e essas tarefas críticas, muitas delas
+viraram procedimentos de execução, então todos esses procedimentos estão no sistemas de
+padronização da petrobras, se você for lá no SIMPEP, e que cada operador ele precisa pasasar
+por esse processo de treinamento e capacitação dos padrões. alguns operadores vêm de outra
+unidade com alguma experiência, outros operadores não... nunca trabalharam num FPSO,
+vieram de refinaria ou vieram de alguma unidade lá do nordeste. então, todo mundo tem esse
+kit de boas vindas, que tem que passar por todos os procedimentos para tentar horizontalizar
+a informação e o conhecimento né. então, a gestão... existe uma matriz de treinamento para
+todo e qualquer posto de trabalho hoje, dentro da P-66, dentro das unidades operacionais
+aqui do pré-sal. Ok?
+Francisco: ok. então a próxima pergunta vai exatamente nessa linha de procedimentos, algum
+procedimento falhou ou deveria existir relacionado a esse acidente?
+Entrevistado 3: procedimento. eu acho que falhou não o procedimento, mas falhou uma rotina
+de trabalho já pré-estabelecida. por exemplo, a primeira rotina que falhou foi a falta de
+fiscalização na ELV: lista de verificação, durante a construção e montagem né, que isso aí já
+está procedimentado, faltou alguma que alguem não observou né. essa completação mecânica
+que a gente chama, segue um rito e a fiscalização tem que tá em cima para ver se todas as
+fases, todas as etapas dessa... até a completação mecânica final, ela tá... faltou fiscalização.
+com relação aos nossos colaboradores feridos e... existe um procedimento que tinha que ser
+seguido, o procedimento existe...
+Francisco: o procedimento ali seria se reunir no ponto de encontro?
+Entrevistado 3: exatamente. isso tá no procedimento de resposta a emergência.
+Francisco: mas quando se tem um vazamento, assim, e esse vazamento tem que ser contido.
+qual seria o procedimento que esses trabalhadores ou qual seria o curso de ação que eles
+deveriam seguir?
+Entrevistado 3: o projeto ele é... ele é consebido para responder automaticamente a qualquer
+emergência né. nós temos um nível de automação x, nós temos válvula de emergência, temos
+sistema de despressurização...
+Francisco: que é justamente para tirar aquele trabalhador da área vulnerável
+Entrevistado 3: sim exatamente, então isso é... isso é intrínseco ao projeto.
+Entrevistado 1: sendo que o operador... são decisões muito... basicamente em casos
+excepcionais. onde o que se prega é tirar o perfil da área e fazer tudo de forma remota, que as
+operações tem que ser feitas.
+Entrevistado 3: pô e caba ressaltar que existe um limiar em que a decisão desse operador e o
+procedimento. se ele tinha alguma, se ele entendeu ali que como profissional que ele tinha
+alguma ação que ele pudesse fazer para evitar qualquer princípio de incêndio ou alguma outra
+coisa, ele poderia tê-lo feito. pode ser que a decisão tomada tenha sido um pouco mais
+exacerbada do que deveria.
+Francisco: é dada uma liberdade, mas talvez não fosse esse o caso de ficar lá. de atuar...
+Entrevistado 3: eu vou te dar um exemplo concreto. eu tô com princípio de incêndio lá na
+planta, de madrugada. eu tenho um operador na sala de controle que ele é o responsável pela
+planta de óleo e gás. e tem o supervisor da noite. eu preciso acordar o GEPLAT para poder
+tomar uma ação e fechar a produção toda? esse cara que tá a noite, ele tem a autonomia para
+tomar a decisão sem consultar o coordenador e sem consultar o GEPLAT, porque ele é o
+profissional da área. claro que durante o dia tá tudo mundo ali né, na hora de tomar uma
+decisão ele pode até tomar instantâneamente, mas o GEPLAT tá ali, o coordenador tá ali. pode
+se tomar uma decisão colegiada. correto?
+Entrevistado 2: sim, mas no caso, principalmente de vazamento de gás, o cara não tem o que
+ele fazer. essa questão de ele atuar ou não, seria uma coisa de... que ele consiga ver muito
+bem a dimensão do que ele tá fazendo. seria um princípio de incêndio que o cara vê "oh ta
+aqui". qualquer coisa, principalmente o gás que é uma coisa que o cara não tem como ver, é
+algo que já tá bem longe desse escopo aí de atuação do operador. não tem que nem que ter
+dúvida nesse caso. o cara já tem que pegar e sair.
+Entrevistado 3: isso se o sistema automatico não funcionou. se o sistema automático não
+funcionou, ele tem que tomar a decisão, não tem jeito. que o sistema automatico ele tem que
+funcionar na hora. se por alguma coisa fugiu o controle, ele toma a decisão e para
+manualmente. correto?
+Francisco: e nesse caso que a shut down valve, é shut down né, ou shut off
+Entrevistado 3: isso SDV é shut down valve. e BDV é blow down valve
+Francisco: que a shut down valve não contem o vazamento...
+Entrevistado 1: não, a SDV ela fechou né, só que a BDV que despressuriza e direciona o gás
+para o flare né, o sistema de tocha né, e não deixa vazando né por um tempo maior né, ela não
+abriu. nesse caso, bem... ai tudo... cada caso é um caso diferente, até por isso você tem ali a
+equipe de resposta a emergência se reune na sala de controle, equipes grandes e
+multidisciplinares né para decidir o curso de ação né, mas é... esse caso a gente aguardaria né
+entre mandar um operador para uma área que a gente sabe que tem gás para atuar numa 
+valvula e aguardar um tempo maior até o sistema despressurizar para atmosfera, seria mais
+adequado aguardar o sistema despressurizar para a atmosfera.
+Entrevistado 2: mas independente da ação que foi tomada, o procedimento é o mesmo. todo
+mundo se reúne no ponto de reuinão. aí sim, os líderes lá da emergência vão decidir o que vai
+ser feito. eventualmente, se for mandar alguem para área, se for considerar que a área está
+segura para mandar algum para lá, o cara vai ser convocado no ponto de reunião para ir
+depois. não é algo que ele toma a decisão sozinho.
+Entrevistado 3: eu vou dar um exemplo aqui, caseiro. eu morava num condominio lá em cabo
+frio, e tinha uma sauna a gás, comum, e alguem lá foi fazer sauna. pegou fogo cara, não sei
+como ele conseguiu que a sauna começasse a pegar fogo, ai minha mulher ligou apavorada
+"entrevistdo 3 tá pegando fogo aqui na sauna, tão jogando agua tão fazendo isso e aquilo" aí
+eu por telefone né, eu nem tava em casa, pede pra fulano fechar o gás, manda fechar o butijão
+de gás que esse fogo vai extinguir. mas até eles tomarem essa ação, pô lambeu quase tudo lá.
+faltava o cara chegar ali perto ali, porque tinha condições de chegar, e fechar o butijão de gás.
+precisa fechar a fonte. então pode ser que a blow down valve ela não abriu, mas eu tenho uma
+valvula de bypass, ta começando a lamber tudo na plataforma, eu não consigo abrir a BDV, aí
+eu vou na válvula de bypass. aí o GEPLAT junto com a comissão vai dizer: tem condições de se
+aproximar do local? tem condições... vai olhar lá no fluxograma, tem condições de eu abrir
+essa válvula aqui? então são decisões que vai ser tomada pela equipe de emergência, equipe
+de contrle de emergência. ok?
+Francisco: ok. que processo organizacionais podem contribuir para essa ocorrência? como é a
+supervisão da atividade? como os operadores ficam sabendo de quais quer mudanças que
+possam afetar a atividade?. vou voltar para primeira, que processos organizacionais podem
+contribuir para essa ocorrência?
+Entrevistado 1: fiscalização na construção e montagem, esse seria o principal. e o outro seria,
+se você entrar no mérito aí da permanência do operador, seria então o plano de resposta a
+emergência né, na parte da comunicação de desvios né. a parte da luminária né.
+Francisco: aqui fala sobre a supervisão da atividade. então vendo a atividade da construção e
+montagem a supervisão seria feita por um fiscal que vai lá, após a montagem e construção,
+teoricamente para conferir e garantir que tá tudo certo né. acho que é isso.
+Entrevistado 3: não, durante o prórpio processo de montagem... de construção e montagem,
+essas etapas são acompanhadas de um fiscal. depois de montado você distinguir se aquela
+jutna é ou não é apropriada, você não vai conseguir.
+Entrevistado 2: é algumas etapas da construção e montagem tem que ser acompanhadas
+durante. outras não, outras o cara vai ter um checklist lá que ele vai bater e conferir se tá tudo
+ok.
+Francisco: e no caso lá do operador que tava próximo ao vazamento... a supervisão da
+atividade existe, como ela é feita?
+Entrevistado 1: é, como a gente tá falando na primeira partida né, é um caso um pouco
+diferente por que a supervisão tá... ela é feita pela equipe de comissionamento, apesar de
+também haver a supervisão do tanto do supervisor de operação quanto da (alguma coisa que
+não entendi) da produção. mas é um caso um pouquinho diferente né. como se, é um trabalho
+feito em duas equipes né, de comissionamento e de operação. mas eles, no papel de maior 
+liderança técnica. mas a gente né, até como... nós executamos as operações, as manobras né,
+no campo né, a gente também não pode se abster dessa supervisão e, vamos dizer:
+corresponsabilidade. porque se acontecer qualquer acidente né, nós também somos
+responsáveis aí né. tanto o supervisor de produção, coordenador de produção, e por
+consequencia também o GEPLAT né, não sei que nível a gente vai abordar aí né, mas ele
+também tem o papel de supervisão também.
+Entrevistado 3: o que acontece é que durante... cheguei a comentar aqui que os testes de
+aceitação da performance, por exemplo quando a gente tá nessa fase de comissionamento,
+durante a fase de comissionamento tem esses testes de aceitação da performance dos
+equipamentos, e quem atesta a performance e aceita o sistema é o opeardor, é a equipe de
+operação que faz isso né. então na realidade, você... como o entrevistado 1 falou, existe uma
+corresponsabildiade né, alguem ta mostrando teste pra você e você tá aceitando ou não.
+então qualquer tipo de vazamento... em relação a construção e montagem, nós não temos
+esse viés de tá acompanhando e fiscalizando tudo, até porque não é nossa função da equipe
+de operação. mas em relação aos testes das máquinas, testes de performance, a gente tem
+nossa parcela de responsabilidade sim. a equipe de operações está acompanhando, tá
+verificando se não existe... mesmo porque você tá recebendo o equipamento, e você tem que
+saber o que está recebendo.
+Entrevistado 2: é, mas nesse cenário aí, o problema eram essas grandes pressões né, que no
+caso foi feito o teste antes e não tinha falhado né. mas conforme você vai aumentando a
+pressão de operação pode acontecer, que no caso de ter algo fora da especificação ele falhar,
+então era algo que tinha que ter sido pego na construção e montagem. que depois disso,
+mesmo fazendo um teste preeliminar tava oculto ali. não tinha como saber.
+Entrevistado 1: o que a operação consegue identificar de problema é... uma quantidade
+limitada de problemas né. os testes são feitos em condições diferentes né, como já falou... de
+operação. mas de alguma maneira a gente tá envolvido no processo também.
+Francisco: que recomendações de segurança vocês propõem para previnir a reincidência
+desses casos? envolvendo equipamentos, ou escala de pessoal, ou erros humanos...
+Entrevistado 3: eu acho o que nós colocamos ali como recomendação né, né entrevistado 1,
+você tem aberto as recomendações aí? acho que elas foram claras aí, as recomendações que
+foram colocadas.
+Entrevistado 1: vou ler então as recomendações, isso?
+Francisco: isso
+Entrevistado 1: garantir que os testes funcionais dos equipamentos sejam realizados conforme
+o previsto na etapa de comissionamento na pressão próxima a pressão de operação. caso não
+seja possível o teste funcional dos sistemas da (alguma coisa que não etendi) de tratamento e
+de compressão de gás na pressão de operação, planejar e executar até a estanqueidade de
+fluxo seguro, ar ou nitrogênio a pressão mais próxima possível da pressão de operação.
+Entrevistado 2: é isso já pegaria vários vazamentos, então vários pequenos vazamentos você
+pode pegar, inclusive situações em que o flange não tiver torqueado adequadamente e tal,
+porque conforme você vai subindo, vai começando a vazar e você vai pegando. mas obvio que
+não consegue pegar todo que pode acontecer de problema né. mas muitos problemas você já
+consegue matar aí. 
+Entrevistado 1: eu gosto sempre de reforçar né, porque tem algumas que pensam que você
+pressurizando o sistema, imagina que você vai ter um sistema lá, um vaso que vai operar
+com... sei lá uma pressão de 10 bar. tem muitas pessoas que acreditam que você
+pressurizando esse vaso com 10 bar seja com nitrogênio, seja com ar comprimido, que você
+garante que não vai haver vazamento na hora de operar esse vaso. você não tem como
+garantir isso, porque na hora de... você reduz essa probabilidade a um valor né... bastante
+baixo, mas não tem como garantir isso, porque na hora que você colocar esse vaso para
+operar, ele não vai operar nem com ar nem com nitrogênio, ele vai operar com gás e por
+exemplo...
+Entrevistado 3: as características fisico-químicas são diferentes né.
+Entrevistado 1: você pode ter uma mesma pressão, mas talvez tenha uma temperatura
+diferente, um fluído diferente...
+Entrevistado 2: você pode ter alguma dilatação ali, você pode ter vibração...
+Entrevistado 1: vibração pelo próprio fluxo, então essa questão do teste de estanqueidade é
+para minimizar a probabilidade de vazamentos e principalmente minimizar a probabilidade de
+grandes vazamentos né. o acidente catastrófico ele vem de grandes vazamentos, não de
+pequenos né. a não ser que seja em ambientes muito confinados, que não é muito o nosso
+caso. ali na cidade de são mateus teve o vazamento que não foi de grande porte, mas era um
+ambiente confinado.
+Entrevistado 2: mas no nosso caso a gente não tem gás na praça de máquinas. então não teria
+esse problema.
+Entrevistado 3: é vale lebrar né entrevistado 1, que muitos sistemas foram comissionados no
+estaleiro, depois a plataforma saiu do estaleiro, a unidade ela trabalha, então, talvez quando
+chegar na locação talvez tenha que dar um reaperto, tem que refazer os testes. então você
+pega muitos problemas ai que... as pessoas dizem: não mas eu já fiz o teste. não pode
+trabalhar com esse pensamento. por que da onde saiu o estaleiro? andou com a locação, tudo
+trabalha dentro da estrutura né, e isso pode ocasionar um vazamento.
+Francisco: só para eu ter uma ideia, qual é a quilometragem de tubulação que tem embarcada
+de uma unidade de produção?
+Entrevistados: (risos)
+Francisco: é de qual ordem?
+Entrevistado 3: são milhares de quilometros, mas não saberia te informar.
+Entrevistado 1: plataforma tem 300 metros
+Entrevistado 3: por mais 54 de boca
+Entrevistado 2: 100 vezes 300 metros, entrevistado 1
+Entrevistado 3: não tem...
+Francisco: é só pensar nessa maneira e relacionar com um vazamento, já se pode ter ideia da
+magnitude...
+Entrevistado 1: agora quantos flanges têm né? quantas tomadas de instrumento têm
+Entrevistado 3: tudo milhares...
+Francisco: quer passar para o próximo item?
+Entrevistado 1: então o próximo item é: garantir a fiscalização adequada, durante a etapa de
+construção e montagem né. item três: reforçar a necessidade de planejamento para
+movimentação de carga, para evitar danos em equipamentos né.
+Entrevistado 2: é como eu comentei né, as vezes você não consegue por conta do balanço da
+unidade, é lógico que o ideal é que não tenha, mas eventualmente acontece né. o que o cara
+tem que fazer é... fazer um planejamento ali para evitar ao máximo né, quando possível, e
+depois, o próximo item é quando não... quando acontecer de danificar alguma coisa, é
+importante que o supervisor lá seja alertado para tome providências.
+Entrevistado 1: item quatro: reforçar (alguma coisa que não entendi) sobre a questão de
+desvios. item cinco: reforçar durante o treinamento ao plano de resposta a emergência a
+necessidade de se dirigir imediatamente ao ponto de encontro.
+Francisco: foi isso das recomendações né?
+Entrevistado 1: foi.
+Francisco: tem mais algum ponto que vocês gostariam de destacar? vocês acham que essa
+entrevista abrangeu o que a gente fez durante o dia?
+Entrevistado 3: não, abrangeu né. eu acho que foi uma sintese do trabalho que foi elaborado
+aqui. evidentemente é necessário que outras percepções que não a nossa... esse trabalho
+precisa ser feito, precisa ser elaborado por outras percepções, porque até que vocês elaborem
+aí o documento final ou o trabalho final né, aqui tem um experiência na companhia, vocês tem
+que procurar outras pessoas que também tem outras experiências, bagagem, para poder fazer
+um fechamento. de forma nenhuma a gente tentou aqui esgotar, nem de longe, um trabalho
+desses de grande importância aos fatores humanos. fatores humanos e de gestão do processo.
+Entrevistado 1: eu só gostaria de destacar também que esse cenário de grande vazamento, ele
+já é previsto né, na análise de risco da unidade, tá. na PR, probabilidade de risco, ele é previsto
+tá. então esse é um, dentro de outros... a gente tem todos os equipamentos aí nas áreas que
+são sujeitas a possível vazamento de gás, eles são equipamentos a prova de explosão. mas
+bem, também tem essa questão do volume muito grande, o número muito grande de
+equipamentos né, então o desafio que existe a bordo com a equipe reduzida né, até por uma
+questão de limitação de vaga né, de manter todos os equipamentos operando da forma como
+devem opearar, sem ter nenhum problema na forma de integridade. bem a gente ta falando
+também que a fonte de ignição, foi uma fonte relacionada a algum equipamento né, mas a
+gente tem aí também... outra fonte de ignição pode ser... seja um trabalho que está sendo
+feito na área, a gente tem trabalhos a quente que podem ser feitos na área né, seja trabalhos
+com chama aberta, seja os mais críticos né, seja os trabalhos aí que são considerados a quente
+por que podem gerar... gerar faísca por esta por exemplo usando equipamento que não é a
+prova de explosão. eles seguem aí um padrão específico né. e são PTs diferentes né, que são
+PTs a quente e exigem uma análise mais criteriosa e apesar disso eles podem estar ocorrendo
+né, no momento em que houver uma liberação súbita de gás. isso é possível acontecer e não
+possível prever isso né. e por último, aí seriam os desvios, né de por exemplo, apesar de ser
+orientada, a pessoa está usando um equipamento na área que... sem a devida PT né, que não
+seja adequado para a área classificada né. isso aí, se eu não me engano, isso é uma das 
+suspeitas lá da cidade de são mateus né, que a possível fonte de ignição foi algum
+equipamento não adequado para a área classificado que o pessoal desceu lá para área de
+bombas.
+Francisco: isso é verificado pela permissão?
+Entrevistado 1: é verificado pela permissão, desde que haja permissão. o problema seria no
+caso de indisciplina operacional, de que apesar de ser orientado no briefing, da pessoa levar
+um equipamento...
+Entrevistado 3: ou uma falha de projeto ou uma falha de construção e montagem, porque
+todos os equipamentos instalados em áreas de (alguma coisa que nao entendi) explosiva, eles
+precisam ser certificados né. então existe um estudo de certificação de todos os
+equipamentos. se foi montado o equipamento lá que não era a prova de explosão, eu não sei...
+Entrevistado 1: não, não estou falando isso. to falando por exemplo do... de alguem levar para
+área um equipamento portátil sem pedir uma permissão que não seja...
+Entrevistado 3: a máquina fotográfica por exemplo. eu posso gerar uma centelha né.
+Entrevistado 1: notebook, celular...
+Entrevistado 3: eu posso ignitar alguma coisa. mas é importante a gente salientar o seguinte: a
+petrobras nesses projetos né, tem todo um estudo de risco do projeto, que nem esses estudos
+de risco, as APRs e os HAZOPs. então a pretrobrás ela é muito sistematizada e estruturada para
+poder fazer todos esses estudos de riscos. o que nós estamos falando aqui não é nenhuma
+novidade, porque todo esses projetos aí que se você pegar lá no projeto você vai ver todos os
+estudos de risco, dispersão de gáses e tudo mais. então nós estamos falando aqui, estamos
+colocando sobre hipóteses... um caso hipotético aqui que pode acontecer, mas que tudo isso
+está previsto nos estudos da petrobras né.
+Entrevistado 1: os estudos levam em consideração a probabilidade disso ocorrer, então
+basicamente é o seguinte né. então nós temos os números, se naquele estudo verifica-se que a
+probabilidade, num determinado percentual né, então... não sei, acho que é uma vez a cada
+mil anos, não lembro exatamente qual é a taxa que a petrobras considera. que aquela seria
+uma condição aceitável. a petrobras nos estudos de risco que ela faz, ela verifica sempre a
+probabilidade e severidade daquele cenário ocorrer.
+Observadora: a matriz de tolerabilidade né.
+Entrevistado 1: exatamente. com base nisso as ações são feitas né, o número de sensores são
+alocados para evitar que possa gerar uma...
+Entrevistado 3: também é importante destacar que tem estudos de risco no ínicio do projeto e
+depois tem uma revisitação desses estudos de riscos depois que você entra em operação. ou
+para confirmar ou para validar aquilo que foi feito, ou é preciso, houve alguma mudança né,
+no sistema que precisa fazer ou até uma recomendação ou até uma obra né se for necessário.
+agora, o fator humano realmente contribui com uma boa parcela para qualquer tipo, para
+muitos tipos de acidentes que ocorrem. é um fator crítico de sucesso aí ou de fracasso, no caso
+de um acidente.
+Entrevistado 2: talvez o mais complicado ainda
+Entrevistad0 3: o mais complicado do que equipamento. 
+Entrevistado 2: equipamento você consegue solucionar de forma mais simples né. trocar,
+concertar... fator humano... criar um hábito é o mais complicado. você tem que, tem que ser
+algo constante, pois se você chegar e tentar implementar de uma vez e largar... o hábito das
+pessoas é algo mais difícil né de ser mudado. tem que ficar em cima né. senão não consegue.
+Entrevistado 3: e a petrobras, assim como os outros segmentos da industria aí, aeronátuica e
+militar e tudo mais, nós estamos implementado através do sistama de gerenciamento
+integrado das operações, no monitoramento das unidades, então pessoas aqui de terra estão
+monitorando as atividades...
+Francisco: é o COI ali né.
+Entrevistado 3: é o COI, o centro de operações integradas. além de ter pessoas na plataforma
+olhando os processos, outras pessoas estão olhando o que está acontecendo né, nas
+operações. então isso é uma forma de você fazer uma redundância na segurança de processo
+através da monitoração.
+Francisco: por último gostaria de...
+Marina: posso parar?
+Francisco: pode parar.

@@ -1,0 +1,617 @@
+---
+title: "Técnica Bag of words para compreensão de estruturas e papéis de trabalhadores da indústria de óleo e gás"
+author: "Código fonte, método e modelagem: Viviane Schneider. Método e validação: Aline Pacheco e Rosana Halinski De Oliveira"
+date: "outubro de 2020 - última versão: 10 de dezembro de 2020"
+output: 
+  html_document: 
+    highlight: zenburn
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+setwd("~/Text Mining")
+```
+
+# Contexto do estudo 
+
+Bases de dados que possuem dados de variáveis de resiliência em fatores humanos são notavelmente difíceis de encontrar na indústria de óleo e gás. A maioria das bases de dados disponíveis tratam da contagem dos acidentes e respectivos elementos subjacentes. 
+Contudo, uma abordagem que investiga os condicionantes de performance que tornam um ambiente resiliênte é algo ainda novo na prevenção de acidentes nas plataformas de óleo e gás, e por esse motivo há escassez de dados estruturados com tal foco, contribuindo assim para que as análises orientadas à resiliência sejam um desafios aos pesquisadores.
+
+## Objetivos desse estudo
+
+Tendo em vista a problemática apontada no contexto acima, este estudo visa o seguinte objetivo geral.
+
+### Objetivo geral
+
+- Estabelecer um método para criar indicativos de capacidades resiliêntes a partir de dados textuais não estruturados.
+
+Esses dados textuais são provenientes de narrações de colaboradores de plataformas offshore e onshore, da indústria de óleo e gás.
+
+Os objetivos específicos para alcançar o objetivo geral é descrito a seguir
+
+### Objetivos específicos
+
+1. Estabelecer um modelo de dados que permita estruturar os elementos textuais analisados, nomeando as falas dos entrevistados de acordo com o papel assumido por eles dentro da estrutura hierárquica no trabalho (representação por persona);
+
+2. Avaliar as falas das personas para estimar as estruturas de poder estabelecidas a partir do termo "Comunicação";
+
+3. Descrever o perfil de cada persona, com base nos termos mais frequentes que eles relataram nos textos;
+
+4. Verificar quais os termos mais frequentes utilizados por todas as personas, a fim de identificar os elementos símbólicos comum a todas as personas.
+
+
+## Questão de pesquisa
+
+Como criar insumos para indicadores de capacidades resiliêntes a partir de dados textuais não estruturados?
+
+
+## Methods, Materials and Techniques
+
+### Métodos
+
+Os métodos utilizados são provenientes do metamodelo descrito em Schneider(2019), na dimensão de avaliação "Senso de Unidade" da coerência da governança em ambientes complexos. Para avaliar o senso de unidade, o seguinte passo a passo foi realizado.
+
+- Todas as falas transcritas nos documentos foram separadas em duas categorias, (i) pedidos: falas dos entrevistarores (pesquisadores HF); (ii) resposta: falas dos entrevistados.
+
+- As falas dos entrevistados foram também categorizadas por personas. Personas são representações de perfis dos colaboradores da indústria de óleo e gás.
+
+
+### Materials
+
+### Técnicas
+
+Para identificar os indicadores, neste estudo utilizou-se o método de mineração de texto "Bag of Words". Segundo o glossário de Machine learning do Google*, essa técnica consistem em uma representação de palavras em uma frase ou passagem, independentemente da ordem. 
+
+Por exemplo, saco de palavras representa as seguintes três frases de forma idêntica:
+
+- o cachorro pula
+
+- pula o cachorro
+
+- cachorro pula o
+
+Cada palavra é mapeada para um índice em um vetor esparso, onde o vetor tem um índice para cada palavra do vocabulário. Por exemplo, a frase "o cachorro pula"" é mapeada em um vetor de característica com valores diferentes de zero nos três índices correspondentes às palavras o, cachorro e pula. O valor diferente de zero pode ser qualquer um dos seguintes:
+
+- Um 1 para indicar a presença de uma palavra.
+
+- Uma contagem do número de vezes que uma palavra aparece na bolsa. 
+
+- Algum outro valor, como o logaritmo da contagem do número de vezes que uma palavra aparece na bolsa.
+
+*Disponível em: https://developers.google.com/machine-learning/glossary#b
+
+# Bibliotecas R
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+# Pacotes e Funções
+library(tidyverse) # Manipulacao eficiente de dados
+library(tidytext) # Manipulacao eficiente de texto
+library(textreadr) # Leitura de pdf para texto
+library(tm) # Pacote de mineracao de texto com stopwords 
+library(wordcloud) # Grafico nuvem de palavras
+library(igraph)
+library(ggraph)
+library(ggplot2)
+library(dplyr)
+library(pdftools)
+library(RRPP)
+library(plotrix)
+
+```
+
+
+## Lendo os arquivos
+
+```{r echo=FALSE}
+library(readxl)
+Dados_text_Mining <- read_excel("Dados_text_Mining.xlsx", 
+    col_types = c("numeric", "numeric", "numeric", 
+        "text", "text", "text", "numeric", 
+        "numeric", "numeric", "numeric", 
+        "numeric", "numeric", "numeric", 
+        "numeric", "numeric", "numeric", 
+        "numeric", "numeric", "numeric", 
+        "numeric"))
+```
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+TidyData <- Dados_text_Mining[, 1:6]
+
+glimpse(TidyData)
+
+```
+
+
+## Função de limpeza do texto - (palavras que foram retiradas)
+
+Essas são as palavras que foram retiradas dos textos.
+
+```{r message=FALSE, warning=FALSE}
+my_stops <- c("entrevistado", "entrevistada","fogaça",  "francisco", "Francisco", "Marina", "marina")
+
+
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+clean_corpus <- function(x){
+  y <- tm_map(x, removePunctuation)
+  x <- tm_map(y, content_transformer(tolower))
+  x <- tm_map(x, removeNumbers)
+  x <- tm_map(x, removeWords, my_stops)
+  x <- tm_map(x, stripWhitespace)
+  return(x)
+}
+```
+
+
+# Avaliando os Pedidos dos entrevistadores
+
+A avaliação dos perguntas dos entrevistadores em dinâmicas de storytelling é essencial, tendo em vista que o entrevistador provoca reações e repete as palavras dos entrevistados, com o intuito de confirmar o que foi relatado. 
+
+Assim, avaliar o conjunto de palavras e termos mais frequentes falados pelos entrevistadores, pode fornecer uma apanhado de conteúdo que foi relatado e confirmado nessas dinâmicas.
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+## Only questions
+Pedido <- TidyData %>%
+          filter(Tipo_Fragmento == "Pedido")
+
+## Make a corpus
+Pedido_source <- VectorSource(Pedido$Texto)
+Corpus_Pedido <- VCorpus(Pedido_source)
+
+#Clean Corpus
+Clean_Pedido_corpus <- clean_corpus(Corpus_Pedido)
+
+```
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+pedido_tdm <- TermDocumentMatrix(Clean_Pedido_corpus)
+
+# Convert coffee_dtm to a matrix
+pedido_m <- as.matrix (pedido_tdm)
+
+# Print the dimensions of coffee_m
+dim(pedido_m)
+
+
+```
+
+
+## Palavras mais frequentes de Pedidos
+
+Nesses resultados é possível verificar as palavras e agrupamentos mais frequentes nos pedidos dos entrevistadores
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(qdap)
+
+# Calculate the row sums 
+term_frequency <- rowSums(pedido_m)
+
+# Sort term_frequency in decreasing order
+term_frequency <- sort(term_frequency, decreasing = TRUE)
+
+# Plot a barchart of the 10 most common words
+barplot(term_frequency[2:10], col = "blue", las = 2)
+
+# Load wordcloud package
+library(wordcloud)
+
+# Print the first 10 entries in term_frequency
+term_frequency[1:10]
+
+# Vector of terms
+terms_vec <-names(term_frequency)
+
+# Create a word cloud for the values in word_freqs
+wordcloud(terms_vec,term_frequency, max.words = 60, min.freq = 2,
+  random.order = FALSE, 
+  rot.per = 0.35, 
+  colors = brewer.pal(8, "Dark2"))
+
+
+```
+
+
+## Clustering Pedido
+
+O Dendograma abaixo mostra os principais termos dos repetidos pelos entrevistadores aos lideres e liderados.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+library(RWeka)
+
+# Make tokenizer function 
+tokenizer <- function(x) {
+  NGramTokenizer(x, Weka_control(min = 2, max = 2))
+}
+
+Pedido_tdm <- 
+  TermDocumentMatrix(Clean_Pedido_corpus,
+  control = list(tokenize = tokenizer)
+)
+
+# Create Pedido_tdm_m
+Pedido_tdm_m <- as.matrix(Pedido_tdm)
+
+# Create Pedido_freq
+Pedido_freq <- rowSums(Pedido_tdm_m)
+
+# Plot a word cloud Pedido bigrams
+wordcloud(names(Pedido_freq),Pedido_freq, max.words = 25, color = "red" )
+
+
+# Create Pedido_tdm by removing sparse terms 
+Pedido_tdm2 <-removeSparseTerms(Pedido_tdm, sparse = .993)
+
+# Create hc as a cluster of distance values
+hc <- hclust(dist(Pedido_tdm2),method = "complete")
+
+# Produce a plot of hc                  
+plot(hc, hang = 1, main = "Clusters Pedido")
+
+
+
+library(dendextend)
+
+# Make 2 dendrograms, using 2 different clustering methods
+d1 <- Pedido_tdm2 %>% dist() %>% hclust( method="complete" ) %>% as.dendrogram()
+d2 <- Pedido_tdm2 %>% dist() %>% hclust( method="average" ) %>% as.dendrogram()
+ 
+# Custom these kendo, and place them in a list
+dl <- dendlist(
+  d1 %>% 
+    set("labels_col", value = c("skyblue", "orange", "grey"), k=3) %>%
+    set("branches_lty", 1) %>%
+    set("branches_k_color", value = c("skyblue", "orange", "grey"), k = 3),
+  d2 %>% 
+    set("labels_col", value = c("skyblue", "orange", "grey"), k=3) %>%
+    set("branches_lty", 1) %>%
+    set("branches_k_color", value = c("skyblue", "orange", "grey"), k = 3)
+)
+ 
+# Plot them together
+tanglegram(dl, 
+           common_subtrees_color_lines = TRUE, highlight_distinct_edges  = TRUE, highlight_branches_lwd=TRUE, match_order_by_labels = TRUE,
+           margin_inner=11,
+           lwd=1
+)
+
+```
+
+
+
+# Avaliando as Respostas dos Líderes
+
+Esse corpus agrega todas as falas dos entrevistados categorizados como líderes dos três documentos analisados.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+## Only anwser Lider
+Resposta_Lider <- TidyData %>%
+          filter(Tipo_Fragmento == "Resposta") %>%
+          filter(Persona == c(1,3,5)) 
+
+## Make a corpus
+Resposta_source_Lider <- VectorSource(Resposta_Lider$Texto)
+Corpus_Resposta_Lider <- VCorpus(Resposta_source_Lider)
+
+#Clean Corpus
+Clean_RespostaLider_corpus <- clean_corpus(Corpus_Resposta_Lider)
+
+
+```
+
+
+Quantidade de falas e termos existentes ou não em cada fala: 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+RespostaLider_tdm <- TermDocumentMatrix(Clean_RespostaLider_corpus)
+
+# Convert coffee_dtm to a matrix
+RespostaLider_m <- as.matrix (RespostaLider_tdm)
+
+# Print the dimensions of coffee_m
+dim(RespostaLider_m)
+
+
+```
+
+
+## Palavras mais frequentes das respostas dos líderes
+
+Nesses resultados é possível verificar as palavras e agrupamentos mais frequentes nos pedidos dos líderes
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+library(qdap)
+
+# Calculate the row sums 
+term_frequency_lider <- rowSums(RespostaLider_m)
+
+# Sort term_frequency in decreasing order
+term_frequency_lider <- sort(term_frequency_lider, decreasing = TRUE)
+
+# Plot a barchart of the 10 most common words
+barplot(term_frequency_lider[2:10], col = "blue", las = 2)
+
+# Load wordcloud package
+library(wordcloud)
+
+# Print the first 10 entries in term_frequency
+term_frequency_lider[1:10]
+
+# Vector of terms
+terms_vec_lider <-names(term_frequency_lider)
+
+# Create a word cloud for the values in word_freqs
+wordcloud(terms_vec_lider,term_frequency_lider, max.words = 60, min.freq = 2,
+  random.order = FALSE, 
+  rot.per = 0.35, 
+  colors = brewer.pal(8, "Dark2"))
+
+
+
+```
+
+# Avaliando as respostas dos liderados
+
+Abaixo o conjunto de palavras mais frequentes dos liderados.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+## Only anwser Lider
+Resposta_Liderado <- TidyData %>%
+          filter(Tipo_Fragmento == "Resposta") %>%
+          filter(Persona == 2) 
+
+## Make a corpus
+Resposta_source_Liderado <- VectorSource(Resposta_Liderado$Texto)
+Corpus_Resposta_Liderado <- VCorpus(Resposta_source_Liderado)
+
+#Clean Corpus
+Clean_RespostaLiderado_corpus <- clean_corpus(Corpus_Resposta_Liderado)
+
+
+
+
+
+```
+
+
+
+
+
+
+Quantidade de falas e termos existentes ou não em cada fala: 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+RespostaLiderado_tdm <- TermDocumentMatrix(Clean_RespostaLiderado_corpus)
+
+# Convert coffee_dtm to a matrix
+RespostaLiderado_m <- as.matrix (RespostaLiderado_tdm)
+
+# Print the dimensions of coffee_m
+dim(RespostaLiderado_m)
+
+
+```
+
+
+## Palavras mais frequentes dos liderados
+
+Essas são as palavras mais frequentes faladas pelos liderados.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(qdap)
+
+# Calculate the row sums 
+term_frequency_Liderado <- rowSums(RespostaLiderado_m)
+
+# Sort term_frequency in decreasing order
+term_frequency_Liderado <- sort(term_frequency_Liderado, decreasing = TRUE)
+
+# Plot a barchart of the 10 most common words
+barplot(term_frequency_Liderado[2:10], col = "tan", las = 2)
+
+# Load wordcloud package
+library(wordcloud)
+
+# Print the first 10 entries in term_frequency
+term_frequency_Liderado[1:10]
+
+# Vector of terms
+terms_vec_Liderado <-names(term_frequency_Liderado)
+
+# Create a word cloud for the values in word_freqs
+wordcloud(terms_vec_Liderado,term_frequency_Liderado, max.words = 60, colors = c("grey80", "darkgoldenrod1","tomato"))
+
+
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+RespostaLiderado_tdm <- 
+  TermDocumentMatrix(Clean_RespostaLiderado_corpus,
+  control = list(tokenize = tokenizer)
+)
+
+
+RespostaLiderado_tdm_m <- as.matrix(RespostaLiderado_tdm)
+
+
+RespostaLiderado_freq <- rowSums(RespostaLiderado_tdm_m)
+
+
+
+```
+
+
+# Palavras Comum Lideres e Liderados
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+ txt <- system.file("texts", "txt", package = "tm")
+(corpus_m_o <- VCorpus(DirSource("C:/Users/Jacob/Documents/Text Mining/storytelling_m_o", encoding = "UTF-8"),
+ readerControl = list(language = "lat")))
+
+clean_m_o <- clean_corpus(corpus_m_o)
+
+
+```
+
+
+## Palavras comuns entre as personas
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+library(plotrix)
+library(dplyr)
+
+
+O_M_tdm <- TermDocumentMatrix(clean_m_o)
+
+O_M_m <- as.matrix(O_M_tdm)
+
+colnames(O_M_m) <- c("Gerentes", "Operadores")
+
+# Create all_m
+all_M_O <- as.matrix(O_M_m)
+
+
+# Identify terms shared by both documents
+common_words <- subset(all_M_O,
+                       all_M_O[, 1] > 0 & all_M_O[, 2] > 0)
+# Find most commonly shared words
+difference <- abs(common_words[, 1] - common_words[, 2])
+common_words <- cbind(common_words, difference)
+common_words <- common_words[order(common_words[, 3],
+decreasing = TRUE), ]
+
+top25_df <- data.frame(
+               Gerentes = common_words[1:25, 1],
+               Operadores = common_words[1:25, 2],
+               Palavras = rownames(common_words[1:25, ]))
+
+
+
+DT::datatable(top25_df)
+
+
+ txt <- system.file("texts", "txt", package = "tm")
+(corpus_m_o_p <- VCorpus(DirSource("C:/Users/Jacob/Documents/Text Mining/storytelling_m_o_p", encoding = "UTF-8"),
+ readerControl = list(language = "lat")))
+
+clean_m_o_p <- clean_corpus(corpus_m_o_p)
+
+O_M_P_tdm <- TermDocumentMatrix(clean_m_o_p)
+
+O_M_P_m <- as.matrix(O_M_P_tdm)
+
+# Print a commonality cloud
+commonality.cloud(O_M_P_m, max.words = 100,colors = "steelblue1")
+
+```
+
+## Núvem de palavras comuns entre Entrevistador, Gerentes e Operadores
+
+Essa núvem agrega as palavras comuns entre entrevistador, gerentes e operadores.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Give the columns distinct names
+colnames(O_M_P_m) <- c("Entrevistador", "Gerentes", "Operadores")
+
+# Create all_m
+all_M_O_P <- as.matrix(O_M_P_m)
+
+# Create comparison cloud
+comparison.cloud(all_M_O_P,colors = c("orange", "blue", "green"), max.words = 100)
+
+
+
+```
+
+
+## Comunicação
+
+Abaixo as palavras comuns entre gerentes e operadores que possuem maior correlação com o termos comunicação.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+
+common_words <- subset(all_M_O,
+                       all_M_O[, 1] > 0 & all_M_O[, 2] > 0)
+
+# Find most commonly shared words
+difference <- abs(common_words[, 1] - common_words[, 2])
+common_words <- cbind(common_words, difference)
+common_words <- common_words[order(common_words[, 3],
+decreasing = TRUE), ]
+
+common_w <- data.frame(
+               Gerentes = common_words[1:100, 1],
+               Operadores = common_words[1:100, 2],
+               Palavras = rownames(common_words[1:100, ]))
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+word_cor <- common_w %>%
+  group_by(Gerentes) %>%
+  filter(n() >= 50) %>%
+  widyr::pairwise_cor(Palavras,Palavras, sort = TRUE)
+
+word_cor %>%
+  filter(item1 %in% c("acho", "tem", "que")) %>%
+  group_by(item1) %>%
+  arrange(desc(item1))%>%
+  top_n(30) %>%
+  ungroup() %>%
+  mutate(item2 = reorder(item2, correlation)) %>%
+  ggplot(aes(item2, correlation, fill = item1)) +
+  geom_col(show.legend = FALSE) +
+  geom_bar(stat = "identity") +
+  labs(x=NULL, y= NULL)+
+  facet_wrap(~ item1, ncol = 1, scales = "free") +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  scale_x_reordered()
+
+```
+
+# Conclusões
+
+Observar cada parte de um corpus como sendo a representação de personas permite compreender os elementos simbólicos que povoam os modelos mentais dos agentes humanos, em contextos sociotécnicos.
+...
+
+# Referencias
+
+http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+
+https://eight2late.wordpress.com/2015/05/27/a-gentle-introduction-to-text-mining-using-r/
+
+https://cran.r-project.org/web/packages/corpus/vignettes/corpus.html
+
+https://rpubs.com/malkoves/DS_project

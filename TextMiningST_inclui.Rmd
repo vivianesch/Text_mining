@@ -1,0 +1,914 @@
+---
+title: "Bag of words tecnique to stablish sense of unity indicator into Oil and gas industry project"
+author: "Viviane Schneider, PhD"
+date: "09 de abril de 2020 - Last version: 23/09/2020"
+output: 
+  html_document: 
+    highlight: zenburn
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+
+setwd("~/Text Mining")
+```
+
+# Context of study
+
+
+
+# Study goal
+
+
+
+## Research question
+
+
+
+# Methods, Materials and Techniques
+
+
+
+## Materials
+
+
+**R Packages**
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+# Pacotes e Funções
+library(tidyverse) # Manipulacao eficiente de dados
+library(tidytext) # Manipulacao eficiente de texto
+library(textreadr) # Leitura de pdf para texto
+library(tm) # Pacote de mineracao de texto com stopwords 
+library(wordcloud) # Grafico nuvem de palavras
+library(igraph)
+library(ggraph)
+library(ggplot2)
+library(dplyr)
+library(pdftools)
+library(RRPP)
+```
+
+## Make a Corpus
+
+```{r}
+ txt <- system.file("texts", "txt", package = "tm")
+(corpus <- VCorpus(DirSource("C:/Users/Jacob/Documents/Text Mining/storytelling", encoding = "UTF-8"),
+ readerControl = list(language = "lat")))
+
+```
+
+
+## Text Cleaning Function
+
+```{r}
+my_stops <- c("entrevistado", "fogaça", "francisco")
+
+clean_corpus <- function(x){
+  y <- tm_map(x, removePunctuation)
+  x <- tm_map(y, content_transformer(tolower))
+  x <- tm_map(x, removeNumbers)
+  x <- tm_map(x, removeWords, words = c(stopwords("pt"), my_stops))
+  x <- tm_map(x, stripWhitespace)
+  return(x)
+}
+
+clean_corp <- clean_corpus(corpus)
+```
+
+
+# Bag of word text mining techinique
+Bag of words is a technique form text mining methodology que consiste em analisar 
+
+## Term Document Matrix (TDM)
+
+the term-document matrix  has terms in the first column and documents across the top as individual column names.
+The TDM is often the matrix used for language analysis. This is because you likely have more terms than authors or documents and life is generally easier when you have more rows than columns. An easy way to start analyzing the information is to change the matrix into a simple matrix using as.matrix() on the TDM.
+
+
+```{r}
+# Create a term-document matrix from the corpus
+ST_tdm <- TermDocumentMatrix(clean_corp)
+
+# Print coffee_tdm data
+ST_tdm 
+
+# Convert to a matrix
+ST_m <- as.matrix(ST_tdm)
+
+# Print the dimensions of the matrix
+dim(ST_m)
+
+
+```
+
+
+
+## Document Term Matrix (DTM)
+
+The document-term matrix is used when you want to have each document represented as a row. This can be useful if you are comparing authors within rows, or the data is arranged chronologically, and you want to preserve the time series. The tm package uses a "simple triplet matrix" class. However, it is often easier to manipulate and examine the object by re-classifying the DTM with as.matrix()
+
+
+```{r}
+# Create the document-term matrix from the corpus
+ST_dtm <- DocumentTermMatrix(clean_corp)
+
+# Print out coffee_dtm data
+ST_dtm
+
+# Convert coffee_dtm to a matrix
+ST_m <- as.matrix (ST_dtm)
+
+# Print the dimensions of coffee_m
+dim(ST_m)
+
+# Review a portion of the matrix to get some Starbucks
+
+```
+
+
+# Coherence of Sense of Unity
+
+# Context
+
+```{r}
+
+library(qdap)
+
+# Convert to a matrix
+ST_m <- as.matrix(ST_tdm)
+
+# Calculate the row sums 
+term_frequency <- rowSums(ST_m)
+
+# Sort term_frequency in decreasing order
+term_frequency <- sort(term_frequency, decreasing = TRUE)
+
+
+# Plot a barchart of the 10 most common words
+barplot(term_frequency[1:10], col = "tan", las = 2)
+
+
+# Create frequency
+frequency <- freq_terms(
+clean_corp,
+top = 10,
+at.least = 3,
+stopwords("pt"))
+
+plot(frequency)
+
+# Load wordcloud package
+library(wordcloud)
+
+# Print the first 10 entries in term_frequency
+
+term_frequency[1:10]
+
+# Vector of terms
+terms_vec <-names(term_frequency)
+
+# Create a word cloud for the values in word_freqs
+wordcloud(terms_vec,term_frequency, max.words = 30, colors = "red")
+
+
+
+```
+
+
+Remove some words
+
+```{r}
+
+# Add to stopwords
+stops <- c(stopwords(kind = 'pt'), 'ah', 'ahh', 'ahhh')
+
+# Review last 6 stopwords 
+tail(stops)
+
+# Apply to a corpus
+cleaned_2_corp <- tm_map(clean_corp, removeWords,stops)
+
+```
+
+```{r}
+library(viridisLite)
+# Sort in descending order
+sorted_corp_words <- sort(term_frequency, decreasing = TRUE)
+
+# Print the 6 most frequent chardonnay terms
+head(sorted_corp_words, 6)
+
+# Get a terms vector
+terms_vec <- names(term_frequency)
+
+# Create a wordcloud for the values in word_freqs
+wordcloud(terms_vec,term_frequency,
+          max.words = 50, colors = "red")
+
+
+# Print the word cloud with the specified colors
+wordcloud(terms_vec,term_frequency,
+    max.words = 80,
+    colors = c("grey80", "darkgoldenrod1","tomato"))
+
+# Select 5 colors 
+color_pal <- cividis(n=5)
+
+# Examine the palette output
+color_pal
+
+# Create a word cloud with the selected palette
+wordcloud(terms_vec,term_frequency, 
+          max.words = 100,
+          colors = color_pal
+          )
+
+```
+
+# Common Words
+
+## Create one corpus
+
+```{r}
+ txt <- system.file("texts", "txt", package = "tm")
+(corpus_m_o <- VCorpus(DirSource("C:/Users/Jacob/Documents/Text Mining/storytelling_m_o", encoding = "UTF-8"),
+ readerControl = list(language = "lat")))
+
+clean_m_o <- clean_corpus(corpus_m_o)
+
+ 
+```
+
+
+
+## Find common words
+
+```{r}
+O_M_tdm <- TermDocumentMatrix(clean_m_o)
+
+O_M_m <- as.matrix(O_M_tdm)
+
+# Print a commonality cloud
+commonality.cloud(O_M_m, max.words = 100,colors = "steelblue1")
+
+```
+
+
+## Visualize dissimilar words
+
+```{r}
+
+
+# Give the columns distinct names
+colnames(O_M_m) <- c("Gerentes", "Operadores")
+
+# Create all_m
+all_M_O <- as.matrix(O_M_m)
+
+# Create comparison cloud
+comparison.cloud(all_M_O,colors = c("orange", "blue"), max.words = 50)
+```
+
+## Polarized tag cloud
+
+
+Polarized tag cloud
+Commonality clouds show words that are shared across documents. One interesting thing that they can't show you is which of those words appear more commonly in one document compared to another. For this, you need a pyramid plot; these can be generated using pyramid.plot() from the plotrix package.
+
+First, some manipulation is required to get the data in a suitable form. This is most easily done by converting it to a data frame and using dplyr. Given a matrix of word counts, as created by as.matrix(tdm), you need to end up with a data frame with three columns:
+
+The words contained in each document.
+The counts of those words from document 1.
+The counts of those words from document 2.
+Then pyramid.plot() using
+
+pyramid.plot(word_count_data$count1, word_count_data$count2, word_count_data$word)
+There are some additional arguments to improve the cosmetic appearance of the plot.
+
+Now you'll explore words that are common in chardonnay tweets, but rare in coffee tweets. all_dtm_m is created for you.
+
+```{r}
+library(plotrix)
+library(dplyr)
+
+# Identify terms shared by both documents
+common_words <- subset(all_M_O,
+                       all_M_O[, 1] > 0 & all_M_O[, 2] > 0)
+# Find most commonly shared words
+difference <- abs(common_words[, 1] - common_words[, 2])
+common_words <- cbind(common_words, difference)
+common_words <- common_words[order(common_words[, 3],
+decreasing = TRUE), ]
+
+top25_df <- data.frame(
+               Gerentes = common_words[1:25, 1],
+               Operadores = common_words[1:25, 2],
+               Palavras = rownames(common_words[1:25, ]))
+
+pyramid.plot(top25_df$Gerentes, top25_df$Operadores, 
+  labels = top25_df$Palavras, 
+  top.labels = c("Gerentes", "Palavras", "Operadores"), 
+  main = "Palavras em comum", 
+  unit = NULL, raxlab = NULL, 
+  gap = 38 )
+
+Top200Words <- rownames(common_words[1:200, ])
+
+
+
+```
+
+## Visualize word networks
+
+Another way to view word connections is to treat them as a network, similar to a social network. Word networks show term association and cohesion. A word of caution: these visuals can become very dense and hard to interpret visually.
+
+In a network graph, the circles are called nodes and represent individual terms, while the lines connecting the circles are called edges and represent the connections between the terms.
+
+For the over-caffeinated text miner, qdap provides a shortcut for making word networks. The word_network_plot() and word_associate() functions both make word networks easy!
+
+The sample code constructs a word network for words associated with "Marvin".
+
+
+```{r}
+# Word association
+
+stops_clouds <- rownames(common_words[20:nrow(common_words), ])
+
+word_associate(content(clean_m_o[[1]]), match.string = "operação", 
+               stopwords = c(stops_clouds, my_stops, stopwords("pt")),
+               network.plot = TRUE, cloud.colors = c("gray85", "darkred"))
+title(main = "Associações de palavras dos gerentes com o termo operação")
+
+```
+
+
+# Distance matrix and dendrogram
+
+A simple way to do word cluster analysis is with a dendrogram on your term-document matrix. Once you have a TDM, you can call dist() to compute the differences between each row of the matrix.
+
+Next, you call hclust() to perform cluster analysis on the dissimilarities of the distance matrix. Lastly, you can visualize the word frequency distances using a dendrogram and plot(). Often in text mining, you can tease out some interesting insights or word clusters based on a dendrogram.
+
+Consider the table of annual rainfall that you saw in the last video. Cleveland and Portland have the same amount of rainfall, so their distance is 0. You might expect the two cities to be a cluster and for New Orleans to be on its own since it gets vastly more rain.
+
+
+# Make a dendrogram friendly TDM
+Now that you understand the steps in making a dendrogram, you can apply them to text. But first, you have to limit the number of words in your TDM using removeSparseTerms() from tm. Why would you want to adjust the sparsity of the TDM/DTM?
+
+TDMs and DTMs are sparse, meaning they contain mostly zeros. Remember that 1000 tweets can become a TDM with over 3000 terms! You won't be able to easily interpret a dendrogram that is so cluttered, especially if you are working on more text.
+
+In most professional settings, a good dendrogram is based on a TDM with 25 to 70 terms. Having more than 70 terms may mean the visual will be cluttered and incomprehensible. Conversely, having less than 25 terms likely means your dendrogram may not plot relevant and insightful clusters.
+
+When using removeSparseTerms(), the sparse parameter will adjust the total terms kept in the TDM. The closer sparse is to 1; the more terms are kept. This value represents a percentage cutoff of zeros for each term in the TDM.
+
+```{r}
+n_w <- 200
+
+stops_corpus <- rownames(common_words[n_w:nrow(common_words), ])
+
+common_corpus <- tm_map(clean_corp, removeWords, 
+                        words = c(stopwords("pt"), my_stops, stops_corpus))
+
+tdm <- TermDocumentMatrix(common_corpus)
+
+# Create tdm1
+tdm1 <- removeSparseTerms(ST_tdm,sparse = 0.95)
+
+# Create tdm2
+tdm2 <- removeSparseTerms(ST_tdm, sparse = 0.975)
+
+# Print tdm1
+tdm1
+
+# Print tdm2
+tdm2
+
+```
+
+
+#  Put it all together: a text-based dendrogram
+
+
+Its time to put your skills to work to make your first text-based dendrogram. Remember, dendrograms reduce information to help you make sense of the data. This is much like how an average tells you something, but not everything, about a population. Both can be misleading. With text, there are often a lot of nonsensical clusters, but some valuable clusters may also appear.
+
+A peculiarity of TDM and DTM objects is that you have to convert them first to matrices (with as.matrix()), before using them with the dist() function.
+
+For the chardonnay tweets, you may have been surprised to see the soul music legend Marvin Gaye appears in the word cloud. Let's see if the dendrogram picks up the same.
+
+```{r}
+
+common_wordsMO <- subset(all_M_O,
+                       all_M_O[, 1] > 20 & all_M_O[, 2] > 20)
+
+
+ST_dist <- dist(common_wordsMO)
+
+# Create hc
+hc <- hclust(ST_dist)
+
+# Plot the dendrogram
+plot(hc)
+```
+
+
+# Dendrogram aesthetics
+
+So you made a dendrogram…but it's not as eye-catching as you had hoped!
+
+The dendextend package can help your audience by coloring branches and outlining clusters. dendextend is designed to operate on dendrogram objects, so you'll have to change the hierarchical cluster from hclust using as.dendrogram().
+
+A good way to review the terms in your dendrogram is with the labels() function. It will print all terms of the dendrogram. To highlight specific branches, use branches_attr_by_labels(). First, pass in the dendrogram object, then a vector of terms as in c("data", "camp"). Lastly, add a color such as "blue".
+
+After you make your plot, you can call out clusters with rect.dendrogram(). This adds rectangles for each cluster. The first argument to rect.dendrogram() is the dendrogram, followed by the number of clusters (k). You can also pass a border argument specifying what color you want the rectangles to be (e.g. "green").
+
+```{r}
+library(dendextend)
+
+# Create hcd
+hcd <- as.dendrogram(hc)
+
+# Print the labels in hcd
+labels(hcd)
+
+# Change the branch color to red for "marvin" and "gaye"
+hcd_colored <- branches_attr_by_labels(hcd,c("problema", "sonda"), color = "red")
+
+# Plot hcd_colored
+plot(hcd_colored, main = "Better Dendrogram")
+
+# Add cluster rectangles
+rect.dendrogram(hcd_colored,k = 2,border = "grey50")
+```
+
+
+# Using word association
+Another way to think about word relationships is with the findAssocs() function in the tm package. For any given word, findAssocs() calculates its correlation with every other word in a TDM or DTM. Scores range from 0 to 1. A score of 1 means that two words always appear together in documents, while a score approaching 0 means the terms seldom appear in the same document.
+
+Keep in mind the calculation for findAssocs() is done at the document level. So for every document that contains the word in question, the other terms in those specific documents are associated. Documents without the search term are ignored.
+
+To use findAssocs() pass in a TDM or DTM, the search term, and a minimum correlation. The function will return a list of all other terms that meet or exceed the minimum threshold.
+
+findAssocs(tdm, "word", 0.25)
+Minimum correlation values are often relatively low because of word diversity. Don't be surprised if 0.10 demonstrates a strong pairwise term association.
+
+The coffee tweets have been cleaned and organized into tweets_tdm for the exercise. You will search for a term association, and manipulate the results with list_vect2df() from qdap and then create a plot with the ggplot2 code in the example script.
+
+Instructions
+100 XP
+Create associations using findAssocs() on tweets_tdm to find terms associated with "venti", which meet a minimum threshold of 0.2.
+View the terms associated with "venti" by printing associations to the console.
+Create associations_df, by calling list_vect2df(), passing associations, then setting col2 to "word" and col3 to "score".
+Run the ggplot2 code to make a dot plot of the association values.
+
+```{r}
+library(ggthemes)
+
+n_w <- 30
+
+stops_corpus <- rownames(common_words[n_w:nrow(common_words), ])
+
+common_corpus <- tm_map(clean_corp, removeWords, 
+                        words = c(stopwords("pt"), my_stops, stops_corpus))
+tdm <- TermDocumentMatrix(common_corpus)
+
+
+# Create associations
+associations <- findAssocs(tdm,"problema",0.2)
+
+# View the venti associations
+associations
+
+# Create associations_df
+associations_df <- list_vect2df(associations,col2 = "Palavra",col3 = "score")
+
+associations_df <- arrange(associations_df, score)
+
+associations_df[1:30,1:3]
+
+# Plot the associations_df values
+ggplot(associations_df[1:20,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+# Plot the associations_df values
+ggplot(associations_df[40:70,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+ggplot(associations_df[110:130,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+ggplot(associations_df[300:330,1:3], aes(score, Palavra)) + 
+  geom_point(size = 3) + 
+  theme_gdocs()
+
+```
+
+# N-gram tokenization
+
+## Changing n-grams
+
+So far, we have only made TDMs and DTMs using single words. The default is to make them with unigrams, but you can also focus on tokens containing two or more words. This can help extract useful phrases that lead to some additional insights or provide improved predictive attributes for a machine learning algorithm.
+
+The function below uses the RWeka package to create trigram (three word) tokens: min and max are both set to 3.
+
+tokenizer <- function(x) {
+  NGramTokenizer(x, Weka_control(min = 3, max = 3))
+}
+Then the customized tokenizer() function can be passed into the TermDocumentMatrix or DocumentTermMatrix functions as an additional parameter:
+
+tdm <- TermDocumentMatrix(
+  corpus, 
+  control = list(tokenize = tokenizer)
+)
+
+```{r}
+library(RWeka)
+
+# Make tokenizer function 
+tokenizer <- function(x) {
+  NGramTokenizer(x, Weka_control(min = 2, max = 2))
+}
+
+# Create unigram_dtm
+unigram_dtm <- DocumentTermMatrix(common_corpus)
+
+# Create bigram_dtm
+bigram_dtm <- DocumentTermMatrix(common_corpus,
+  control = list(tokenize = tokenizer) 
+  )
+
+# Print unigram_dtm
+unigram_dtm
+
+# Print bigram_dtm
+bigram_dtm
+
+```
+
+
+# How do bigrams affect word clouds?
+Now that you have made a bigram DTM, you can examine it and remake a word cloud. The new tokenization method affects not only the matrices but also any visuals or modeling based on the matrices.
+
+Remember how "Marvin" and "Gaye" were separate terms in the chardonnay word cloud? Using bigram, tokenization grabs all two-word combinations. Observe what happens to the word cloud in this exercise.
+
+This exercise uses str_subset from stringr. Keep in mind, other DataCamp courses cover regular expressions in more detail. As a reminder, the regular expression ^ matches the starting position within the exercise's bigrams
+
+```{r}
+# Create bigram_dtm_m
+bigram_dtm_m <- as.matrix(bigram_dtm)
+
+# Create freq
+freq <- colSums(bigram_dtm_m)
+
+# Create bi_words
+bi_words <- names(freq)
+
+# Examine part of bi_words
+str_subset(bi_words,"^sonda")
+
+# Plot a word cloud
+wordcloud(bi_words,freq,max.words = 15)
+```
+
+
+# Different frequency criteria
+
+## Changing frequency weights
+So far, you've simply counted terms in documents in the DocumentTermMatrix or TermDocumentMatrix. In this exercise, you'll learn about TfIdf weighting instead of simple term frequency. TfIdf stands for term frequency-inverse document frequency and is used when you have a large corpus with limited-term diversity.
+
+TfIdf counts terms (i.e. Tf), normalizes the value by document length and then penalizes the value the more often a word appears among the documents. This is common sense; if a word is commonplace, it's important but not insightful. This penalty aspect is captured in the inverse document frequency (i.e., Idf).
+
+For example, reviewing customer service notes may include the term "cu" as shorthand for "customer". One note may state "the cu has a damaged package" and another as "cu called with question about delivery". With document frequency weighting, "cu" appears twice, so it is expected to be informative. However, in TfIdf, "cu" is penalized because it appears in all the documents. As a result, "cu" isn't considered novel, so its value is reduced towards 0, which lets other terms have higher values for analysis.
+
+Instructions 1/2
+50 XP
+1
+Create tdm, a term frequency-based TermDocumentMatrix() using text_corp.
+Create tdm_m by converting tdm to matrix form.
+Examine the term frequency for "coffee", "espresso", and "latte" in a few tweets. Subset tdm_m to get rows c("coffee", "espresso", "latte") and columns 161 to 166.
+
+Take Hint (-15 XP)
+2
+Edit the TermDocumentMatrix() to use TfIdf weighting. Pass control = list(weighting = weightTfIdf) as an argument to the function.
+Run the code and compare the new scores to the first part of the exercise.
+
+```{r}
+
+# Create a TDM
+tdm <- TermDocumentMatrix(corpus_m_o)
+
+# Convert it to a matrix
+tdm_m <- as.matrix(tdm)
+
+# Examine part of the matrix
+tdm_m[c("problema")]
+
+
+# Edit the controls to use Tfidf weighting
+tdm <- TermDocumentMatrix(corpus_m_o, 
+       control = list(weighting = weightTfIdf))
+
+# Convert to matrix again
+tdm_m <- as.matrix(tdm)
+
+# Examine the same part: how has it changed?
+tdm_m[c("problema")]
+
+```
+
+
+# Capturing metadata in tm
+Depending on what you are trying to accomplish, you may want to keep metadata about the document when you create a corpus.
+
+To capture document-level metadata, the column names and order must be:
+
+doc_id - a unique string for each document
+text - the text to be examined
+... - any other columns will be automatically cataloged as metadata.
+Sometimes you will need to rename columns in order to fit the expectations of DataframeSource(). The names() function is helpful for this.
+
+tweets exists in your worksapce as a data frame with columns "num", "text", "screenName", and "created".
+
+Instructions
+100 XP
+Rename the first column of tweets to "doc_id".
+Set the document schema with DataframeSource() on the smaller tweets data frame.
+Make the document collection a volatile corpus nested in the custom clean_corpus() function.
+Apply content() to the first tweet with double brackets such as text_corpus[[1]] to see the cleaned plain text.
+Confirm that all metadata was captured using the meta() function on the first document with single brackets.
+Remember, when accessing part of a corpus, the double or single brackets make a difference! For this exercise, you will use double brackets with content() and single brackets with meta().
+
+```{r}
+
+# Examine the first doc content
+content(corpus_m_o[[1]])
+
+# Access the first doc metadata
+meta(corpus_m_o[1])
+
+
+```
+
+
+# Step 1 - Define the problem and question
+
+
+
+# Step 2: Identifying the text sources
+
+Employee reviews can come from various sources. If your human resources department had the resources, you could have a third party administer focus groups to interview employees both internally and from your competitor.
+
+Forbes and others publish articles about the "best places to work", which may mention Amazon and Google. Another source of information might be anonymous online reviews from websites like Indeed, Glassdoor or CareerBliss.
+
+Here, we'll focus on a collection of anonymous online reviews.
+
+Instructions
+100 XP
+View the structure of amzn with str() to get its dimensions and a preview of the data.
+Create amzn_pros from the positive reviews column amzn$pros.
+Create amzn_cons from the negative reviews column amzn$cons.
+Print the structure of goog with str() to get its dimensions and a preview of the data.
+Create goog_pros from the positive reviews column goog$pros.
+Create goog_cons from the negative reviews column goog$cons.
+
+```{r eval=FALSE, include=FALSE}
+
+# Print the structure of amzn
+str(tdm)
+
+# Create amzn_pros
+amzn_pros <- amzn$pros
+
+# Create amzn_cons
+amzn_cons <- amzn$cons
+
+# Print the structure of goog
+str(goog)
+
+# Create goog_pros
+goog_pros <-goog$pros
+
+# Create goog_cons
+goog_cons <-goog$cons
+
+```
+
+
+# Step 3: Text organization
+
+Apply qdap_clean() to amzn_pros, assigning to qdap_cleaned_amzn_pros.
+
+Create a vector source (VectorSource()) from qdap_cleaned_amzn_pros, then turn it into a volatile corpus (VCorpus()), assigning to amzn_p_corp.
+
+Create amzn_pros_corp by applying tm_clean() to amzn_p_corp.
+
+
+
+```{r}
+
+tokenizer <- function(x) 
+  NGramTokenizer(x, Weka_control(min = 2, max = 2))
+
+clean_m_o <- clean_corpus(corpus_m_o)
+
+# Create amzn_p_tdm
+m_o_p_tdm <- TermDocumentMatrix(clean_m_o, 
+control = list(tokenize = tokenizer)
+ )
+
+# Create amzn_p_tdm_m
+m_o_p_tdm_m <- as.matrix(m_o_p_tdm)
+
+# Create amzn_p_freq
+m_o_p_freq <- rowSums(m_o_p_tdm_m)
+
+# Plot a word cloud using amzn_p_freq values
+wordcloud(names(m_o_p_freq),m_o_p_freq,max.words = 25, color = "blue" )
+```
+
+
+```{r eval=FALSE, include=FALSE}
+# Create amzn_c_tdm
+m_o_c_tdm <- 
+  TermDocumentMatrix(clean_m_o,
+  control = list(tokenize = tokenizer)
+)
+
+# Create amzn_c_tdm_m
+m_o_n_c_tdm_m <- as.matrix(m_o_c_tdm)
+
+# Create amzn_c_freq
+m_o_c_freq <- rowSums(m_o_n_c_tdm_m)
+
+# Plot a word cloud of negative Amazon bigrams
+wordcloud(names(m_o_c_freq),m_o_c_freq, max.words = 25, color = "red" )
+
+
+# Create amzn_c_tdm2 by removing sparse terms 
+m_o_c_tdm2 <-removeSparseTerms(m_o_n_c_tdm_m, sparse = .993)
+
+# Create hc as a cluster of distance values
+hc <- hclust(dist(m_o_c_tdm2),method = "complete")
+
+# Produce a plot of hc                  
+plot(hc)
+
+```
+
+
+## amzn_cons dendrogram
+It seems there is a strong indication of long working hours and poor work-life balance in the reviews. As a simple clustering technique, you decide to perform a hierarchical cluster and create a dendrogram to see how connected these phrases are.
+
+```{r}
+
+
+```
+
+
+# Word association
+As expected, you see similar topics throughout the dendrogram. Switching back to positive comments, you decide to examine top phrases that appeared in the word clouds. You hope to find associated terms using the findAssocs()function from tm. You want to check for something surprising now that you have learned of long hours and a lack of work-life balance.
+
+Instructions
+100 XP
+The amzn_pros_corp corpus has been cleaned using the custom functions like before.
+
+Construct a TDM called amzn_p_tdm from amzn_pros_corp and control = list(tokenize = tokenizer).
+Create amzn_p_m by converting amzn_p_tdm to a matrix.
+Create amzn_p_freq by applying rowSums() to amzn_p_m.
+Create term_frequency using sort() on amzn_p_freq along with the argument decreasing = TRUE.
+Examine the first 5 bigrams using term_frequency[1:5].
+You may be surprised to see "fast paced" as a top term because it could be a negative term related to "long hours". Look at the terms most associated with "fast paced". Use findAssocs() on amzn_p_tdm to examine "fast paced" with a 0.2 cutoff.
+
+
+```{r}
+# Create amzn_p_tdm
+mo_p_tdm <- TermDocumentMatrix(
+corpus_m_o,
+control = list(tokenize = tokenizer)
+)
+
+# Create amzn_p_m
+amzn_p_m <- as.matrix(amzn_p_tdm)
+
+# Create amzn_p_freq
+amzn_p_freq <- rowSums(amzn_p_m)
+
+# Create term_frequency
+term_frequency <-sort(amzn_p_freq, decreasing = TRUE)
+
+# Print the 5 most common terms
+term_frequency[1:5]
+
+# Find associations with fast-paced
+findAssocs(amzn_p_tdm, "fast paced", 0.2)
+```
+
+#  Quick review of Google reviews
+You decide to create a comparison.cloud() of Google's positive and negative reviews for comparison to Amazon. This will give you a quick understanding of top terms without having to spend as much time as you did, examining the Amazon reviews in the previous exercises.
+
+We've provided you with a corpus all_goog_corpus, which has 500 positive and 500 negative reviews for Google. Here, you'll clean the corpus and create a comparison cloud comparing the common words in both pro and con reviews.
+
+Instructions
+100 XP
+The all_goog_corpus object consisting of Google pro and con reviews, is loaded in your workspace.
+
+Create all_goog_corp by cleaning all_goog_corpus with the predefined tm_clean() function.
+Create all_tdm by converting all_goog_corp to a term-document matrix.
+Create all_m by converting all_tdm to a matrix.
+Construct a comparison.cloud() from all_m. Set max.words to 100. The colors argument is specified for you.
+
+```{r}
+# Create all_goog_corp
+all_goog_corp <- tm_clean(all_goog_corpus)
+
+# Create all_tdm
+all_tdm <- TermDocumentMatrix(all_goog_corp)
+
+# Create all_m
+all_m <- as.matrix(all_tdm)
+
+# Build a comparison cloud
+comparison.cloud(all_m, 
+    max.words = 100, 
+    colors = c("#F44336", "#2196f3"))
+```
+
+
+# Cage match! Amazon vs. Google pro reviews
+Amazon's positive reviews appear to mention bigrams such as "good benefits", while its negative reviews focus on bigrams such as "workload" and "work-life balance" issues.
+
+In contrast, Google's positive reviews mention "great food", "perks", "smart people", and "fun culture", among other things. Google's negative reviews discuss "politics", "getting big", "bureaucracy", and "middle management".
+
+You decide to make a pyramid plot lining up positive reviews for Amazon and Google so you can compare the differences between any shared bigrams.
+We have preloaded a data frame, all_tdm_df, consisting of terms and corresponding AmazonPro, and GooglePro bigram frequencies. Using this data frame, you will identify the top 5 bigrams that are shared between the two corpora.
+
+Instructions
+100 XP
+Create common_words from all_tdm_df using dplyr functions.
+filter() on the AmazonPro column for nonzero values.
+Likewise filter the GooglePro column for nonzero values.
+Then mutate() a new column, diff which is the abs (absolute) difference between the term frequencies columns.
+Although we could have piped again, create top5_df by applying top_n to common_words to extract the top 5 values in the diff column. It will print to your console for review.
+Create a pyramid.plot passing in top5_df$AmazonPro then top5_df$GooglePro and finally add labels with top5_df$terms.
+
+```{r}
+library(dplyr)
+
+# Filter to words in common and create an absolute diff column
+common_words <- all_tdm_df %>% 
+  filter(
+    AmazonPro != 0,
+    GooglePro != 0
+  ) %>%
+  mutate(diff = abs(AmazonPro - GooglePro))
+
+# Extract top 5 common bigrams
+top5_df <- top_n(common_words,5,diff)
+
+# Create the pyramid plot
+pyramid.plot(top5_df$AmazonPro, top5_df$GooglePro, 
+             labels = top5_df$terms, gap = 12, 
+             top.labels = c("Amzn", "Pro Words", "Goog"), 
+             main = "Words in Common", unit = NULL)
+```
+
+
+# Cage match, part 2! Negative reviews
+In both organizations, people mentioned "culture" and "smart people", so there are some similar positive aspects between the two companies. However, with the pyramid plot, you can start to infer degrees of positive features of the work environments.
+
+You now decide to turn your attention to negative reviews and make the same visual. This time you already have the common_words data frame in your workspace. However, the common bigrams in this exercise come from negative employee reviews.
+
+Instructions
+100 XP
+Using top_n() on common_words, obtain the top 5 bigrams weighted on the diff column. The results of the new object will print to your console.
+Create a pyramid.plot(). Pass in top5_df$AmazonNeg, top5_df$GoogleNeg, and labels = top5_df$terms. For better labeling, set
+gap to 12.
+top.labels to c("Amzn", "Neg Words", "Goog")
+The main and unit arguments are set for you.
+
+```{r}
+
+```
+
+
+
+```{r eval=FALSE, include=FALSE}
+ST_m[25:35, c("","")]
+```
+
+
+
+http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+
+https://eight2late.wordpress.com/2015/05/27/a-gentle-introduction-to-text-mining-using-r/
+
+https://cran.r-project.org/web/packages/corpus/vignettes/corpus.html
+
+https://rpubs.com/malkoves/DS_project

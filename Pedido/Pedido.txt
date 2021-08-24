@@ -1,0 +1,252 @@
+Fogaça: então tá, tá gravando a partir de agora. podemos fazer uma rodada de apresentação, não sei quem quer começar. apesentação com a função e o tempo de experiência na parte de perfuração.  			
+Fogaça: não só experiência de embarque mesmo. trabalha só com perfuração ou produção também?			
+Fogaça: o fiscal fica sempre embarcado?			
+Fogaça: tá legal. então, validando o caso para ter certeza que a gente entendeu o que vocês nos contaram. a gente teve um caso de blackout parcial, que evoluiu para um caso de blackout total, houve uma disconexão da sonda e abalroamento com o barco que estava fazendo o suprimento desta sonda. Pergunta para vocês. de todos os casos que vocês poderiam ter escolhido, a gente teve até uma troca de caso, um ajuste grande no começo, mas por que esse caso?			
+Fogaça: considerando esse acidente como um todo. em grau de severidade, consideraria ele grave?			
+Fogaça: e em termos de probabilidade?			
+Fogaça: Tá, não mas seria um acidente possível de acontecer, não é? mas essa possíbilidade é remota?			
+Fogaça: baixa, entendi. Ok.			
+Fogaça: não não o abalroamento, eu digo o caso como um todo, considerem blackout...			
+Fogaça: não tudo bem, mas ainda assim por que esse caso é interessante para vocês, por que vocês escolheram falar disso?			
+Fogaça: tá a desconexão, o ESD é o ponto chave aí.			
+Fogaça: legal, é uma escolha de gestão de risco. em termos de desconexão, tem acontecido nas sondas de libra.			
+Fogaça: não seria comum, é raro isso acontecer?			
+Fogaça: quase um susto assim.			
+Fogaça: interessante.			
+Fogaça: e chegaram alguma conclusão do caso?			
+Fogaça: ótimo, tá bom. a gente escolheu então. conduziu né, para envolver geradores e toda essa parte de abalroamento, deck de carga e tudo mais, acho que ficou claro a respeito dos porquês ai pra mim, pelo menos. se quiserem completar alguma coisa, me enterropam a qualquer momento. O dia da semana não foi o caso, mas a hora envolvia aquela parte de fadiga e troca de turno e tudo mais, porque é mais estafante, é mais cansativo. todo mundo trabalha assim, internacionalmente é esse mesmo sistema de 12/12 horas, ai tem o 12+6 e tudo mais... tem outros sistemas?			
+Fogaça: isso são normas da empresa ou isso é lei trabalhista para função?			
+Fogaça: isso na petrobrás como um todo ou só libra?			
+Fogaça: libra também?			
+Fogaça: eessa decisão de escala é que tem um departamento de escala que escala isso? como é?			
+Fogaça: mas tem um  setor de escala na empresa que determina isso, quem decide se vai ficar uma semana a mais ou não?			
+Fogaça: certo.			
+Fogaça: tá ótimo.			
+Fogaça: e o pessoal que não é da sonda, tu fala, que não conhece aquela sonda em especial			
+Fogaça: não tem mesma especialização. entendi.			
+Fogaça: e uma pergunta rápida a respeito dessa parte de compras de materiais. na aviação, por exemplo, eu tenho o avião da boeing, e ela especifica quais peças eu posso usar, eu tenho um partnumber um negócio lá que diz é só aquilo ali. se tu não comprar aquela peça tu ta infringindo a lei. como funciona, tu comentaste da camisa de bomba, qual é o grau de liberdade que vocês tem de correr atrás de uma peça...			
+Fogaça: tá ok, então ela era mais simples, mas estava dentro da especificação.			
+Fogaça: bota bota, bota de calçado?			
+Fogaça: pequenos detalhes...			
+Fogaça: o barato sai caro			
+Fogaça: seguindo. a parte de condições meteorológicas, comentou que as condições meteorológicas... era noite e as condições eram marginais. em linhas gerais, teria como explicar o que é uma condição marginal. vocês comentaram que vento é um fator muito importante, o que mais que influenciaria bastante aqui.			
+Fogaça: então ondas perto do limite, vento...			
+Fogaça: mas vocês tem anemometro pra medir vento?			
+Fogaça: essa medidade de			
+Fogaça: também tem um valor númerico que aparece em algum lugar. isso é medido né, não é no olho?			
+Fogaça: ok, então não é medido "assim"... ok. a gente já falou bastante, mas é só para validar mesmo, a parte de pessoas envolvidas então, a gente mencionou DPO, então novo e recem promovido. pouca experiência, ansiedade e essas coisas. a parte do eletrecista ocorre o contrário. é extremamente experiente, aí é um pouco de complacencia, um pouco de excesso de confiança. algum tipo de ruído na comunicação entre o pessoal da plataforma e da sonda na parte de atracamento ali do barco, não sei se atracamento é o correto, mas a aproximação para descarga né. e algo mais? esqueci alguma coisa?			
+Fogaça: tá, em relação a treina...			
+Fogaça: o pessoal, em especial o DPO, treinamentos específicos para isso, tem algum treinamento, dá pra fazer algum simulado? assim oh, tu ta com um pane agora de blackout, vai fazer essa comunicação e tudo mais, existe... e tem tipo um simulador pra isso? como que é?			
+Fogaça: não nunca é			
+Fogaça: isso é feito na plataforma?			
+Fogaça: tá, aqueles simuladores que a gente viu no SENAI, tem alguma coisa pra esse tipo de coisa ou não?			
+Fogaça: tipo uma sala de controle ou coisa assim			
+Fogaça: além de ter curso teórico tem simulador, tem treinamento simulado regulares?			
+Fogaça: então ele não pode ser DPO?			
+Fogaça: vai ser a primeira vez, first time.			
+Fogaça: entendi, então ele pode chegar lá, mesmo que esteja completamente certificado, está bem verdinho ainda, bem cru.			
+Fogaça: ok. a parte do eletrecista como é os periódicos desse pessoal? tem simulador também ou é só o inicial?			
+Fogaça: não			
+Fogaça: o DPO isso? ou eletrecista?			
+Fogaça: é anual então?			
+Fogaça: tá bom.			
+Fogaça: ele não vai estar sozinho?			
+Fogaça: e nesse caso como fica o noturno?			
+Fogaça: ele vai tá sozinho			
+Fogaça: entendi. comentavam a respeito de experiência. quem seria um DPO bom que tipo de experiência esse cara já tem para ser um cara safo na operaçã, que ta com ele tá tranquilo não sei se é um tempo, tipo: ah o cara com quatro anos embarcado, ou que já passou por tal e tal situação. não sei se vocês têm essa noção.			
+Fogaça: ba mas ai o cara é muito pé quente né.			
+Fogaça: trabalhando como DPO, por exemplo.			
+Fogaça: então esse cara é considerado proficiente.			
+Fogaça: e cinco anos é mais ou menos parelho para qualquer função?			
+Fogaça: e chega na total hoje um cara que não tem cinco, mas tem quatro anos. ele não vai assumir?			
+Fogaça: a petrobrás faz alguma coisa nesse sentido?			
+Fogaça: então vocês subcontratam, isso?			
+Fogaça: um aceite como se fosse.			
+Fogaça: e para o fiscal, não se é o caso, se isso aparece no radar de vocês, se vocês chamam atenção, vocês tão embarcando em uma plataforma onde tem, por exemplo: chove em cima do pobre do DPO, ali e tal, o cara é primeiro ano dele, é novinho, isso chama atenção? ba to numa plataforma que tem um cara novinho aqui e tal, vamo ficar de olho nele ou alguma coisa assim.			
+Fogaça: sempre tem um veterano junto?			
+Fogaça: mas isso chega a chamar atenção, quem são os novatos da plataforma ou não?			
+Fogaça: sim sim, eu usei de exemplo porque foi o nome que apareceu né. mas se tu tem um soldador que é novo, tipo é o primeiro embarque do cara, isso chama atenção?			
+Fogaça: no briefing isso aparece para vocês? ou algo assim, num briefing de entrada em plataforma, vocês sabe que eles são os novatos ou alguma coisa? ou tem que pescar?			
+Fogaça: não não, só curioso para saber como é o processo mesmo. Seguimos?			
+Fogaça: não, ótimo, acho que estou entendendo. do ponto de vista fisiológico, acho que o ponto maior aqui do eletrecista que tava com problema em casa e, enfim problema psicológico, canseira e tudo mais, a parte de cansaço acho que influencia mais ele né. acho que a parte do resto do controle da plataforma não é mais tanto, não é, essa parte fisiológica e psicológica. teve ansiedade do outro rapaz ali do barco e tudo mais. mas acho que é por aí né. não tem mais muito o que explorar.			
+Fogaça: tem			
+Fogaça: fez fez, acho que o ponto			
+Fogaça: mas acho que em termos de estado físico, eu acho que o do eletrecista pesou, foi o que mais pesou aqui na parte de repente estar cançado de ta...			
+Fogaça: ta ta então ta beleza. entedemos certo. em relação a procedimentos que deveriam existir ou que falharam, alguma coisa assim, algum checklist, eu imagino que tudo seja procedimentalizado, pelo que vocês me comentaram. tem um procedimento para partida do gerador, entendi que tem um procedimento para comunicação com o barco, mesmo que não seja um checklist, é treinado tudo isso. então. algum desses vocês entendem que sejam particularmente dificil ou que deveria existir e não existe, que tem que ser reformado, sem falar em profundidade, mas em geral tal procedimento é charope ou é dificil ou alguma coisa assim.			
+Fogaça: aham. e apos a revisão como o pessoal recebe esses procedimentos novos?			
+Fogaça: ok, mas não é necessáriamente todo mundo, sai uma revisão e como todo mundo fica sabendo dela?			
+Fogaça: o procedimento é para sonda, não é para eletrecistas por exemplo.			
+Fogaça: tá supõe que nessa sonda que a gente falou hoje, o eletrecista chega lá e diz: ba esse procedimento poderia ser melhorado. ele reporta e vem um procedimento. é só para aquela sonda é reportado.			
+Fogaça: isso vem num boletim de treinamento? como é feita essa adaptação?			
+Fogaça: então, suponha que tenha mudado um procedimento há um mês atrás e eu sou o eletrecista, aí chego lá e vou receber "oh tem um procedimento novo" eu tenho que dar ciência que eu li ele.			
+Fogaça: que é mais ou menos que a aviação está usando.			
+Fogaça: ta bom. algo que vocês visualizem ou imaginem que poderia ter deixado essa operação toda, vamos considerar tanto a comunicação com o barco ou a parte do gerador ali em baixo, mais fácil. alguma condição que poderia ter faciltado a vida do pessoal ali?			
+Fogaça: tentanto manter o mesmo cenário...			
+Fogaça: o que seria esse visual por exemplo?			
+Fogaça: uma luz estroboscópica, uma coisa assim, ou uma rotating beacon.			
+Fogaça: isso não existe? seria uma sugestão?			
+Fogaça: se eu apagasse algumas luzes já...			
+Fogaça: esse sinal vizual, ele já existe ou seria uma sugestão?			
+Fogaça: uma recomendação. tá vou colocar como um recomendação adicional. legal. colocar um sinal visual.			
+Fogaça: uma fumaça, um sinalizador tipo aqueles...			
+Fogaça: ah... certo, acho que a gente já falou dos erros humanos e falhas ativas aqui, ta bem explorado também. a gente poderia falar da supervisão da atividade. vocês comentaram que o eletrecista, entendi que ele é meio que um chefe, não ele não é o chefe, chefe de máquinas é o que tá dormindo lá, tá descansando. esse cara seria o próximo na cadeia de comando, seria o segundo ou não? tem algum supervisor entre eles ainda?			
+Fogaça: ele taria supervisionando esse cara?			
+Fogaça: mesmo a noite, naquele horário ele estaria lá.			
+Fogaça: então o eletrecista não estaria sozinho, teria mais alguem com ele.			
+Fogaça: tá então seria duas pessoas para não deixar acontencer o erro. teria uma supervisão ali. ele teria conhecimento técnico sufiente para servir como barreira?			
+Fogaça: sim ele foi lá e tipo: deixa pra mim que eu resolvo, tá, entendi.			
+Fogaça: boa nomenclatura. ta e, a parte do rapaz DPO, o supervisor dele não estaria lá, taria remoto e taria sozinho, entao. taria sozinho na sua área.			
+Fogaça: como ele parecia novato, teria um supervisor.			
+Fogaça: ta e esse cara taria dormindo nesse horário?			
+Fogaça: tá então vai ter sempre dois embarcados?			
+Fogaça: ok, e esse cara ele poderia ter ajudado na situação? ter feito a comunicação para esse caso?			
+Fogaça: foi no banheiro...			
+Fogaça: o capitão teria ação nesse acidente que a gente comentou aqui?			
+Fogaça: ele tava dormindo			
+Fogaça: mas nesse caso ele ta dormindo?			
+Fogaça: sim sim ter um canal alternativo			
+Fogaça: tá, em relação, ainda falando nesse ambito de comunicação.			
+Fogaça: falando na falha do primeiro gerador ali do... pra eletrecistar ir ligar o segundo porque não foi manual. quem avisa ele? como é que ele fica sabendo que houve uma falha de gerador... blackout parcial ele vai ver.			
+Fogaça: tipo um anunciador assim. para eu saber "oh não tive um acionamento automatico, alguem precisa ir lá resolver".			
+Fogaça: tá e ele avisa por rádio "oh fulano de tal to indo lá ver"			
+Fogaça: isso, tá.			
+Fogaça: é a área dele.			
+Fogaça: ta na região, ok. mas ele deveira... precisa consultar o painel, não vai ser uma coisa que né...			
+Fogaça: entendi.			
+Fogaça: então ele ficaria... seria fácil dele perceber isso ai?			
+Fogaça: ótimo. falamos da resposta a este tipo de emergência, todo aquele ciclo de ações, tudo bem, tá anotadinho pra nós. recomendações, ficou uma recomendação adicional, seria a flashing light lá do sinal visual. todo mundo concorda que seria um bom sistema?			
+Fogaça: ok, ótimo. isso poderia ser acionado da propria cabine ou sala de controle?			
+Fogaça: seria algo, por exemplo, um stay away, quando tocar um alarme vai acender a luz ali, que viu aquela luz se afasta.			
+Fogaça: entendi, então a gente tem recomendações de equipamentos acho que não, mais em relação a pessoal e procedimentos, treinamentos, erros humanos e recomendações... tá.			
+Fogaça: tá legal acho que a gente cobriu tudo, tá bacana. vocês tem mais algum comentário a respeito do caso aí?			
+Fogaça: Ok, então passando a limpo a estória: nós tivemos um caso de queda de BOP com Riser com danos estruturais severos na plataformas e danos pessoais. isso foi por um... processo durante a perfuração do poço. mais ou menos no meio do processo de perfuração do poço.			
+Fogaça: E o BOP é a peça que faz a prevenção e os Risers nesse conjunto fazem?			
+Fogaça: mas vai passar o BOP por dentro e outras ferramentas.			
+Fogaça: esse é o BOP. O caso então foi... ahh sim muito importante, de todas as possibilidade, por que vocês escolheram esse caso?			
+Fogaça: e combinaram com a queda do BOP.			
+Fogaça: tá, a questão de criticidade, é mais fundo. o limite de sonda é 3000 metros e vai estar operando em 2800 metros, perto do limite. Isso eu estou falando de cabo de guindaste ou alcance dele ou ...			
+Fogaça: então terá o peso da coluna dos Riser e mais o BOP na coluna de 3000 metros. Tá, em termos de outras sondas que vocês têm conhecimento, é mais ou menos esse o limite da indústria hoje em 3000 metros?			
+Fogaça: essa seria a vanguarda de perfuração. o que tem de melhor			
+Fogaça: então podemos dizer que 3000 metros é o limite da sétima geração.			
+Fogaça: então tá, vamos lá. Local foi a plataforma, os equipamentos vocês mensionaram ali, a respito dos risers e mostraram os vídeos, que depois vou querer pegar o link com voces. não tinha o semana específico, mas tinha o horário: noturno, em troca de turno e dia de embarque né. O embarque e desembarque tem horário certo para acontecer?			
+Fogaça: quanto tempo o helicóptero constuma ficar na platafoma para fazer o embarque e desembarque?			
+Fogaça: e vocês usam o superpuma? quantos passageiros vão?			
+Fogaça: seguindo, condições meteorológicas da ocorrencia. Vocês comentaram então: mar agitado, sol e vento. algo mais?			
+Fogaça: no limite regulamentar do contrato			
+Fogaça: e a estabilização é tudo por thruster. OK. a parte das pessoas. a gente falou então de algumas pessoas. as pressões que essas pessoas poderiam estar sofrendo de tempo e de produção. a gente falou, que não era muito o caso de pressão.			
+Fogaça: vocês mencionaram também que ele deveria demosntrar serviço para continuar embarcado. Ok. O plataformista estava sofrendo alguma pressão?			
+Fogaça: não esse era o driller			
+Fogaça: a gente ver em outros casos, até mesmo da aviação, auto motivação pra fazer o negocio acontecer e dar certo e produzir e atingir a meta. tá. mais alguma coisa em termos de pressão por tempo ou produção?			
+Fogaça: existe treinamento especifico para essa manobra de colocação de BOP?			
+Fogaça: como vocês treinam a equipe inteira, é on job training, é na hora. a primeira vez que tiver lá vai treinar, ou tem um simulador lá que ele vai treinar.			
+Fogaça: mas não tem simulador disso então			
+Fogaça: existe algo similar que possa preparar o pessoal para chegar menos verde?			
+Fogaça: o "runing to" é só o engate.			
+Fogaça: que é a mesma que gira a broca e tudo mais. Entre o "running to" e o top-driver não tem nada?			
+Fogaça: a catarina não tem a ver com isso?			
+Fogaça: entendi. eu li o livrinho aquele e tava pensando...			
+Fogaça: então o treinamento é na plataforma mesmo? tem que ver acontecer e ir aprendendo. Só de curioso, existe rotatividade de função para o cara aprender mais alguma... o sistema toda ta acontecendo ou o cara aprende só a colocar pino e tirar pino e fica vinte anos tirando e colocando pino.			
+Fogaça: qual seria o tipo de experiência necessária para esse tipo de função. Vocês comentaram que o cara tem que ter visto isso antes. mas eles tem algum tipo de linha de corte, tipo: esse cara não vai participar da operação, pois está muito cru, ou algo assim.			
+Fogaça: e tem algum número máximo de capacete verde que pode ser utilizado ou é a critério de quem está gerenciando a operação.			
+Fogaça: e no caso do driller e do pusher la em cima. eu to imaginando que ele fica mais alto.			
+Fogaça: e eles também pode ter um novato, capacete verde ali com eles?			
+Fogaça: e vai ter outro do pusher observando ele?			
+Fogaça: tá, ele não vai estar fisicamente com ele.			
+Fogaça: é mais de procedimento é o Manual Geral de Operações ali.			
+Fogaça: isso, pode levar 10 anos sendo copiloto.			
+Fogaça: e das vagas. Então ta, então vai treinando. entendi. Seguindo. Fisiologicamente o pessoal estava bem, ninguem estava doente. tava tudo tranquilo. tinha algumas coisas do ponto de vista psicologico e problema em casa. isso é muito comum?			
+Fogaça: vamos imaginar ai em um mundo paralelo, que o pessoal reporta. tu tem em quantos, em média, embarcados na plataforma total?			
+Fogaça: tá, na plataforma, num dia que eu embarcar lá, vou encontrar 150 pessoas.			
+Fogaça: o resto desse pessoal, imagino que metade seja o pessoal em folga para cumprir o próximo turno. mas gente para manter a plataforma, que não ta diretamente na operação?			
+Fogaça: e o resto é para manter o navio.			
+Fogaça: e são funcionários seadrill?			
+Fogaça: entendi. então vamos supor que 10% dos 150 que estão embarcados reportem que estão com problemas psicológicos. o que se faz com esse pessoal?			
+Fogaça: não, a aleatório da plataforma inteira. um cara de máquina, um cara de driller e por ai vai...			
+Fogaça: o que vocês ja viram? dois ou três ao mesmo tempo?			
+Fogaça: e quando acontece alguma ocorrencia, não precisa ser psicológica, pode ser médica, o voo que conduz o desembarque, já vem alguem para fazer a susbtituição?			
+Fogaça: o cara fica dobrando a função temporária, ou um turno, até chegar alguem.			
+Fogaça: a aviação trabalha bastente com isso, legal... Vamo lá, algum procedimento falhou ou deveria existir relacionado a esse acidente? vocês acham que faltou algum procedimento ou havia procedimento demais, aquela história, havia algum procedimento sobrando ali?			
+Fogaça: ok. vamos pensar na falha em si, mas na, aqui foi uma queda de BOP. como seria o nome dessa manobra... colocação de BOP?			
+Fogaça: tá vou chamar de descida de BOP. pensando nos dois extremos. e voces começaram o dia falando quando se faz uma operação complicada a gente nunca se sente muito super liso assim, tem que ficar de olho. pois exige atenção. mas vocês me deram um situação marginal em que o mar estava batido, tava em mes ruim, houve troca de turno. Sem querer recorrer ao (alguma coisa que não entendi). tipo tudo ao contrário seria melhor. mas o que seria uma descida de BOP tranquila. Qual é a condição ideal para fazer isso. se pudesse escolhar.			
+Fogaça: em que situação voces trabalhariam sem compromisso de performance? existe isso?			
+Fogaça: tudo bem, mas existe na industria contrato que não preciona desse jeito?			
+Fogaça: e para eu entender. o pagamento é por contrato, não é por hora de trabalho. se vocês demorarem mais vocês não ganham a mais por isso.			
+Fogaça: não, da operação.			
+Fogaça: é			
+Fogaça: tá, mas da operação.			
+Fogaça: entendi. tá bom.  			
+Fogaça: essa estatística me enteressaria			
+Fogaça: a gente tem um dizer na aviação que é a antiga foto do iceberg. para cada 10 reportes tem 100 não reportes... e por aí vai.			
+Fogaça: tá bom. mas boa informação. então isso poderia ter facilitado a atividade. entao para torna-la mais dificil acho que vocês ja pegaram a situação que tornaria mais dificil a atividade. entendi assim né. e vocês teriam algum tipo de priorização nessa condução. o que é prioridade aqui, vocês tem a pressão por tempo, tem a pressão para manter a seguraça.			
+Fogaça: é, mas de repente, como a gente é medido, a gente trabalha diferente. de repente a sonda com mais produto não tenha um ranking bom. talvez a sonda que menos tenha acidente tenha um ranking bom.			
+Fogaça: Ok. talvez eu precise desse procedimento ai do... de descida do BOP. para entender melhor o que se faz primeiro o que é feito depois.			
+Fogaça: é ajuda a entender. mas tranquilo. sobre erros humanos e falhas ativas, ficou bem claro. acho que não tem muito o que comentar. to satisfeito. Processos organizacionais a respeito de supervisão ou mudanças na atividade. Voces poderiam me dizer... bom a gente falou que se o cara viu alguma coisa que não está legal ele pode pedir o timeout. seria o procedimento a fazer. existe algum outro procedimento negócio. se o cara viu alguma coisa que tá estranha...			
+Fogaça: seria no final do turno né, pois a operação continuou?			
+Fogaça: quanto tempo dura o debriefing?			
+Fogaça: entendi.			
+Fogaça: e esse debriefing é um bate-bola informal? quem conduz o debriefing?			
+Fogaça: e o pessoal costuma contribuir legal? ta na cultura já?			
+Fogaça: muito bom. o controle dessa atividade como um todo de descida do BOP, tem alguem que tá. quem é o dono da tarefa. quem é que... supervisiona toda a operação.			
+Fogaça: o que tu tem que olhar quando ta acontecendo um negócio desses? durante a operação o que tu cuida?			
+Fogaça: essa é uma operação que envolve uma parte grande da plataforma, em termos de pessoa. como é que tu operacionaliza isso? da uma caminhada, dá uma olhada para o que o pessoal está fazendo, conversa com o pessoal entrando em turno ou saindo de turno.			
+Fogaça: se alguem fosse para porque chegou pra ti no fim do turno e disesse: oh cara tem um rangido estranho é tu que pararia a operação?			
+Fogaça: mas eu digo, nesses espaços cinzas ai, eu não sei se tá bom ou não.			
+Fogaça: parabens pela boa cultura e pelo bom entendimento. tá e se tu precisasse dar um aviso é PA mesmo? chama lá e avisa: oh pessoal... alguma coisa assim. nesse caso, se tu viu alguma coisa.			
+Fogaça: então é nessa ronda ai que vai pegar...			
+Fogaça: legal. em relação a resposta a emergência. vocês fizeram bem organizadinho ali com os tempos... mas o pusher avisaria a sala de controle e a partir da li a sala de controle distribui a informação? em três horas estaremos com todo mundo atendido e vai. em três horas o cara que caiu na agua já estaria a bordo. e não é crítica, é só de curioso mesmo, mas o cara que caiu na agua morreu, o resgate dele demora mais por isso, pois eu imagino que não seja prioridade. nessa três horas ele já estaria de volta?			
+Fogaça: quem é que desce lá para buscar o cara?			
+Fogaça: desceria com uma baleieria, depois sobre a baleieira ou não tem como subir.			
+Fogaça: a baleieira não sobe mais, então.			
+Fogaça: não está procedimentalizado.			
+Fogaça: é ter uma ideia para qual lado correr. é, tá ótimo. recomendações de segurança para sinalizar que vocês colocaram. checar o com fabricante o interlock, seria iluminação, procedimentalizar handover de funções... pequenos handovers. hoje vocês não tem isso?			
+Fogaça: tá, acham que o procedimento ajudaria ou só complicaria mais?			
+Fogaça: tem que passar as informações para			
+Fogaça: tá. nesse caso de certificar se na ausencia do me, vocês comentaram de que olha se não tiver como deixar o cara para a operação. conseguiria parar tipo, olha tenho que ir no banheiro ali e tal, para a operação dez minutos ai...			
+Fogaça: normalmente não precisa parar, se consegue uma alternativa.			
+Fogaça: funciona bem?			
+Fogaça: excenlente. a revisão step-by-step antes do incio da tarefa, seria a revisão de procedimento? pensar se o procedimento está adequado, ou não, só ler o procedimento?			
+Fogaça: o pessoal no briefing né... toolbox que vocês falaram né. é... vocês dão highlights ou destacam alguma coisa ao que? eventos recentes ou é do feeling de que esta fazendo o brieifing?			
+Fogaça: é daquela trava mecânica...			
+Fogaça: é mais do feeling de que tá fazendo o briefing então, do que o cara acha mais relevante assim?			
+Fogaça: tipo aconteceu tal coisa dá uma destacada no briefing...			
+Fogaça: em relação a equipamentos acho que teria recomendações e tal, em relação a escala de pessoal e turno de serviço. a gente escuta vira e mexe que esses turnos de viradinha aí é bem crítico, o padrão da indústria é esse mesmo? não acharam uma solução melhor? pensa em alguma solução? alguma alternativa para deixar o pessoal menos cansado?			
+Fogaça: talvez o relogio biologico do cara fique bem esquizitão ficar invertendo de quinze em quinze dias.			
+Fogaça: o turno é sempre de meia noite ao meio dia ou tem um que é...			
+Fogaça: e isso varia como?			
+Fogaça: é por função?			
+Fogaça: entendi. o driller é 12/12?			
+Fogaça: tá, erros humanos a gente já falou alguma coisinha de recomendações. e... processo organizacional condições latentes e recomendações adicionais?			
+Fogaça: mais algum comentário sobre o caso?			
+Francisco: bom, então a primeira pergunta é para representar o que foi o caso. então o caso foi uma partida de um FPSO num comissionamento da descarga de um compressor né, que teve vazamento e esse vazamento foi associado junto com ignição, causada por uma lâmpada que foi danificada durante uma movimentação de carga. por que vocês escolheram esse caso?			
+Francisco: logo no ínicio, quando a gente tava fazendo o brainstorming tu levantaste como um problema o offloading. qual foi o motivo, assim, que o grupo resolveu utilizar esse caso como sendo o storytelling e não o offloading. Pois, eu vejo o offloading como sendo um caso que se tenha a participação de muito mais atores do que em um evento como esse levantado hoje.			
+Francisco: e quando o vazamento de hidrocabonetos acontece abaixo do convés, dentro do casco, não é mais difícil a retirada desse hidrocarboneto? pelo fato da densidade tender a...			
+Francisco: sim, então teve uma mudança de perspectiva para tentar mudar a cultura de operação de segurança dentro da empresa, será que... sei lá, algum evento como esse que foi recente, são mateus, não é uma inércia ainda da cultura antiga, em que a petrobras queria produzir em vez de parar			
+Francisco: é que minha pergunta anterior tentando associar o ato de liderança ou proatividade que aquele nosso trabalhador ficar ali, em detrimento da segurança, tentar resolver o problema e não interromper a produção, por exemplo.			
+Francisco: certo. aqui no meu roteiro tem uma pergunta que é: há algum tipo de treinamento específico para essa situação de vazamento...			
+Francisco: e aproveitando, esses treinamentos baseados em cenários, eles são... a plataforma ou a sonda não para para fazer esse tipo de treinamento, ela continua operando, como funciona?.			
+Francisco: é trivial que tenha alguem lá monitorando... que tipo de expeeriência é necessária para a situação elencada para aquele trabalhador ali, naquele posto de trabalho? ele tem que ter uma experiência de treinamento, ou assim... a experiência que ele ganha somente trabalhando, que não vem de procedimento ou treinamento, ou da troca de experiêcia com um colega dele.			
+Francisco: sim, e aí depois que ele embarca ele tem algum acompanhamento durante algum período antes dele estar solo, digamos assim, naquele posto?			
+Francisco: ok. então a próxima pergunta vai exatamente nessa linha de procedimentos, algum procedimento falhou ou deveria existir relacionado a esse acidente?			
+Francisco: o procedimento ali seria se reunir no ponto de encontro?			
+Francisco: mas quando se tem um vazamento, assim, e esse vazamento tem que ser contido. qual seria o procedimento que esses trabalhadores ou qual seria o curso de ação que eles deveriam seguir?			
+Francisco: que é justamente para tirar aquele trabalhador da área vulnerável			
+Francisco: é dada uma liberdade, mas talvez não fosse esse o caso de ficar lá. de atuar...			
+Francisco: e nesse caso que a shut down valve, é shut down né, ou shut off			
+Francisco: que a shut down valve não contem o vazamento...			
+Francisco: ok. que processo organizacionais podem contribuir para essa ocorrência? como é a supervisão da atividade? como os operadores ficam sabendo de quais quer mudanças que possam afetar a atividade?. vou voltar para primeira, que processos organizacionais podem contribuir para essa ocorrência?			
+Francisco: aqui fala sobre a supervisão da atividade. então vendo a atividade da construção e montagem a supervisão seria feita por um fiscal que vai lá, após a montagem e construção, teoricamente para conferir e garantir que tá tudo certo né. acho que é isso.			
+Francisco: e no caso lá do operador que tava próximo ao vazamento... a supervisão da atividade existe, como ela é feita?			
+Francisco: que recomendações de segurança vocês propõem para previnir a reincidência desses casos? envolvendo equipamentos, ou escala de pessoal, ou erros humanos..
+Francisco: isso			
+Francisco: só para eu ter uma ideia, qual é a quilometragem de tubulação que tem embarcada de uma unidade de produção?			
+Francisco: é de qual ordem?			
+Francisco: é só pensar nessa maneira e relacionar com um vazamento, já se pode ter ideia da magnitude...			
+Francisco: quer passar para o próximo item?			
+Francisco: foi isso das recomendações né?			
+Francisco: tem mais algum ponto que vocês gostariam de destacar? vocês acham que essa entrevista abrangeu o que a gente fez durante o dia?			
+Francisco: isso é verificado pela permissão?			
+Observadora: a matriz de tolerabilidade né.			
+Francisco: é o COI ali né.			
+Francisco: por último gostaria de...			
+Marina: posso parar?			
+Francisco: pode parar.			
