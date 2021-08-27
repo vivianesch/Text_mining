@@ -37,7 +37,7 @@ Como identificar fatores humanos relacionados ao modelo HF2 nos relatórios de i
 # Documento P-20
 
 ```{r }
-
+library(tidyverse)
 library(dplyr)
 library(pdftools)
 library(magrittr)
@@ -76,11 +76,10 @@ arquivoPdf_P48 <- "~/Text Mining/P-48_Relatorio.pdf"
               }
 
 
+
 P20 <- .LimpaOrganiza(arquivoPdf_P20)
 P36 <- .LimpaOrganiza(arquivoPdf_P36)
 P48 <- .LimpaOrganiza(arquivoPdf_P48)
-
-library(readxl)
 
 
 ```              
@@ -92,19 +91,116 @@ library(readxl)
 
 ## Functon return phases reletec with a factor and 3 exemplos of these phrases
 
+
+.Frases <- function(vetor, texto){
+  
+  # Create our polit_pattern again by collapsing "factors"
+polit_pattern <- glue_collapse(vetor, sep = "|")
+
+# Match one or more word characters or punctuations
+context <- "([\\w\\.]]+\\s){0,10}"
+
+# Add this pattern in front and after the polit_pattern
+polit_pattern_with_context <- glue(
+  "{context}({polit_pattern})\\s?{context}"
+)
+frases <- grep(
+  texto,
+  pattern = polit_pattern_with_context, ignore.case = TRUE, value = TRUE
+)
+frases <- as.data.frame.character(frases)
+return(frases)
+}
+
+
+
+
+
+
+
+
+
+
+```
+
 .Frases <- function(text,vector) {
   # Match one or more word characters or punctuations
 ##"([\\w[:punct:]]+\\s){0,20}"
-context <- "([\\w[:punct:]]+\\s){0,200}"
-pattern_operator <- glue_collapse(vector, sep = "|")
+context <- "([\\w[:punct:]]+\\s){0,30}"
+pattern <- glue_collapse(vector, sep = "|")
 pattern_with_context <- glue(
-  "{context}({pattern_operator})\\s?{context}")
+  "{context}({vector})\\s?{context}")
 phrases <- grep(
 text,
   pattern = pattern_with_context, value = TRUE,ignore.case = TRUE)
+phrases <- as.data.frame.character(phrases)
 return(phrases)
-  }
-  
+
+}
+
+
+# Make a clean volatile corpus: text_corpus
+text_corpus <- clean_corpus(VCorpus(docs))
+
+# Examine the first doc content
+content(text_corpus[[1]])
+
+# Access the first doc metadata
+meta(text_corpus[1])
+
+phrases[1]
+
+
+
+
+res<-data.frame(str_detect(pdf.text,F22))
+colnames(res)<-"Result"
+res<- subset(res,res$Result==TRUE)
+row.names(res)
+
+
+
+
+
+pdf.text <- pdftools::pdf_text(arquivoPdf_P20)
+cat(pdf.text[[2]]) 
+pdf.text<-unlist(pdf.text)
+pdf.text<-tolower(pdf.text)
+library(stringr)
+res<-data.frame(str_detect(pdf.text,F22))
+colnames(res)<-"Result"
+res<- subset(res,res$Result==TRUE)
+row.names(res)
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+
+ 
+F22 <- c("riscos", "avaliação", "verificação", "análise", "avaliou", "avaliaram")
+F28 <-  c("considerção", "aprovação", "consciência","aprovação", "planejamento","segurança","respeito","avaliação","permissão","segurança","risco")
+F29 <-  c("considerção","consciência","aprovação","planejamento","segurança","respeito","avaliação","permissão","segurança","monitor")
+F51 <- c('não\\scumpriu', 'não\\spossui', 'ausentes?', 'normas?','regras?','procedimentos?','regulamentos?')
+F52 <-  c("alocação","jornada","cansaço","demasiado","trabalhos?")
+F56 <-  c("feedback","sistema")       
+F57 <- c('equipamentos?', 'configuração', 'dimensionamento', 'especificação','rupturas','instalação')
+F58 <- c('manutenção', 'registro', 'notas')
+F61 <-  c("comunicação", "canais?","rádios?","esclarecimentos?","orientação")
+F87 <- c('direcionou', 'ineficácia', 'comando', 'coordenação','lideranças?','tomada', 'decisão','decisões', 'responsáveis')
+F104 <- c('gestão\\sde\\smudanças?', 'gerenciamento\\sde\\smudanças?')
+F105 <- c("segurança")
+F118 <- c('trabalho', 'permissão')
+
+vetores_fatores <- sprintf(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, F105, F118)
+
+## S3 method for class 'list' to transforma a df
+as.data.frame(F104, row.names = NULL, optional = FALSE,
+              cut.names = FALSE, col.names = names(x), fix.empty.names = TRUE,
+              stringsAsFactors = default.stringsAsFactors())
+
+
 
 # Function to return a wordcloud and 3 main prases from a factor
 
@@ -122,29 +218,79 @@ frequency <- freq_terms(
   return(wc)
 }
 
+
+
+
+
+
 ```
 
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+```{r}
+Relatorio_corpus <- VCorpus(VectorSource(P20$text))
+content(Relatorio_corpus[[15]])
 
 
- 
-F22 <- c('falhas?', 'avaliação', 'verificação', 'análises?','riscos?','tomada', 'decisão','decisões')
-F28 <-  c("considerção", "aprovação", "consciência","aprovação", "planejamento","segurança","respeito","avaliação","permissão","segurança","risco")
-F29 <-  c("considerção","consciência","aprovação","planejamento","segurança","respeito","avaliação","permissão","segurança","monitor")
-F51 <- c('não\\scumpriu', 'não\\spossui', 'ausentes?', 'normas?','regras?','procedimentos?','regulamentos?')
-F52 <-  c("alocação","jornada","cansaço","demasiado","trabalhos?")
-F56 <-  c("feedback","sistema")       
-F57 <- c('equipamentos?', 'configuração', 'dimensionamento', 'especificação','rupturas','instalação')
-F58 <- c('manutenção', 'registro', 'notas')
-F61 <-  c("comunicação", "canais?","rádios?","esclarecimentos?","orientação")
-F87 <- c('direcionou', 'ineficácia', 'comando', 'coordenação','lideranças?','tomada', 'decisão','decisões', 'responsáveis')
-F104 <- c('gestão\\sde\\smudanças?', 'gerenciamento\\sde\\smudanças?')
-F105 <- c("segurança")
-F118 <- c('trabalho', 'permissão')
+##complicate <- c("complicated", "complication","complicatedly" )
+# Perform word stemming: stem_doc
+##stem_doc <- stemDocument(complicate)
+# Create the completion dictionary: comp_dict
+##comp_dict <- c("complicate")
+# Perform stem completion: complete_text 
+##complete_text <- stemCompletion(stem_doc, comp_dict)
+##removeWords(text, stopwords("pt"))
+new_stops <- c("plataforma", "investigação", stopwords("pt"))
 
-vetores_fatores <- list(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, F105, F118)
+.Clean_corpus <- function(corpus) {
+  # Remove punctuation
+  corpus <- tm_map(corpus, removePunctuation)
+  # Transform to lower case
+  corpus <- tm_map(corpus, content_transformer(tolower))
+  # Add more stopwords
+  corpus <- tm_map(corpus, removeWords, words = new_stops)
+  # Strip whitespace
+  corpus <- tm_map(corpus, stripWhitespace)
+  return(corpus)
+}
+
+clean_P20 <- .Clean_corpus(Relatorio_corpus)
+
+##DTM 
+.DTM <- function(clean_corp){
+corp_dtm <- DocumentTermMatrix(clean_corp)
+# Convert dtm to a matrix
+dtm_corp_m <- as.matrix (corp_dtm)
+return(dtm_corp_m)
+}
+
+DTM_P20_m <- .DTM(clean_P20)
+
+.TDM <- function(clean_corp){
+# Create a term-document matrix from the corpus
+corp_tdm <- TermDocumentMatrix(clean_corp)
+# Convert tdm to a matrix
+tdm_corp_m <- as.matrix(corp_tdm)
+return(tdm_corp_m)
+}
+
+TDM_P20_m <- .TDM(clean_P20)
+
+# Review a portion of the matrix
+TDM_P20_m[F22[1:2],]
+
+
+freq <- colSums(DTM_P20_m)
+
+# Create bi_words
+bi_words <- names(freq)
+
+str_subset(bi_words,"^falhas")
+
+
+names(P20)[1] <- "doc_id"
+
 
 
 
@@ -160,6 +306,7 @@ vetores_fatores <- list(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, 
 
 
 .Analise_fatores_tb <- function(Texto, Tipo_Acidente){
+
 
 ### Fator linha 51 "Regras e instruções de trabalho projetadas"
 F51_Regras_projetadas <- .Frases(Texto$text,F51)
@@ -202,40 +349,33 @@ F61_Comunicacao <-  .Frases(Texto$text, F61)
 F105_PriorSeguranca <-  .Frases(Texto$text, F105)
 
 
-#mess data - two separeted data
-#put the colunm status into which table
 
-F22_Decisao <- .Frases(P20$text, F22)
+F22_Decisao <- F22_Decisao %>%
+ mutate(Fator = "F22_Decisao", text = F22_Decisao, Dimensao = "Indivíduo") 
 
+F51_Regras_projetadas <- F51_Regras_projetadas  %>% mutate(Fator = "F51_Regras_projetadas", text = F51_Regras_projetadas, Dimensao = "Trabalho") 
 
-F22_Decisao <- F22_Decisao |>
- mutate( Fator = "F22_Decisao", text = F22_Decisao, Dimensao = "Indivíduo") 
-
-F51_Regras_projetadas <- data.frame(F51_Regras_projetadas) 
-F51_Regras_projetadas <- mutate(F51_Regras_projetadas, Fator = "F51_Regras_projetadas", text = F51_Regras_projetadas, Dimensao = "Trabalho") 
-
-F58_manutencao <- data.frame(F58_manutencao) 
-F58_manutencao <- mutate(F58_manutencao, Fator = "F58_manutencao", text = F58_manutencao, Dimensao = "Trabalho")
+F58_manutencao <- F58_manutencao %>% mutate(Fator = "F58_manutencao", text = F58_manutencao, Dimensao = "Trabalho")
   
-F57_QualiEquipamento <- data.frame(F57_QualiEquipamento) %>% mutate(Fator = "F57_QualiEquipamento", text = F57_QualiEquipamento, Dimensao = "Trabalho" )
+F57_QualiEquipamento <- F57_QualiEquipamento %>% mutate(Fator = "F57_QualiEquipamento", text = F57_QualiEquipamento, Dimensao = "Trabalho" )
 
-F87_coordena <- data.frame(F87_coordena) %>% mutate(Fator = "F87_coordena", text = F87_coordena, Dimensao = "Organização")
+F87_coordena <- F87_coordena %>% mutate(Fator = "F87_coordena", text = F87_coordena, Dimensao = "Organização")
 
-F104Gerir_mudanca <- data.frame(F104Gerir_mudanca) %>% mutate(Fator = "F104Gerir_mudanca", text = F104Gerir_mudanca, Dimensao = "Organização")
+F104Gerir_mudanca <- F104Gerir_mudanca %>% mutate(Fator = "F104Gerir_mudanca", text = F104Gerir_mudanca, Dimensao = "Organização")
 
-F118_PraticaTrabalho <- data.frame(F118_PraticaTrabalho) %>% mutate(Fator = "F118_PraticaTrabalho", text = F118_PraticaTrabalho, Dimensao = "Trabalho")
+F118_PraticaTrabalho <- F118_PraticaTrabalho %>% mutate(Fator = "F118_PraticaTrabalho", text = F118_PraticaTrabalho, Dimensao = "Trabalho")
 
-F28_ConscienciaRespeitoRisco <- data.frame(F28_ConscienciaRespeitoRisco) %>% mutate(Fator = "F28_ConscienciaRespeitoRisco", text = F28_ConscienciaRespeitoRisco, Dimensao = "Indivíduo")
+F28_ConscienciaRespeitoRisco <- F28_ConscienciaRespeitoRisco %>% mutate(Fator = "F28_ConscienciaRespeitoRisco", text = F28_ConscienciaRespeitoRisco, Dimensao = "Indivíduo")
 
-F29_ConscienciaMonitora <- data.frame(F29_ConscienciaMonitora) %>% mutate(Fator = "F29_ConscienciaMonitora", text = F29_ConscienciaMonitora, Dimensao = "Indivíduo")
+F29_ConscienciaMonitora <- F29_ConscienciaMonitora %>% mutate(Fator = "F29_ConscienciaMonitora", text = F29_ConscienciaMonitora, Dimensao = "Indivíduo")
 
-F52_CargaTrabalho <- data.frame(F52_CargaTrabalho) %>% mutate(Fator = "F52_CargaTrabalho", text = F52_CargaTrabalho, Dimensao = "Trabalho")
+F52_CargaTrabalho <- F52_CargaTrabalho %>% mutate(Fator = "F52_CargaTrabalho", text = F52_CargaTrabalho, Dimensao = "Trabalho")
 
-F56_FeedbackSistema <- data.frame(F56_FeedbackSistema) %>% mutate(Fator = "F56_FeedbackSistema", text = F56_FeedbackSistema,  Dimensao = "Trabalho")
+F56_FeedbackSistema <- F56_FeedbackSistema %>% mutate(Fator = "F56_FeedbackSistema", text = F56_FeedbackSistema,  Dimensao = "Trabalho")
 
-F61_Comunicacao <- data.frame(F61_Comunicacao) %>% mutate(Fator = "F61_Comunicacao", text = F61_Comunicacao, Dimensao = "Organização")
+F61_Comunicacao <- F61_Comunicacao %>% mutate(Fator = "F61_Comunicacao", text = F61_Comunicacao, Dimensao = "Organização")
 
-F105_PriorSeguranca <- data.frame(F105_PriorSeguranca) %>% mutate(Fator = "F105_PriorSeguranca", text = F105_PriorSeguranca, Dimensao = "Trabalho")
+F105_PriorSeguranca <- F105_PriorSeguranca %>% mutate(Fator = "F105_PriorSeguranca", text = F105_PriorSeguranca, Dimensao = "Trabalho")
 
 
 #put together in a big data frame
@@ -281,7 +421,7 @@ return(Frases_por_fator)
 
 .Analise_Fatores_grafico <- function(Frases_por_fator){
 print(
-  Frases_por_fator %>% 
+   Frases_por_fator %>%
     group_by(Fator, Dimensao, Tipo_Acidente) %>% 
     summarise(Qnt_Frases = n())  %>% 
     ggplot(aes(x=Qnt_Frases , y= Fator, size = Qnt_Frases, color=Dimensao)) +
@@ -334,7 +474,18 @@ print(DT::datatable(frequency))
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
 
-# Função para normalizar texto
+#
+# FUNCAO para analisar as 25 frases mais frequentes no texto dos fatores
+
+.Analise_25Frases_texto <- function(texto) {
+  
+  # Lista de palavras para remover
+palavrasRemover <- c(stopwords(kind = "pt"), letters) %>%
+  as.tibble() %>% 
+  rename(Palavra = value) %>% 
+  mutate(Palavra = NormalizaParaTextMining(Palavra))
+  
+   ## Função para normalizar texto
 NormalizaParaTextMining <- function(texto){
  
   # Normaliza texto
@@ -356,9 +507,6 @@ NormalizaParaTextMining <- function(texto){
 my_stopwords <- tibble(Palavra = c(as.character(1:3), 
                                     "www","http", ",", ".", "tq", "figura", "raiz","nº", "fatores", "causais", "fator", "afirma", "seguinte", "investigacao", "relatorio", "plataforma", "f"))
 
-# FUNCAO para analisar as 25 frases mais frequentes no texto dos fatores
-
-.Analise_25Frases_texto <- function(texto) {
   
   CleanW <- texto  %>% 
   unnest_tokens(Palavra, text) %>% 
@@ -408,9 +556,11 @@ temp=ngram::ngram(ngram::concatenate(CleanW),ngrams)      # Objeto temporario re
 
 ## FUNCAO que agrega todas as funções
 
-.Analise_Completa_Documento <- function(texto_bruto, Nome_Acidente) {
-  
-tb <- .Analise_fatores_tb(texto_bruto, Nome_Acidente)
+
+
+
+
+tb_P20 <- .Analise_fatores_tb(P20, "Incendío")
 
 .Analise_Fatores_grafico(tb)
 
@@ -420,9 +570,6 @@ tb <- .Analise_fatores_tb(texto_bruto, Nome_Acidente)
 
 .Analise_25Frases_texto(texto_bruto)
 
-return()
-
-}
 
 ```
 

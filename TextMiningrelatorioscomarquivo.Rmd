@@ -72,18 +72,18 @@ setwd("~/Text Mining")
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
 
-library(tidyverse) # Manipulacao eficiente de dados
+library()
 library(tidytext) # Manipulacao eficiente de texto
 library(textreadr) # Leitura de pdf para texto
 library(tm) # Pacote de mineracao de texto com stopwords 
 library(wordcloud) # Grafico nuvem de palavras
 library(igraph)
 library(ggraph)
-library(ggplot2)
 library(dplyr)
 library(pdftools)
 library(RRPP)
 library(SnowballC)
+library(ggplot2)
 library(glue)
 library(purrr)
 library(magrittr) # needs to be run every time you start R and want to use %>%
@@ -106,13 +106,20 @@ modelo_reduzido_greco_vetores <- read_excel("modelo_reduzido_greco_vetores.xlsx"
 
 relatorioExplosao <- .Pdftotext("~/Text Mining/P-48_Relatorio.pdf")
 
+
+
+
+
+```
+
+
 .Fator <- function(vetor){
   texto <- relatorioExplosao
-  context <- "([[:punct:]\\w]){0,20}"
+  context <- "([\\w[:punct:]]+\\s){0,10}"
    pattern <- glue_collapse(vetor, sep = "|")
    # Add this pattern in front and after the HF_pattern
     pattern_with_context <- glue(
-  "{context}({vetor}){context}")
+  "{context}({vetor})\\s?{context}")
     frases<-grep(
   texto,
   pattern = pattern_with_context, value = TRUE,ignore.case = TRUE
@@ -135,11 +142,6 @@ relatorioExplosao <- .Pdftotext("~/Text Mining/P-48_Relatorio.pdf")
 }
 
     
-
-
-
-```
-
 
 
 ```{r}
