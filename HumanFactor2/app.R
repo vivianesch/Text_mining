@@ -7,27 +7,60 @@
 #    http://shiny.rstudio.com/
 #
 
+rsconnect::setAccountInfo(name='vivianesch', token='99089EE69C2A20B8E669E3E5C2ED72B5', secret='MLL72ZVfzPrzFr5qsY9rgxS9MxeBct0Xd9ONjCkj')
+setwd("~/Text Mining/HumanFactor2")
+
 library(shiny)
-
-
 library(tm)
 library(wordcloud)
 library(memoise)
+library(rsconnect)
+library(reader)
+library(tidyverse)
+library(dplyr)
+library(pdftools)
+library(magrittr)
+library(tidyverse) # Manipulacao eficiente de dados
+library(tidytext) # Manipulacao eficiente de texto
+library(textreadr) # Leitura de pdf para texto
+library(wordcloud) # Grafico nuvem de palavras
+library(igraph)
+library(ggraph)
+library(ggplot2)
+library(RRPP)
+library(SnowballC)
+library(glue)
+library(purrr)
+
+arquivoPdf_1 <- "~/Text Mining/HumanFactor2/relatorios/Abandono_producao_P-34.pdf"
+arquivoPdf_2 <- "~/Text Mining/HumanFactor2/relatorios/Balroamento_obito-SS-83.pdf"
+arquivoPdf_3 <- "~/Text Mining/HumanFactor2/relatorios/Explosao_Naufragio_P-36.pdf"
+
+
+.LimpaOrganiza <- function(arquivoPdf) {
+    Texto <- arquivoPdf %>% 
+        read_pdf() %>%
+        as.tibble() %>% 
+        select(text)
+    return(Texto)
+}
+
+
+
+Abandono_producao <- .LimpaOrganiza(arquivoPdf_1)
+Balroamento_obito <- .LimpaOrganiza(arquivoPdf_2)
+Explosao_Naufragio <- .LimpaOrganiza(arquivoPdf_3)
+
+
 
 # The list of valid books
-books <<- list("relatorio1" = "summer",
-               "relatorio2" = "merchant",
-               "relatorio" = "romeo")
+books <<- list("Abandono_producao" = "parada",
+               "Balroamento_obito" = "balroamento",
+               "Explosao_Naufragio" = "Naufragio")
 
-# Using "memoise" to automatically cache the results
-getTermMatrix <- memoise(function(book) {
-    # Careful not to let just any name slip in here; a
-    # malicious user could manipulate this value.
-    if (!(book %in% books))
-        stop("Relatório Inexistente")
+
     
-    text <- readLines(sprintf("~/relatorios", book),
-                      encoding="UTF-8")
+    text <- Abandono_producao
     
     myCorpus = Corpus(VectorSource(text))
     myCorpus = tm_map(myCorpus, content_transformer(tolower))
@@ -42,7 +75,7 @@ getTermMatrix <- memoise(function(book) {
     m = as.matrix(myDTM)
     
     sort(rowSums(m), decreasing = TRUE)
-})
+
 
 
 # Define UI for application that draws a histogram
