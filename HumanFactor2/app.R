@@ -6,9 +6,8 @@
 #
 #    http://shiny.rstudio.com/
 #
-
-rsconnect::setAccountInfo(name='vivianesch', token='99089EE69C2A20B8E669E3E5C2ED72B5', secret='MLL72ZVfzPrzFr5qsY9rgxS9MxeBct0Xd9ONjCkj')
 setwd("~/Text Mining/HumanFactor2")
+
 
 library(shiny)
 library(tm)
@@ -31,36 +30,48 @@ library(RRPP)
 library(SnowballC)
 library(glue)
 library(purrr)
+library(memoise)
+
+
 
 arquivoPdf_1 <- "~/Text Mining/HumanFactor2/relatorios/Abandono_producao_P-34.pdf"
-arquivoPdf_2 <- "~/Text Mining/HumanFactor2/relatorios/Balroamento_obito-SS-83.pdf"
-arquivoPdf_3 <- "~/Text Mining/HumanFactor2/relatorios/Explosao_Naufragio_P-36.pdf"
+##arquivoPdf_2 <- "~/HumanFactor2/relatorios/Balroamento_obito-SS-83.pdf"
+##arquivoPdf_3 <- "~/HumanFactor2/relatorios/ExplosaoSM_11-02-15.pdf"
 
 
-.LimpaOrganiza <- function(arquivoPdf) {
-    Texto <- arquivoPdf %>% 
-        read_pdf() %>%
-        as.tibble() %>% 
-        select(text)
-    return(Texto)
-}
+# you can use an url or a path that leads to a pdf dcument
 
 
-
-Abandono_producao <- .LimpaOrganiza(arquivoPdf_1)
-Balroamento_obito <- .LimpaOrganiza(arquivoPdf_2)
-Explosao_Naufragio <- .LimpaOrganiza(arquivoPdf_3)
-
+# extract text
+txt_output <- pdftools::pdf_text(arquivoPdf_1) %>%
+    paste(sep = " ") %>%
+    stringr::str_replace_all(fixed("\n"), " ") %>%
+    stringr::str_replace_all(fixed("\r"), " ") %>%
+    stringr::str_replace_all(fixed("\t"), " ") %>%
+    stringr::str_replace_all(fixed("\""), " ") %>%
+    paste(sep = " ", collapse = " ") %>%
+    stringr::str_squish() %>%
+    stringr::str_replace_all("- ", "") 
 
 
 # The list of valid books
-books <<- list("Abandono_producao" = "parada",
-               "Balroamento_obito" = "balroamento",
-               "Explosao_Naufragio" = "Naufragio")
+books <<- list("Abandono_producao" = "parada")
+
+#"Balroamento_obito" = "balroamento",
+#"Explosao_Naufragio" = "Naufragio"
 
 
+
+# Using "memoise" to automatically cache the results
+getTermMatrix <- memoise(function(book) {
+    # Careful not to let just any name slip in here; a
+    # malicious user could manipulate this value.
+    if (!(book %in% books))
+        stop("Unknown book")
     
-    text <- Abandono_producao
+    text <- readLines(sprintf(txt_output, book),
+                      encoding="UTF-8")
+
     
     myCorpus = Corpus(VectorSource(text))
     myCorpus = tm_map(myCorpus, content_transformer(tolower))
@@ -75,6 +86,8 @@ books <<- list("Abandono_producao" = "parada",
     m = as.matrix(myDTM)
     
     sort(rowSums(m), decreasing = TRUE)
+    
+})
 
 
 
@@ -86,7 +99,7 @@ ui <- fluidPage(
     sidebarLayout(
         # Sidebar with a slider and selection inputs
         sidebarPanel(
-            selectInput("selection", "Choose a book:",
+            selectInput("Escolha", "Escolha um documento:",
                         choices = books),
             actionButton("update", "Change"),
             hr(),
@@ -106,15 +119,6 @@ ui <- fluidPage(
 )
 
 
-
-    # Text of the books downloaded from:
-    # A Mid Summer Night's Dream:
-    #  http://www.gutenberg.org/cache/epub/2242/pg2242.txt
-    # The Merchant of Venice:
-    #  http://www.gutenberg.org/cache/epub/2243/pg2243.txt
-    # Romeo and Juliet:
-    #  http://www.gutenberg.org/cache/epub/1112/pg1112.txt
-    
     server <- function(input, output, session) {
         # Define a reactive expression for the document term matrix
         terms <- reactive({

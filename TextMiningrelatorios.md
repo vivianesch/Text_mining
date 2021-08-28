@@ -35,152 +35,78 @@ Como identificar fatores humanos relacionados ao modelo HF2 nos relatórios de i
 # Documento P-20
 
 
-```r
-library(tidyverse) # Manipulacao eficiente de dados
-library(tidytext) # Manipulacao eficiente de texto
-library(textreadr) # Leitura de pdf para texto
-library(tm) # Pacote de mineracao de texto com stopwords 
-library(wordcloud) # Grafico nuvem de palavras
-library(igraph)
-library(ggraph)
-library(ggplot2)
-library(dplyr)
-library(pdftools)
-library(RRPP)
-library(SnowballC)
-library(glue)
-```
-
-```
-## Warning: package 'glue' was built under R version 3.6.3
-```
-
-```
-## 
-## Attaching package: 'glue'
-```
-
-```
-## The following object is masked from 'package:dplyr':
-## 
-##     collapse
-```
-
-```r
-library(ngram)
-library(qdapTools)
-library(qdap)
-library(rlist)
-```
-
-```
-## Warning: package 'rlist' was built under R version 3.6.3
-```
-
-```r
-library(pipeR)
-```
-
-```
-## Warning: package 'pipeR' was built under R version 3.6.3
-```
-
-```r
-setwd("~/Text Mining")
-
-## Função para ler, organizar, limpar palavras e normalizar o texto
-
-
-# Arquivo pdf
-arquivoPdf_P20 <- "~/Text Mining/Relatorio_P-20_final.pdf"
-arquivoPdf_P36 <- "~/Text Mining/Relatorio_P-36.pdf"
-arquivoPdf_P48 <- "~/Text Mining/P-48_Relatorio.pdf"
-
-
-.LimpaOrganiza <- function(arquivoPdf) {
-              Texto <- arquivoPdf %>% 
-              read_pdf() %>% 
-              as.tibble() %>% 
-              select(text) 
-}
-
-
-P20 <- .LimpaOrganiza(arquivoPdf_P20)
-```
-
-```
-## Warning: `as.tibble()` is deprecated as of tibble 2.0.0.
-## Please use `as_tibble()` instead.
-## The signature and semantics have changed, see `?as_tibble`.
-## This warning is displayed once every 8 hours.
-## Call `lifecycle::last_warnings()` to see where this warning was generated.
-```
-
-```r
-P36 <- .LimpaOrganiza(arquivoPdf_P36)
-P48 <- .LimpaOrganiza(arquivoPdf_P48)
-
-library(readxl)
-```
 
 
 
 
 
-```r
-## Functon return phases reletec with a factor and 3 exemplos of these phrases
 
 .Frases <- function(text,vector) {
   # Match one or more word characters or punctuations
 ##"([\\w[:punct:]]+\\s){0,20}"
-context <- "([\\.\\w\\.]){0,200}"
-pattern_operator <- glue_collapse(vector, sep = "|")
+context <- "([\\w[:punct:]]+\\s){0,30}"
+pattern <- glue_collapse(vector, sep = "|")
 pattern_with_context <- glue(
-  "{context}({pattern_operator})\\s?{context}")
+  "{context}({vector})\\s?{context}")
 phrases <- grep(
-text,
+text$text,
   pattern = pattern_with_context, value = TRUE,ignore.case = TRUE)
+phrases <- as.data.frame.character(phrases)
 return(phrases)
-  }
-  
 
-# Function to return a wordcloud and 3 main prases from a factor
-
-
-.Wc_3f <- function(phrases){
-frequency <- freq_terms(
-  phrases,
-  top = 15,
-  at.least = 1,
-  stopwords("pt"))
-  wc <- wordcloud(frequency$WORD,frequency$FREQ,
-    max.words = 80,
-    colors = c("grey80", "darkgoldenrod1","tomato"))
-  return(phrases[1:3])
-  return(wc)
 }
-```
+
+
+# Make a clean volatile corpus: text_corpus
+text_corpus <- clean_corpus(VCorpus(docs))
+
+# Examine the first doc content
+content(text_corpus[[1]])
+
+# Access the first doc metadata
+meta(text_corpus[1])
+
+phrases[1]
 
 
 
 
-```r
-F22 <- c('falhas?', 'avaliação', 'verificação', 'análises?','riscos?','tomada', 'decisão','decisões')
-F28 <-  c("considerção", "aprovação", "consciência","aprovação", "planejamento","segurança","respeito","avaliação","permissão","segurança","risco")
-F29 <-  c("considerção","consciência","aprovação","planejamento","segurança","respeito","avaliação","permissão","segurança","monitor")
-F51 <- c('não\\scumpriu', 'não\\spossui', 'ausentes?', 'normas?','regras?','procedimentos?','regulamentos?')
-F52 <-  c("alocação","jornada","cansaço","demasiado","trabalhos?")
-F56 <-  c("feedback","sistema")       
-F57 <- c('equipamentos?', 'configuração', 'dimensionamento', 'especificação','rupturas','instalação')
-F58 <- c('manutenção', 'registro', 'notas')
-F61 <-  c("comunicação", "canais?","rádios?","esclarecimentos?","orientação")
-F87 <- c('direcionou', 'ineficácia', 'comando', 'coordenação','lideranças?','tomada', 'decisão','decisões', 'responsáveis')
-F104 <- c('gestão\\sde\\smudanças?', 'gerenciamento\\sde\\smudanças?')
-F105 <- c("segurança")
-F118 <- c('trabalho', 'permissão')
+res<-data.frame(str_detect(pdf.text,F22))
+colnames(res)<-"Result"
+res<- subset(res,res$Result==TRUE)
+row.names(res)
 
-vetores_fatores <- list(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, F105, F118)
-```
+
+
+
+
+pdf.text <- pdftools::pdf_text(arquivoPdf_P20)
+cat(pdf.text[[2]]) 
+pdf.text<-unlist(pdf.text)
+pdf.text<-tolower(pdf.text)
+library(stringr)
+res<-data.frame(str_detect(pdf.text,F22))
+colnames(res)<-"Result"
+res<- subset(res,res$Result==TRUE)
+row.names(res)
+
+
+
+
+
+
+
+for (i in 1:length(vetores_fatores)) {
+## S3 method for class 'list' to transforma a df
+ Fator[i] <- as.data.frame(vetores_fatores[i], row.names = NULL, optional = FALSE,
+              cut.names = FALSE, col.names = names(vetores_fatores[i]), fix.empty.names = TRUE,
+              stringsAsFactors = default.stringsAsFactors())
+ x = colnames(Fator[1])
+ write.csv(Fator[i], file = x)
+}
+
+
+
 
 
 
@@ -190,6 +116,7 @@ vetores_fatores <- list(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, 
 
 
 .Analise_fatores_tb <- function(Texto, Tipo_Acidente){
+
 
 ### Fator linha 51 "Regras e instruções de trabalho projetadas"
 F51_Regras_projetadas <- .Frases(Texto$text,F51)
@@ -229,38 +156,38 @@ F56_FeedbackSistema <-  .Frases(Texto$text, F56)
 F61_Comunicacao <-  .Frases(Texto$text, F61)
 
 ## Fator linha 105 Organização	Gestão e organização do trabalho 	Cultura de segurança 	Prioridade à segurança
+
+
 F105_PriorSeguranca <-  .Frases(Texto$text, F105)
 
 
-#mess data - two separeted data
-#put the colunm status into which table
 
+F22_Decisao <- F22_Decisao %>%
+ mutate(Fator = "F22_Decisao", text = F22_Decisao, Dimensao = "Indivíduo") 
 
-F22_Decisao <- data.frame(F22_Decisao) %>% mutate(Fator = "F22_Decisao", text = F22_Decisao, Dimensao = "Indivíduo") 
+F51_Regras_projetadas <- F51_Regras_projetadas  %>% mutate(Fator = "F51_Regras_projetadas", text = F51_Regras_projetadas, Dimensao = "Trabalho") 
 
-F51_Regras_projetadas <- data.frame(F51_Regras_projetadas) %>% mutate(Fator = "F51_Regras_projetadas", text = F51_Regras_projetadas, Dimensao = "Trabalho") 
-
-F58_manutencao <- data.frame(F58_manutencao) %>% mutate(Fator = "F58_manutencao", text = F58_manutencao, Dimensao = "Trabalho")
+F58_manutencao <- F58_manutencao %>% mutate(Fator = "F58_manutencao", text = F58_manutencao, Dimensao = "Trabalho")
   
-F57_QualiEquipamento <- data.frame(F57_QualiEquipamento) %>% mutate(Fator = "F57_QualiEquipamento", text = F57_QualiEquipamento, Dimensao = "Trabalho" )
+F57_QualiEquipamento <- F57_QualiEquipamento %>% mutate(Fator = "F57_QualiEquipamento", text = F57_QualiEquipamento, Dimensao = "Trabalho" )
 
-F87_coordena <- data.frame(F87_coordena) %>% mutate(Fator = "F87_coordena", text = F87_coordena, Dimensao = "Organização")
+F87_coordena <- F87_coordena %>% mutate(Fator = "F87_coordena", text = F87_coordena, Dimensao = "Organização")
 
-F104Gerir_mudanca <- data.frame(F104Gerir_mudanca) %>% mutate(Fator = "F104Gerir_mudanca", text = F104Gerir_mudanca, Dimensao = "Organização")
+F104Gerir_mudanca <- F104Gerir_mudanca %>% mutate(Fator = "F104Gerir_mudanca", text = F104Gerir_mudanca, Dimensao = "Organização")
 
-F118_PraticaTrabalho <- data.frame(F118_PraticaTrabalho) %>% mutate(Fator = "F118_PraticaTrabalho", text = F118_PraticaTrabalho, Dimensao = "Trabalho")
+F118_PraticaTrabalho <- F118_PraticaTrabalho %>% mutate(Fator = "F118_PraticaTrabalho", text = F118_PraticaTrabalho, Dimensao = "Trabalho")
 
-F28_ConscienciaRespeitoRisco <- data.frame(F28_ConscienciaRespeitoRisco) %>% mutate(Fator = "F28_ConscienciaRespeitoRisco", text = F28_ConscienciaRespeitoRisco, Dimensao = "Indivíduo")
+F28_ConscienciaRespeitoRisco <- F28_ConscienciaRespeitoRisco %>% mutate(Fator = "F28_ConscienciaRespeitoRisco", text = F28_ConscienciaRespeitoRisco, Dimensao = "Indivíduo")
 
-F29_ConscienciaMonitora <- data.frame(F29_ConscienciaMonitora) %>% mutate(Fator = "F29_ConscienciaMonitora", text = F29_ConscienciaMonitora, Dimensao = "Indivíduo")
+F29_ConscienciaMonitora <- F29_ConscienciaMonitora %>% mutate(Fator = "F29_ConscienciaMonitora", text = F29_ConscienciaMonitora, Dimensao = "Indivíduo")
 
-F52_CargaTrabalho <- data.frame(F52_CargaTrabalho) %>% mutate(Fator = "F52_CargaTrabalho", text = F52_CargaTrabalho, Dimensao = "Trabalho")
+F52_CargaTrabalho <- F52_CargaTrabalho %>% mutate(Fator = "F52_CargaTrabalho", text = F52_CargaTrabalho, Dimensao = "Trabalho")
 
-F56_FeedbackSistema <- data.frame(F56_FeedbackSistema) %>% mutate(Fator = "F56_FeedbackSistema", text = F56_FeedbackSistema,  Dimensao = "Trabalho")
+F56_FeedbackSistema <- F56_FeedbackSistema %>% mutate(Fator = "F56_FeedbackSistema", text = F56_FeedbackSistema,  Dimensao = "Trabalho")
 
-F61_Comunicacao <- data.frame(F61_Comunicacao) %>% mutate(Fator = "F61_Comunicacao", text = F61_Comunicacao, Dimensao = "Organização")
+F61_Comunicacao <- F61_Comunicacao %>% mutate(Fator = "F61_Comunicacao", text = F61_Comunicacao, Dimensao = "Organização")
 
-F105_PriorSeguranca <- data.frame(F105_PriorSeguranca) %>% mutate(Fator = "F105_PriorSeguranca", text = F105_PriorSeguranca, Dimensao = "Trabalho")
+F105_PriorSeguranca <- F105_PriorSeguranca %>% mutate(Fator = "F105_PriorSeguranca", text = F105_PriorSeguranca, Dimensao = "Trabalho")
 
 
 #put together in a big data frame
@@ -300,53 +227,9 @@ return(Frases_por_fator)
 
 
 
-
-
-
-
-
-```r
-## FUNÇÃO Índice do documento extraído das frases dos fatores
-
-.Analise_Fatores_index <- function(texto){
-frequency <- freq_terms(
-as.character(texto),
-top = 20,
-at.least = 1,
-stopwords("pt"))
-print(DT::datatable(frequency))
-}
-```
-
-
-
-![](TextMiningrelatorios_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
-
-
-
-```r
-## FUNCAO que agrega todas as funções
-
-.Analise_Completa_Documento <- function(texto_bruto, Nome_Acidente) {
-  
-tb <- .Analise_fatores_tb(texto_bruto, Nome_Acidente)
-
-.Analise_Fatores_grafico(tb)
-
-.Nuvem_Fatores(tb$text)
-
-.Analise_Fatores_index(tb$text)
-
-.Analise_25Frases_texto(texto_bruto)
-
-return()
-
-}
-```
-
 # Documento P_20
 
-![](TextMiningrelatorios_files/figure-html/unnamed-chunk-10-1.png)<!-- -->![](TextMiningrelatorios_files/figure-html/unnamed-chunk-10-2.png)<!-- -->
+![](TextMiningrelatorios_files/figure-html/unnamed-chunk-9-1.png)<!-- -->![](TextMiningrelatorios_files/figure-html/unnamed-chunk-9-2.png)<!-- -->
 
 ```
 ## NULL
@@ -359,74 +242,17 @@ return()
 
 # Documento P_36
 
-
-```r
-tb_P36 <- .Analise_Completa_Documento(P36, "Incendio")
-```
-
-```
-## Warning in bind_rows_(x, .id): Unequal factor levels: coercing to character
-```
-
-```
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-```
-
-![](TextMiningrelatorios_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](TextMiningrelatorios_files/figure-html/unnamed-chunk-10-1.png)<!-- -->![](TextMiningrelatorios_files/figure-html/unnamed-chunk-10-2.png)<!-- -->
 
 ```
 ## NULL
 ```
 
-```
-## Joining, by = "Palavra"
-## Joining, by = "Palavra"
-```
-
-![](TextMiningrelatorios_files/figure-html/unnamed-chunk-11-2.png)<!-- -->
-
 
 
 # Documento P_48
 
-![](TextMiningrelatorios_files/figure-html/unnamed-chunk-12-1.png)<!-- -->![](TextMiningrelatorios_files/figure-html/unnamed-chunk-12-2.png)<!-- -->
+![](TextMiningrelatorios_files/figure-html/unnamed-chunk-11-1.png)<!-- -->![](TextMiningrelatorios_files/figure-html/unnamed-chunk-11-2.png)<!-- -->
 
 ```
 ## NULL

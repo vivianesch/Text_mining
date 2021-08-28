@@ -36,7 +36,7 @@ Como identificar fatores humanos relacionados ao modelo HF2 nos relatórios de i
 
 # Documento P-20
 
-```{r }
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 library(tidyverse)
 library(dplyr)
 library(pdftools)
@@ -53,9 +53,10 @@ library(RRPP)
 library(SnowballC)
 library(glue)
 library(purrr)
+library(ngram)
 
 
-setwd("~/Text Mining")
+setwd("~/Text Mining/")
 
 ## Função para ler, organizar, limpar palavras e normalizar o texto
 
@@ -67,19 +68,18 @@ arquivoPdf_P36 <- "~/Text Mining/Relatorio_P-36.pdf"
 arquivoPdf_P48 <- "~/Text Mining/P-48_Relatorio.pdf"
 
 
-.LimpaOrganiza <- function(arquivoPdf) {
-              Texto <- arquivoPdf %>% 
-              read_pdf() %>%
+.Le_Organiza <- function(arquivoPdf) {
+    Texto <- arquivoPdf %>% 
+              read_pdf() %>% 
               as.tibble() %>% 
-              select(text)
+              select(text) 
               return(Texto)
-              }
+}
 
 
-
-P20 <- .LimpaOrganiza(arquivoPdf_P20)
-P36 <- .LimpaOrganiza(arquivoPdf_P36)
-P48 <- .LimpaOrganiza(arquivoPdf_P48)
+P20 <- .Le_Organiza(arquivoPdf_P20)
+P36 <-.Le_Organiza(arquivoPdf_P36)
+P48 <- .Le_Organiza(arquivoPdf_P48)
 
 
 ```              
@@ -92,13 +92,13 @@ P48 <- .LimpaOrganiza(arquivoPdf_P48)
 ## Functon return phases reletec with a factor and 3 exemplos of these phrases
 
 
-.Frases <- function(vetor, texto){
+.Frases <- function(texto, vetor){
   
   # Create our polit_pattern again by collapsing "factors"
 polit_pattern <- glue_collapse(vetor, sep = "|")
 
 # Match one or more word characters or punctuations
-context <- "([\\w\\.]]+\\s){0,10}"
+context <-"([\\w[:punct:]]+\\s){0,20}"
 
 # Add this pattern in front and after the polit_pattern
 polit_pattern_with_context <- glue(
@@ -113,10 +113,7 @@ return(frases)
 }
 
 
-
-
-
-
+        
 
 
 
@@ -131,7 +128,7 @@ pattern <- glue_collapse(vector, sep = "|")
 pattern_with_context <- glue(
   "{context}({vector})\\s?{context}")
 phrases <- grep(
-text,
+text$text,
   pattern = pattern_with_context, value = TRUE,ignore.case = TRUE)
 phrases <- as.data.frame.character(phrases)
 return(phrases)
@@ -179,7 +176,7 @@ row.names(res)
 
 
  
-F22 <- c("riscos", "avaliação", "verificação", "análise", "avaliou", "avaliaram")
+F22 <- c('riscos?', 'avaliação', 'verificação', 'análises?', 'avaliou', 'avaliaram')
 F28 <-  c("considerção", "aprovação", "consciência","aprovação", "planejamento","segurança","respeito","avaliação","permissão","segurança","risco")
 F29 <-  c("considerção","consciência","aprovação","planejamento","segurança","respeito","avaliação","permissão","segurança","monitor")
 F51 <- c('não\\scumpriu', 'não\\spossui', 'ausentes?', 'normas?','regras?','procedimentos?','regulamentos?')
@@ -193,12 +190,7 @@ F104 <- c('gestão\\sde\\smudanças?', 'gerenciamento\\sde\\smudanças?')
 F105 <- c("segurança")
 F118 <- c('trabalho', 'permissão')
 
-vetores_fatores <- sprintf(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, F105, F118)
-
-## S3 method for class 'list' to transforma a df
-as.data.frame(F104, row.names = NULL, optional = FALSE,
-              cut.names = FALSE, col.names = names(x), fix.empty.names = TRUE,
-              stringsAsFactors = default.stringsAsFactors())
+vetores_fatores <- list(F22, F28, F29, F51, F52, F56, F57, F58, F61, F87, F104, F105, F118)
 
 
 
@@ -226,9 +218,17 @@ frequency <- freq_terms(
 ```
 
 
+for (i in 1:length(vetores_fatores)) {
+## S3 method for class 'list' to transforma a df
+ Fator[i] <- as.data.frame(vetores_fatores[i], row.names = NULL, optional = FALSE,
+              cut.names = FALSE, col.names = names(vetores_fatores[i]), fix.empty.names = TRUE,
+              stringsAsFactors = default.stringsAsFactors())
+ x = colnames(Fator[1])
+ write.csv(Fator[i], file = x)
+}
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 Relatorio_corpus <- VCorpus(VectorSource(P20$text))
 content(Relatorio_corpus[[15]])
 
@@ -292,6 +292,41 @@ str_subset(bi_words,"^falhas")
 names(P20)[1] <- "doc_id"
 
 
+.Bag_vetor <- function(pdf) {
+   
+    txt <- pdftools::pdf_text(pdf) %>%
+    paste(sep = " ") %>%
+    stringr::str_replace_all(fixed("\n"), " ") %>%
+    stringr::str_replace_all(fixed("\r"), " ") %>%
+    stringr::str_replace_all(fixed("\t"), " ") %>%
+    stringr::str_replace_all(fixed("\""), " ") %>%
+    paste(sep = " ", collapse = " ") %>%
+    stringr::str_squish() %>%
+    stringr::str_replace_all("- ", "")
+    
+    
+    myCorpus = Corpus(VectorSource(txt))
+    myCorpus = tm_map(myCorpus, content_transformer(tolower))
+    myCorpus = tm_map(myCorpus, removePunctuation)
+    myCorpus = tm_map(myCorpus, removeNumbers)
+    myCorpus = tm_map(mycorpus, bracketX)
+    myCorpus = tm_map(myCorpus, removeWords,
+                      c(stopwords("pt"), "thy", "thou", "thee", "the", "and", "but"))
+    
+ 
+    
+    myDTM = TermDocumentMatrix(myCorpus,
+                               control = list(minWordLength = 1))
+    
+    m = as.matrix(myDTM)
+    
+    Result <- sort(rowSums(m), decreasing = TRUE)
+    
+    
+    return(Result)
+
+}
+
 
 
 
@@ -346,6 +381,8 @@ F56_FeedbackSistema <-  .Frases(Texto$text, F56)
 F61_Comunicacao <-  .Frases(Texto$text, F61)
 
 ## Fator linha 105 Organização	Gestão e organização do trabalho 	Cultura de segurança 	Prioridade à segurança
+
+
 F105_PriorSeguranca <-  .Frases(Texto$text, F105)
 
 
@@ -402,15 +439,6 @@ return(Frases_por_fator)
 
 
 ```
-
-
-
-
-
-
-
-
-
 
 
 
@@ -473,94 +501,13 @@ print(DT::datatable(frequency))
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
-
-#
-# FUNCAO para analisar as 25 frases mais frequentes no texto dos fatores
-
-.Analise_25Frases_texto <- function(texto) {
-  
-  # Lista de palavras para remover
-palavrasRemover <- c(stopwords(kind = "pt"), letters) %>%
-  as.tibble() %>% 
-  rename(Palavra = value) %>% 
-  mutate(Palavra = NormalizaParaTextMining(Palavra))
-  
-   ## Função para normalizar texto
-NormalizaParaTextMining <- function(texto){
- 
-  # Normaliza texto
-  texto %>% 
-    chartr(
-      old = "áéíóúÁÉÍÓÚýÝàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛãõÃÕñÑäëïöüÄËÏÖÜÿçÇ´`^~¨:.!?&$@#0123456789",
-      new = "aeiouAEIOUyYaeiouAEIOUaeiouAEIOUaoAOnNaeiouAEIOUycC                       ",
-      x = .) %>% # Elimina acentos e caracteres desnecessarios
-    str_squish() %>% # Elimina espacos excedentes 
-    tolower() %>% # Converte para minusculo
-    return() # Retorno da funcao
-}
-
-
-
-# Função para Palavras que podem se retiradas
-
-
-my_stopwords <- tibble(Palavra = c(as.character(1:3), 
-                                    "www","http", ",", ".", "tq", "figura", "raiz","nº", "fatores", "causais", "fator", "afirma", "seguinte", "investigacao", "relatorio", "plataforma", "f"))
-
-  
-  CleanW <- texto  %>% 
-  unnest_tokens(Palavra, text) %>% 
-  mutate(Palavra = NormalizaParaTextMining(Palavra)) %>% 
-  anti_join(my_stopwords)   
-
-
-
-ngrams=5
-temp=ngram::ngram(ngram::concatenate(CleanW),ngrams)      # Objeto temporario recebe objeto que guarda sequencias
-    temp=get.phrasetable(temp)                                  # Obtendo tabela de sequencias do objeto acima
-    
-    temp$ngrams=temp$ngrams%>%                                  # Limpeza das sequencias obtidas:
-      str_replace_all(pattern = "^([A-Za-z] [A-Za-z])+","")%>%  # Remover sequencias de apenas 1 letras 
-      str_replace_all(pattern = "[:punct:]","")%>%              # Remover caracteres especiais
-      str_replace_all(pattern = "\n","")%>%                     # Remover o marcador de "nova linha"
-      str_trim()                                                # Remover espaços em branco sobrando
-    
-    #Apos a limpeza..
-    
-    temp=temp[temp$ngrams!="",]                                 # Selecionando apenas as linhas que contenham informacao
-    
-    temp=temp%>%                                                # Novamente manipulando o objeto que contem a tabela de sequencias
-      group_by(ngrams) %>%                                      # Agrupando por "ngrams" (sequencias obtidas)
-      summarise(freq=sum(freq))%>%                              # Resumir as linhas repetidas pela soma das frequencias
-      arrange(desc(freq))%>%                                    # Organizando da maior para a menos frequencia
-      as.matrix()                                               # Alterando o tipo de objeto para matrix
-    
-    rownames(temp)=str_c(temp[,1])                              # O nome das linhas passa a ser a sequencia correspondente
-    v=sort(temp[,2],decreasing = T)                               # Retorna um objeto com as frequencias em ordem decrescente e linhas nomeadas
-
-      
-  plot <- data.frame(words = names(v),freq=v)%>%
-  head(n=25)%>%
-  ggplot(aes(words, freq)) +
-  geom_bar(stat = "identity", color = "black", fill = "#87CEFA") +
-  geom_text(aes(hjust = 1.3, label = freq)) + 
-  coord_flip() + 
-  labs(title = "25 frases mais mencionadas",  x = "Frases", y = "Número de usos")
- return(plot)
-}
-
-```
-
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-
 ## FUNCAO que agrega todas as funções
 
 
+ .Analise_Completa_Documento <- function(texto, Tipo_Acidente) {
 
 
-
-tb_P20 <- .Analise_fatores_tb(P20, "Incendío")
+ tb <- .Analise_fatores_tb(texto, Tipo_Acidente)
 
 .Analise_Fatores_grafico(tb)
 
@@ -568,10 +515,14 @@ tb_P20 <- .Analise_fatores_tb(P20, "Incendío")
 
 .Analise_Fatores_index(tb$text)
 
-.Analise_25Frases_texto(texto_bruto)
 
+return()
+
+}
 
 ```
+
+
 
 # Documento P_20
 
