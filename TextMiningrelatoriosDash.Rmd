@@ -633,62 +633,67 @@ p
 
 # Comparativo por Acidente (documento)
 
-```{r echo=FALSE}
 
-data <- bind_rows(tb_P36, tb_P48, tb_P20)
 
-data %>%
-    group_by(Fator, Dimensao, Tipo_Acidente) %>% 
-    summarise(Qnt_Frases = n()) 
 
-names(data) <- c("group","value","individual")
   
-# library
-library(tidyverse)
- 
 
-# Set a number of 'empty bar' to add at the end of each group
-empty_bar <- 4
-to_add <- data.frame( matrix(NA, empty_bar*nlevels(data$group), ncol(data)) )
-colnames(to_add) <- colnames(data)
-to_add$group <- rep(levels(data$group), each=empty_bar)
-data <- rbind(data, to_add)
-data <- data %>% arrange(group)
-data$id <- seq(1, nrow(data))
- 
-# Get the name and the y position of each label
-label_data <- data
-number_of_bar <- nrow(label_data)
-angle <- 90 - 360 * (label_data$id-0.5) /number_of_bar     # I substract 0.5 because the letter must have the angle of the center of the bars. Not extreme right(1) or extreme left (0)
-label_data$hjust <- ifelse( angle < -90, 1, 0)
-label_data$angle <- ifelse(angle < -90, angle+180, angle)
- 
-# Make the plot
-p2 <- ggplot(data, aes(x=as.factor(id), y=value, fill=group)) +       # Note that id is a factor. If x is numeric, there is some space between the first bar
-  geom_bar(stat="identity", alpha=0.5) +
-  ylim(-100,120) +
-  theme_minimal() +
-  theme(
-    legend.position = "right",
-    axis.text = element_blank(),
-    axis.title = element_blank(),
-    panel.grid = element_blank(),
-    plot.margin = unit(rep(-1,4), "cm") 
-  ) +
-  coord_polar() + 
-  geom_text(data=label_data, aes(x=id, y=value+10, label=individual, hjust=hjust), color="black", fontface="bold",alpha=0.6, size=2.5, angle= label_data$angle, inherit.aes = FALSE ) 
- 
-p2
+names(data) <- c("group","individual", "value")
 
-```
+data <- bind_rows(tb_P36, tb_P48, tb_P20) 
+
+data <- data %>%
+select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+names(data) <- c("fator_humano","percentual","Acidente")
+
+ggplot(data, aes(fill=fator_humano, y=plataforma, x=percentual)) + 
+    geom_bar(position="fill", stat="identity") + ggtitle("Fatores humanos por relatório de acidente")
+    
+    data <- data %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Dimensao) %>%
+   summarise(count = n())
 
 
+  
+   tb_P36a <- tb_P36 %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
 
-```{r eval=FALSE, include=FALSE}
+tb_P48a <- tb_P48 %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+tb_P20a <- tb_P20 %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+data <- bind_rows(tb_P36a, tb_P48a, tb_P20a)
+
+
+
+## Agrupamento de todos os fatores em todos documentos
+
+```{r echo=FALSE}
 library(packcircles)
 library(ggplot2)
+
+
+data4 <- bind_rows(tb_P36, tb_P48, tb_P20) 
+
+data4 <- data4 %>%
+select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Dimensao) %>%
+   summarise(count = n())
+names(data4)  <- c( "group","individual", "value")
  
- 
+ data <- data4
  
 # Generate the layout. This function return a dataframe with one line per bubble. 
 # It gives its center (x and y) and its radius, proportional of the value
@@ -707,7 +712,7 @@ dat.gg <- circleLayoutVertices(packing, npoints=50)
 # Make the plot
 ggplot() + 
   
-  # Make the bubbles
+  # Make the bubbles 
   geom_polygon(data = dat.gg, aes(x, y, group = id, fill=as.factor(id)), colour = "black", alpha = 0.6) +
   
   # Add text in the center of each bubble + control its size
@@ -716,29 +721,45 @@ ggplot() +
   
   # General theme:
   theme_void() + 
-  theme(legend.position="right") +
+    theme(legend.position="none")+
   coord_equal()
 
 
 ```
 
+  
 
+## Mapa de calor dos fatores humanos por acidente
 
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
-```{r eval=FALSE, include=FALSE}
-names(data) <- c("fator_humano","percentual","plataforma")
+data <- bind_rows(tb_P36, tb_P48, tb_P20) 
 
-ggplot(data, aes(fill=fator_humano, y=plataforma, x=percentual)) + 
+data5 <- data %>%
+select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+names(data5)  <- c( "group","individual", "value")
+
+names(data5) <- c("fator_humano","plataforma", "percentual")
+
+ggplot(data5, aes(fill=fator_humano, y=plataforma, x=percentual)) + 
     geom_bar(position="fill", stat="identity") + ggtitle("Fatores humanos por relatório de acidente")
 
 ```
 
 
 
-```{r eval=FALSE, include=FALSE}
-names(data) <- c("fator_humano","percentual","plataforma")
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+data <- bind_rows(tb_P36, tb_P48, tb_P20) 
 
-ggplot(data, aes(fill=plataforma, y=fator_humano, x=percentual)) + 
+data5 <- data %>%
+select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+
+ggplot(data5, aes(fill=Tipo_Acidente, y=Fator, x=count)) + 
     geom_bar(position="fill", stat="identity") + ggtitle("Fatores humanos por relatório de acidente")
 
 ```

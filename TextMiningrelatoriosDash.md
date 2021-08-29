@@ -180,17 +180,66 @@ for (i in 1:length(vetores_fatores)) {
 
 
 
+  
+
+names(data) <- c("group","individual", "value")
+
+data <- bind_rows(tb_P36, tb_P48, tb_P20) 
+
+data <- data %>%
+select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+names(data) <- c("fator_humano","percentual","Acidente")
+
+ggplot(data, aes(fill=fator_humano, y=plataforma, x=percentual)) + 
+    geom_bar(position="fill", stat="identity") + ggtitle("Fatores humanos por relatório de acidente")
+    
+    data <- data %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Dimensao) %>%
+   summarise(count = n())
+
+
+  
+   tb_P36a <- tb_P36 %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+tb_P48a <- tb_P48 %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+tb_P20a <- tb_P20 %>%
+   select(Fator, Dimensao, Tipo_Acidente)%>%
+    group_by(Fator, Tipo_Acidente) %>%
+   summarise(count = n())
+
+data <- bind_rows(tb_P36a, tb_P48a, tb_P20a)
 
 
 
+## Agrupamento de todos os fatores em todos documentos
+
+
+```
+## `summarise()` has grouped output by 'Fator'. You can override using the `.groups` argument.
+```
+
+![](TextMiningrelatoriosDash_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+
+  
+
+## Mapa de calor dos fatores humanos por acidente
+
+![](TextMiningrelatoriosDash_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
 
 
 
-
-
-
-
-
+![](TextMiningrelatoriosDash_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 
 
